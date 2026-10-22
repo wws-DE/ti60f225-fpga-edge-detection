@@ -1,0 +1,95 @@
+{
+  "task_id": "TRACK4-V7-MEDIAN-DETAIL-001",
+  "session_id": "TRACK4-V7-MEDIAN-DETAIL-001-20261022",
+  "timestamp": "2026-10-22T15:51:09.828536+08:00",
+  "state": "WAITING_HUMAN_PROGRAM",
+  "design_version": "保边中值v1 A：用户接受已知噪声取舍的对比版",
+  "project": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\ti60f225_oob.xml",
+  "tool": "Efinity2026.1.132",
+  "device": "Ti60F225/I3",
+  "scene_observation": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\observations\\structured\\TRACK4-V7-MEDIAN-DETAIL-001-scene-20261022.json",
+    "sha256": "ef2e4de463cfb61bb61316618af16218508757062b928feed75a064eaefda6a1"
+  },
+  "original_design_sha256": "6dc29c14b6a2ab364b9eee37107be94a03602f5818de4f8fb7da9862300203f5",
+  "authorization_sha256": "14ec44b9e288e6363ee318613fce894ec9e647f2cc5ffba27d87695259261419",
+  "acceptance_sha256": "900be6ddd1d9a26ffa4668a4be3b72e816f4eadc7775a36fa4356cffefe8885c",
+  "quality_state": "ACCEPTED_WITH_KNOWN_NOISE_TRADEOFF",
+  "original_quality_result": "SYNTHETIC_GATE_FAIL",
+  "accepted_correlated_noise_cases": [
+    {
+      "amplitude": 16,
+      "seed": 433,
+      "axis": 0,
+      "old_edges": 0,
+      "new_edges": 2
+    },
+    {
+      "amplitude": 24,
+      "seed": 431,
+      "axis": 0,
+      "old_edges": 24,
+      "new_edges": 26
+    },
+    {
+      "amplitude": 24,
+      "seed": 432,
+      "axis": 1,
+      "old_edges": 40,
+      "new_edges": 42
+    },
+    {
+      "amplitude": 24,
+      "seed": 433,
+      "axis": 0,
+      "old_edges": 22,
+      "new_edges": 32
+    }
+  ],
+  "bit": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-MEDIAN-DETAIL-001\\median_detail_v1_A_20261022.bit",
+    "desktop_path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\FPGA_保边中值v1_A.bit",
+    "bytes": 2490429,
+    "sha256": "c3b313e58726b96ab3fe487cb06249f7cbfe7b14707950d46772a6b4a7b59d11"
+  },
+  "parameters": {
+    "candidate": "A",
+    "difference": 16,
+    "similarity": 4,
+    "median_stages": 9,
+    "video_latency_cycles": 6602,
+    "sobel_threshold": 64,
+    "thin_mode": 1,
+    "sensor_configuration": "unchanged"
+  },
+  "setup_min_ns": 0.38,
+  "hold_min_ns": 0.026,
+  "resources": {
+    "xlr": 24991,
+    "ram": 181,
+    "dsp": 0
+  },
+  "mode_order": [
+    "COLOR",
+    "GRAY",
+    "MEDIAN",
+    "SOBEL",
+    "OVERLAY"
+  ],
+  "full_video_compared_pixels": 10368000,
+  "unchanged_first_two_mode_pixels": 4147200,
+  "checks_sha256": "fda42c08e01316e803b43f01ed00ac47dbc3462085868511027837a8c532ed54",
+  "inputs_manifest_sha256": "54db3016a92c555af6255bc2b02f07bdc7e5c98b9f20fb8708c4e64d3a791de3",
+  "test_inputs_manifest_sha256": "9b20b9c1fe2b62f456a5f6498f2e17f6e01e73b6e3067dca802ebb79703ccc0b",
+  "rollback_bit": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\FPGA_细化v1.1.bit",
+    "sha256": "c407819ed8fcbbf0bc5e9a9b38d219299d2f6489988d1c19dda036f44e21bd43"
+  },
+  "control_plane_static_result": "FAILED_STATIC_VALIDATION",
+  "hardware_programmed": false,
+  "hardware_passed": false,
+  "real_camera_accuracy_measured": false,
+  "formal_state_updated": false,
+  "local_audit_exception": true,
+  "delivery_evidence_manifest_sha256": "0ae10174c606e8016799703212704df16ba27c4d7a1908f83ef4102904ec04fd"
+}

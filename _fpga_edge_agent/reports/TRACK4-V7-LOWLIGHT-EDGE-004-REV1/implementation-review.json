@@ -1,0 +1,59 @@
+{
+  "result": "REVIEWED_AGAINST_APPROVED_V4_1",
+  "changed_from_v4": [
+    "algorithm/frontend/frontend_frame_pair.sv",
+    "algorithm/frontend/sobel_pair.sv",
+    "rtl/v7_algorithm_video_pair.sv"
+  ],
+  "unchanged_from_v4": 156,
+  "source_sha256": {
+    "algorithm/frontend/frontend_frame_pair.sv": "0c65ac5a035990983c7829528c530dc4e02ede54f755d1ed098d33f2777bf537",
+    "algorithm/frontend/sobel_pair.sv": "ce2e9f70d93eb616c803f8bc9b34f9c2a07e06e660a5a5c652608be8f84ceeb6",
+    "rtl/v7_algorithm_video_pair.sv": "b5865fee08fc87a1a664894f94e398b5a83192aecf7fbb4139cdd5bc2d0d2d62"
+  },
+  "scope_deviation": false,
+  "contract_review": [
+    "S1 signed9 spans reused; original majority/unanimous branches untouched",
+    "S2 separate diagonal signed majority2-of3 on both axes; S3 same-window delay",
+    "S4 nonzero sign aligned dual-axis support and 11bit ratio bound; S5 follows same L1",
+    "S6 OR seed added under original output_kind permission; data and valid remain six-stage",
+    "New default switches0 preserve legacy core/frontend; selected bridge D18 and context drop16",
+    "Unchanged v4 pack/window/filter and six-row scan; all_empty includes full context state",
+    "No top/gray/median/sensor/peri/SDC/control changes"
+  ],
+  "requirement_mapping": {
+    "R1": [
+      "diagonal_majority",
+      "in_diagonal_band",
+      "diagonal_s4/s5",
+      "threshold_compare",
+      "diagonal-core-result.json"
+    ],
+    "R2": [
+      "unchanged v4 context modules",
+      "context-evidence-reuse.json",
+      "frontend-context-result.json",
+      "candidate-quality.json"
+    ],
+    "R3": [
+      "pipeline_advance",
+      "frontend job/slot/context plumbing",
+      "boundary/small/fault/reset/full simulations",
+      "checks.json"
+    ],
+    "R4": [
+      "quality_v41.py",
+      "geometry/contour/stripes/noise gate",
+      "manual H1 pending"
+    ],
+    "R5": [
+      "source snapshots",
+      "Efinity input closure/timing/warning review",
+      "register.py",
+      "human programming gate"
+    ]
+  },
+  "full_video_verification_pending": false,
+  "hardware_passed": false,
+  "full_video_result": "PASS:10368000 pixels/6187505 cycles/6602 latency"
+}

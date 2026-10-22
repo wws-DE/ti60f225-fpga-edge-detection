@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-19",
+  "commit": "7e8564b0ed3b691925b0dea4afd2ee8e9d559ed9",
+  "tracked_files": 43830,
+  "read_files": 43830,
+  "bytes": 1128990636,
+  "unique_contents": 17646,
+  "text_files_scanned": 43690,
+  "binary_files_hashed": 140,
+  "protected_hdl_files_detected": 1309,
+  "markdown_files_indexed": 1271,
+  "changed_paths": 2030,
+  "extensions": [
+    [
+      ".json",
+      14863
+    ],
+    [
+      ".log",
+      11424
+    ],
+    [
+      ".sv",
+      3248
+    ],
+    [
+      ".v",
+      2879
+    ],
+    [
+      ".do",
+      2188
+    ],
+    [
+      ".rpt",
+      1655
+    ],
+    [
+      ".py",
+      1282
+    ],
+    [
+      ".md",
+      1271
+    ],
+    [
+      ".xml",
+      1002
+    ],
+    [
+      ".csv",
+      722
+    ],
+    [
+      ".ps1",
+      665
+    ],
+    [
+      ".txt",
+      636
+    ],
+    [
+      ".sdc",
+      567
+    ],
+    [
+      ".mem",
+      423
+    ],
+    [
+      ".tsv",
+      186
+    ],
+    [
+      ".vh",
+      161
+    ],
+    [
+      ".jsonl",
+      151
+    ],
+    [
+      ".vhd",
+      65
+    ],
+    [
+      ".html",
+      61
+    ],
+    [
+      ".svh",
+      59
+    ],
+    [
+      ".png",
+      44
+    ],
+    [
+      ".pickle",
+      40
+    ],
+    [
+      ".pdf",
+      33
+    ],
+    [
+      ".ini",
+      31
+    ],
+    [
+      ".svg",
+      28
+    ]
+  ],
+  "read_errors": [],
+  "export_files_rechecked": 2015,
+  "export_mismatches": [],
+  "registered_inputs_rechecked": [
+    {
+      "project": "track4_v7_algorithm_bridge_001_20261018",
+      "count": 154,
+      "failures": []
+    },
+    {
+      "project": "track4_v7_algorithm_control_001_20261018",
+      "count": 158,
+      "failures": []
+    }
+  ],
+  "scope_note": "All tracked files read at byte level and hashed; text decoded and indexed automatically. This is not a claim of line-by-line semantic review of all historical/vendor/generated files. Main handoff, updated docs, design and test reports, and key integration RTL receive separate close reading. Binary documents were not visually reviewed."
+}

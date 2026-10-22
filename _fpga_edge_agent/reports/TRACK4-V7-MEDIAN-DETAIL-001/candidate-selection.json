@@ -1,0 +1,9 @@
+{
+  "candidate": "A",
+  "difference": 16,
+  "similarity": 4,
+  "thin_mode": 1,
+  "quality_state": "ACCEPTED_WITH_KNOWN_NOISE_TRADEOFF",
+  "quality_sha256": "eb675ef020c5d8d2818df00adeb94bcaa36344cbb5ee2ca9aa851608fafe08ef",
+  "acceptance_sha256": "900be6ddd1d9a26ffa4668a4be3b72e816f4eadc7775a36fa4356cffefe8885c"
+}

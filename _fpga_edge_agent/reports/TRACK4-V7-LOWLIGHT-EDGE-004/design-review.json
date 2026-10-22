@@ -1,0 +1,47 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-004",
+  "design_version": "优化v4",
+  "timestamp": "2026-10-21T18:12:43.540154+08:00",
+  "state": "READY_FOR_REVIEW",
+  "approval": "PENDING",
+  "design": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\planning\\design-TRACK4-V7-LOWLIGHT-EDGE-004.md",
+  "design_sha256": "2b8f8cdb51d67aef05b596bd4ddd0027c00f51255ec33df994942669949afd5b",
+  "baseline": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_003_20261021",
+  "baseline_input_hashes_verified": 156,
+  "baseline_bit_sha256": "f3825f7e99b9626746df4cb21e21eab9fa32e219af3051e4fde38612764aec0e",
+  "reference_context_window": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\gui_review_20261010_r2\\r2\\rtl\\r2\\nms_window_pair.sv",
+  "reference_context_window_sha256": "9a23ac87d3222408fe9c907332dd765946028bb261e6606580199469724614f4",
+  "scope": "one spatial postprocessing feature: directional single-pixel gap repair and isolated-seed rejection",
+  "proposed_candidates": {
+    "A": {
+      "threshold_drop": 32
+    },
+    "B": {
+      "threshold_drop": 16
+    }
+  },
+  "proposed_video_latency_cycles": 6602,
+  "resource_budget": {
+    "RAM_max": 185,
+    "DSP": 0,
+    "XLR_max": 25000
+  },
+  "synthetic_noise_max": {
+    "amplitude8": 0,
+    "amplitude16": 56,
+    "amplitude24": 2885
+  },
+  "caveats": [
+    "does not recover entire missing weak contours",
+    "may remove true isolated single-pixel details",
+    "no full Canny or NMS in this version"
+  ],
+  "new_business_rtl_generated": false,
+  "new_executable_tests_generated": false,
+  "new_work_copy_created": false,
+  "build_started": false,
+  "bit_generated": false,
+  "database_env_configured": false,
+  "formal_state_updated": false,
+  "hardware_operation": false
+}

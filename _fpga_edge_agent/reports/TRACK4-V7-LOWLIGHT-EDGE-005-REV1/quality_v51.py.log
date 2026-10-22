@@ -1,0 +1,244 @@
+{
+  "result": "SYNTHETIC_GATE_FAIL",
+  "selected_candidate": null,
+  "candidates": {
+    "P1A": {
+      "smooth_passes": 1,
+      "low_threshold": 24,
+      "eligible": false,
+      "weak_geometry_gain": 5427,
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "old_false_edges": 0,
+          "new_false_edges": 790,
+          "limit": 0,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 16,
+          "old_false_edges": 50,
+          "new_false_edges": 16924,
+          "limit": 50,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 24,
+          "old_false_edges": 2843,
+          "new_false_edges": 27764,
+          "limit": 2843,
+          "pixels": 93744
+        }
+      ],
+      "failures": [
+        "noise amplitude 8: 790 > approved v4.1 cap 0",
+        "correlated noise amplitude 8 axis 0: 11 > v4.1 0",
+        "correlated noise amplitude 8 axis 1: 12 > v4.1 0",
+        "noise amplitude 16: 16924 > approved v4.1 cap 50",
+        "correlated noise amplitude 16 axis 0: 5223 > v4.1 0",
+        "correlated noise amplitude 16 axis 1: 5473 > v4.1 0",
+        "noise amplitude 24: 27764 > approved v4.1 cap 2843",
+        "correlated noise amplitude 24 axis 0: 17338 > v4.1 79",
+        "correlated noise amplitude 24 axis 1: 17419 > v4.1 100"
+      ]
+    },
+    "P1B": {
+      "smooth_passes": 1,
+      "low_threshold": 32,
+      "eligible": false,
+      "weak_geometry_gain": 4164,
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "old_false_edges": 0,
+          "new_false_edges": 23,
+          "limit": 0,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 16,
+          "old_false_edges": 50,
+          "new_false_edges": 7490,
+          "limit": 50,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 24,
+          "old_false_edges": 2843,
+          "new_false_edges": 20623,
+          "limit": 2843,
+          "pixels": 93744
+        }
+      ],
+      "failures": [
+        "noise amplitude 8: 23 > approved v4.1 cap 0",
+        "noise amplitude 16: 7490 > approved v4.1 cap 50",
+        "correlated noise amplitude 16 axis 0: 905 > v4.1 0",
+        "correlated noise amplitude 16 axis 1: 977 > v4.1 0",
+        "noise amplitude 24: 20623 > approved v4.1 cap 2843",
+        "correlated noise amplitude 24 axis 0: 8232 > v4.1 79",
+        "correlated noise amplitude 24 axis 1: 8417 > v4.1 100"
+      ]
+    },
+    "P2A": {
+      "smooth_passes": 2,
+      "low_threshold": 24,
+      "eligible": false,
+      "weak_geometry_gain": 5259,
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "old_false_edges": 0,
+          "new_false_edges": 38,
+          "limit": 0,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 16,
+          "old_false_edges": 50,
+          "new_false_edges": 8048,
+          "limit": 50,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 24,
+          "old_false_edges": 2843,
+          "new_false_edges": 20381,
+          "limit": 2843,
+          "pixels": 93744
+        }
+      ],
+      "failures": [
+        "noise amplitude 8: 38 > approved v4.1 cap 0",
+        "noise amplitude 16: 8048 > approved v4.1 cap 50",
+        "correlated noise amplitude 16 axis 0: 1323 > v4.1 0",
+        "correlated noise amplitude 16 axis 1: 1404 > v4.1 0",
+        "noise amplitude 24: 20381 > approved v4.1 cap 2843",
+        "correlated noise amplitude 24 axis 0: 9312 > v4.1 79",
+        "correlated noise amplitude 24 axis 1: 9512 > v4.1 100"
+      ]
+    },
+    "P2B": {
+      "smooth_passes": 2,
+      "low_threshold": 32,
+      "eligible": false,
+      "weak_geometry_gain": 2472,
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "limit": 0,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 16,
+          "old_false_edges": 50,
+          "new_false_edges": 1860,
+          "limit": 50,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 24,
+          "old_false_edges": 2843,
+          "new_false_edges": 11416,
+          "limit": 2843,
+          "pixels": 93744
+        }
+      ],
+      "failures": [
+        "delta12 horizontal: required weak geometry improvement absent",
+        "delta12 vertical: required weak geometry improvement absent",
+        "noise amplitude 16: 1860 > approved v4.1 cap 50",
+        "correlated noise amplitude 16 axis 0: 98 > v4.1 0",
+        "correlated noise amplitude 16 axis 1: 112 > v4.1 0",
+        "noise amplitude 24: 11416 > approved v4.1 cap 2843",
+        "correlated noise amplitude 24 axis 0: 2623 > v4.1 79",
+        "correlated noise amplitude 24 axis 1: 2851 > v4.1 100"
+      ]
+    },
+    "P3A": {
+      "smooth_passes": 3,
+      "low_threshold": 24,
+      "eligible": false,
+      "weak_geometry_gain": 3816,
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "limit": 0,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 16,
+          "old_false_edges": 50,
+          "new_false_edges": 3143,
+          "limit": 50,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 24,
+          "old_false_edges": 2843,
+          "new_false_edges": 13280,
+          "limit": 2843,
+          "pixels": 93744
+        }
+      ],
+      "failures": [
+        "noise amplitude 16: 3143 > approved v4.1 cap 50",
+        "correlated noise amplitude 16 axis 0: 286 > v4.1 0",
+        "correlated noise amplitude 16 axis 1: 278 > v4.1 0",
+        "noise amplitude 24: 13280 > approved v4.1 cap 2843",
+        "correlated noise amplitude 24 axis 0: 4200 > v4.1 79",
+        "correlated noise amplitude 24 axis 1: 4570 > v4.1 100"
+      ]
+    },
+    "P3B": {
+      "smooth_passes": 3,
+      "low_threshold": 32,
+      "eligible": false,
+      "weak_geometry_gain": 1977,
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "limit": 0,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 16,
+          "old_false_edges": 50,
+          "new_false_edges": 392,
+          "limit": 50,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 24,
+          "old_false_edges": 2843,
+          "new_false_edges": 5432,
+          "limit": 2843,
+          "pixels": 93744
+        }
+      ],
+      "failures": [
+        "thin_horizontal-d18: existing geometric coverage/connectivity regressed",
+        "thin_vertical-d18: existing geometric coverage/connectivity regressed",
+        "thin_horizontal-d19: existing geometric coverage/connectivity regressed",
+        "thin_vertical-d19: existing geometric coverage/connectivity regressed",
+        "thin_horizontal-d20: existing geometric coverage/connectivity regressed",
+        "thin_vertical-d20: existing geometric coverage/connectivity regressed",
+        "delta12 horizontal: required weak geometry improvement absent",
+        "delta12 vertical: required weak geometry improvement absent",
+        "noise amplitude 16: 392 > approved v4.1 cap 50",
+        "correlated noise amplitude 16 axis 0: 6 > v4.1 0",
+        "correlated noise amplitude 16 axis 1: 8 > v4.1 0",
+        "noise amplitude 24: 5432 > approved v4.1 cap 2843",
+        "correlated noise amplitude 24 axis 0: 738 > v4.1 79",
+        "correlated noise amplitude 24 axis 1: 779 > v4.1 100",
+        "parallel stripes delta18: missing/merged boundaries"
+      ]
+    }
+  }
+}

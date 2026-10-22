@@ -1,0 +1,24 @@
+{
+  "name": "frontend_0_1-elaborate",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "frontend_0_1",
+    "--generic_top",
+    "CONTEXT=0",
+    "--generic_top",
+    "DIAG=18",
+    "--generic_top",
+    "COMPARE=1",
+    "--generic_top",
+    "OWNER=1",
+    "work.tb_frontend_context"
+  ],
+  "returncode": 0,
+  "seconds": 4.5462965965271,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-004-REV1\\frontend_0_1-elaborate-20261021-215137-601644.log"
+}

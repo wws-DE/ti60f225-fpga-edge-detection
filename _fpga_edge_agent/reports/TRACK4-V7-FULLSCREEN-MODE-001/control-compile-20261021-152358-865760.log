@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_fullscreen_mode_001_20261021/algorithm/control/key_press_debouncer.sv" into library work
+INFO: [VRFC 10-311] analyzing module key_press_debouncer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_fullscreen_mode_001_20261021/rtl/v7_fullscreen_mode_control.sv" into library work
+INFO: [VRFC 10-311] analyzing module v7_fullscreen_mode_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_fullscreen_mode_001_20261021/tests/tb_fullscreen_control.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_fullscreen_control

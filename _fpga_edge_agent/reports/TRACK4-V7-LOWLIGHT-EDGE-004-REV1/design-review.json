@@ -1,0 +1,42 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-004-REV1",
+  "design_version": "优化v4.1",
+  "timestamp": "2026-10-21T21:37:17.551868+08:00",
+  "state": "READY_FOR_REVIEW",
+  "approval": "PENDING",
+  "design": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\planning\\design-TRACK4-V7-LOWLIGHT-EDGE-004-REV1.md",
+  "design_sha256": "34c0dc732cf8e0056e46fe2a78608a836c5018d12b14f280c618d6f56fcbe1c8",
+  "baseline_manifest": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-004\\quality-failed-inputs.json",
+  "baseline_manifest_sha256": "bb689fac097dfb0cdcfc4f662b25e6a656b4c6a25da911480e1e2f74f409030e",
+  "baseline_159_inputs_verified": true,
+  "baseline_status": "unreleased v4 implementation, core tests passed but quality failed and full regression/build not run",
+  "proposed_seed_candidates": {
+    "A": {
+      "diagonal_min_diff": 18
+    },
+    "B": {
+      "diagonal_min_diff": 19
+    }
+  },
+  "context_threshold_drop_fixed": 16,
+  "proposed_scope": [
+    "sobel_pair.sv diagonal seed branch",
+    "frontend/bridge parameter propagation",
+    "fixed candidate tests",
+    "complete prior unexecuted frontend/video/build checks",
+    "bit staging only on pass",
+    "local reports and append audit"
+  ],
+  "noise_limits_unchanged": [
+    0,
+    56,
+    2885
+  ],
+  "new_business_rtl_generated": false,
+  "new_executable_tests_generated": false,
+  "new_work_copy_created": false,
+  "build_started": false,
+  "bit_generated": false,
+  "formal_state_updated": false,
+  "hardware_operation": false
+}

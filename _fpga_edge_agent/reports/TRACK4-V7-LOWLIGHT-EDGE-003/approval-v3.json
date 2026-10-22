@@ -1,0 +1,14 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-003",
+  "design_version": "优化v3",
+  "source": "current user chat",
+  "reply_exact": "批准优化v3",
+  "timestamp": "2026-10-21T17:39:30.557240+08:00",
+  "approved_design_sha256": "717cffb801e440de98a5932a924594f0a0897cdc5b1d7259e7de5355f0d65cbf",
+  "approved_snapshot": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-003\\approved-design-v3.md",
+  "baseline": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_002_20261021",
+  "scope": "three RTL files, fixed A/B tests and selection, local XSim/Efinity build, bit staging, local reports and append audit",
+  "database_env_configured": false,
+  "formal_state_updated": false,
+  "hardware_operation": false
+}

@@ -1,0 +1,24 @@
+{
+  "synthetic_only": true,
+  "threshold_new": 64,
+  "threshold_old": 96,
+  "regions": {
+    "weak_step": {
+      "new_edges": 18,
+      "old_edges": 0,
+      "pixels": 54
+    },
+    "blurred_step": {
+      "new_edges": 24,
+      "old_edges": 0,
+      "pixels": 72
+    },
+    "flat_noise_and_impulses": {
+      "new_edges": 0,
+      "old_edges": 0,
+      "pixels": 1342
+    }
+  },
+  "sensor_gain_not_simulated": true,
+  "real_camera_accuracy_measured": false
+}

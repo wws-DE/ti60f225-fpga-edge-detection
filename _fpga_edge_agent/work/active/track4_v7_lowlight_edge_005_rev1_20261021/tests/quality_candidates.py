@@ -1,0 +1,113 @@
+"""Frozen synthetic quality gates from approved v2; no real-camera claims."""
+from pathlib import Path
+import hashlib,json
+import numpy as np
+from reference_v2 import image_math,median_image,windows
+
+W=Path(__file__).resolve().parents[1];R=W.parents[2]/'reports/TRACK4-V7-LOWLIGHT-EDGE-002'
+
+def components(mask):
+    remaining=set(map(tuple,np.argwhere(mask)));result=[]
+    while remaining:
+        stack=[remaining.pop()];component=np.zeros_like(mask,dtype=bool)
+        while stack:
+            y,x=stack.pop();component[y,x]=True
+            for dy in (-1,0,1):
+                for dx in (-1,0,1):
+                    p=(y+dy,x+dx)
+                    if p in remaining:remaining.remove(p);stack.append(p)
+        result.append(component)
+    return result
+
+def geometry_quality(item,edge):
+    # Ground truth comes from shape geometry, not the number/thickness of
+    # Sobel response pixels. A 3x3 derivative localizes to a one-pixel band.
+    shape=item['gray']>32;p=np.pad(shape,1,mode='edge')
+    target=shape&(~p[:-2,1:-1]|~p[2:,1:-1]|~p[1:-1,:-2]|~p[1:-1,2:])&item['interior']
+    groups=[target]
+    if item['kind']=='curve':
+        y,x=np.indices(shape.shape);inner=(x-32)**2+(y-24)**2<11.5**2
+        groups=[target&inner,target&~inner]
+    covered=windows(edge).max(axis=(-2,-1))
+    parts=[windows(c).max(axis=(-2,-1)) for c in components(edge&item['interior'])]
+    return dict(points=int(target.sum()),covered=int((target&covered).sum()),
+        complete_connected_contours=sum(any(np.all(c[g]) for c in parts) for g in groups),
+        expected_contours=len(groups),localization_tolerance_px=1,connectivity=8)
+
+def fixtures():
+    y,x=np.indices((48,64));rr=(x-32)**2+(y-24)**2
+    masks=dict(vertical=x>=32,horizontal=y>=24,rectangle=(x>=16)&(x<=47)&(y>=12)&(y<=35),
+        diagonal=x+y>=56,thin_horizontal=(y>=22)&(y<25)&(x>=12)&(x<52),
+        thin_vertical=(x>=30)&(x<33)&(y>=8)&(y<40),curve=(rr>=10**2)&(rr<=13**2))
+    for delta in (17,20,24,25,64):
+        for name,mask in masks.items():
+            gray=32+mask.astype(np.int32)*delta
+            neighborhood=windows(mask.astype(np.int32),2)
+            truth=neighborhood.max(axis=(-2,-1))!=neighborhood.min(axis=(-2,-1))
+            interior=(x>=2)&(x<62)&(y>=2)&(y<46)
+            core=truth&interior
+            if name=='rectangle':
+                for cx,cy in ((16,12),(47,12),(16,35),(47,35)):core&=(np.abs(x-cx)>3)|(np.abs(y-cy)>3)
+            if name=='thin_horizontal':core&=(x>=16)&(x<48)
+            if name=='thin_vertical':core&=(y>=12)&(y<36)
+            yield dict(name=f'{name}-d{delta}',kind=name,delta=delta,gray=gray,truth=truth,core=core,interior=interior)
+
+def noise_fixtures():
+    for amplitude in (8,16,24):
+        for seed in (431,432,433):
+            gray=64+np.random.default_rng(seed).integers(-amplitude,amplitude+1,(128,256))
+            yield amplitude,seed,gray.astype(np.int32)
+
+def main():
+    images=list(fixtures());metrics={d:dict(shapes=[],noise=[],failures=[]) for d in (16,20)}
+    for item in images:
+        old=image_math(item['gray'],96,enabled=False)
+        for d in metrics:
+            new=image_math(item['gray'],64,d)
+            core=item['core'];truth=item['truth'];roi=item['interior']
+            row=dict(name=item['name'],kind=item['kind'],delta=item['delta'],
+                old_core_hits=int((old['edge']&core).sum()),new_core_hits=int((new['edge']&core).sum()),
+                core_pixels=int(core.sum()),old_off_band=int((old['edge']&~truth&roi).sum()),
+                new_off_band=int((new['edge']&~truth&roi).sum()))
+            metrics[d]['shapes'].append(row)
+            row['old_geometry']=geometry_quality(item,old['edge'])
+            row['new_geometry']=geometry_quality(item,new['edge'])
+            if item['delta']==20 and item['kind'] in ('vertical','horizontal','rectangle'):
+                if row['new_geometry']['covered']<=row['old_geometry']['covered']:metrics[d]['failures'].append(item['name']+': weak contour did not improve')
+            if item['delta']==64:
+                geom=row['new_geometry']
+                if geom['covered']!=geom['points'] or geom['complete_connected_contours']!=geom['expected_contours']:
+                    metrics[d]['failures'].append(item['name']+': high-contrast geometry missing or fragmented')
+            if row['new_off_band']>row['old_off_band']:metrics[d]['failures'].append(item['name']+': off-band increase')
+    for amplitude,seed,gray in noise_fixtures():
+        old=image_math(gray,96,enabled=False)['edge'][2:-2,2:-2]
+        for d in metrics:
+            new=image_math(gray,64,d)['edge'][2:-2,2:-2]
+            metrics[d]['noise'].append(dict(amplitude=amplitude,seed=seed,pixels=int(new.size),old_false_edges=int(old.sum()),new_false_edges=int(new.sum())))
+    for d,data in metrics.items():
+        totals=[]
+        for amplitude in (8,16,24):
+            rows=[row for row in data['noise'] if row['amplitude']==amplitude]
+            row=dict(amplitude=amplitude,old_false_edges=sum(x['old_false_edges'] for x in rows),new_false_edges=sum(x['new_false_edges'] for x in rows),pixels=sum(x['pixels'] for x in rows))
+            totals.append(row)
+            if row['new_false_edges']>row['old_false_edges']:data['failures'].append(f'noise amplitude {amplitude}: false edges increased')
+        data['noise_totals']=totals
+        impulse=np.full((48,64),64,dtype=np.int32);impulse[20,20]=255;impulse[30,40]=0
+        assert not image_math(impulse,64,d)['edge'].any()
+        data['salt_pepper_edges']=0
+        data['eligible']=not data['failures']
+        data['noise_sum']=sum(row['new_false_edges'] for row in data['noise'])
+        data['weak_hits']=sum(row['new_core_hits'] for row in data['shapes'] if row['delta']<25)
+    eligible=[d for d in metrics if metrics[d]['eligible']]
+    chosen=min(eligible,key=lambda d:(metrics[d]['noise_sum'],-metrics[d]['weak_hits'],-d)) if eligible else None
+    result=dict(result='SYNTHETIC_GATE_PASS' if chosen else 'SYNTHETIC_GATE_FAIL',threshold=64,selected_d=chosen,
+        selected_d_requires_rtl_checks=True,candidates=metrics,synthetic_only=True,real_camera_accuracy_measured=False,
+        reference_sha256=hashlib.sha256((W/'tests/reference_v2.py').read_bytes()).hexdigest(),
+        benchmark_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
+    result['measurement_correction']='Initial edge-response pixel-count proxy incorrectly classified thinner continuous contours as missing. Initial script/results retained; actual geometric coverage and connected-contour preservation implement R4. Algorithm, fixtures, candidates and noise gates unchanged.'
+    (R/'candidate-quality.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
+    print(json.dumps(dict(result=result['result'],selected_d=chosen,candidates={d:dict(eligible=x['eligible'],noise=x['noise_totals'],failures=x['failures'],weak_hits=x['weak_hits']) for d,x in metrics.items()}),indent=2),flush=True)
+    if chosen is None:raise SystemExit(2)
+    return result
+
+if __name__=='__main__':main()

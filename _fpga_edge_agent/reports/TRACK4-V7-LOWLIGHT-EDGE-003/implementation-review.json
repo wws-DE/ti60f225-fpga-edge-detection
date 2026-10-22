@@ -1,0 +1,33 @@
+{
+  "result": "REVIEWED_AGAINST_APPROVED_V3",
+  "approved_design_sha256": "717cffb801e440de98a5932a924594f0a0897cdc5b1d7259e7de5355f0d65cbf",
+  "changed_business_files": [
+    "algorithm/frontend/frontend_frame_pair.sv",
+    "algorithm/frontend/sobel_pair.sv",
+    "rtl/v7_algorithm_video_pair.sv"
+  ],
+  "unchanged_build_inputs": 153,
+  "code_contract_checks": [
+    "S1 six signed9 differences reused; base majority comparator unchanged",
+    "S2 new all3 signed comparisons; S3 aligns with signed Gx/Gy",
+    "S4 dominant axis, nonzero sign and symmetric tie qualification; S5 aligns with L1",
+    "S6 base OR weak; output_kind permission retained",
+    "All new pipeline state uses the same pipeline_advance; valid reset unchanged",
+    "Weak enable defaults0 in frontend/core; bridge enables only approved target path",
+    "T64, gain81/2A, median, mode controller, peri and SDC hashes equalv2"
+  ],
+  "requirement_mapping": {
+    "R1": "sobel_pair threshold_compare, baseline comparator in tb_coherent_sobel; T6 per-image inclusion assertion",
+    "R2": "unanimous_support/weak_*_s2..s5; frontend/bridge parameter chain; reference_v3/quality_v3/run_weak_checks",
+    "R3": "same pipeline_advance; unchanged ports/buffers; tb_five_modes and actual serializer; Efinity resource/timing gates",
+    "R4": "quality_v3 fixed geometry/connectivity/stripes/noise fixtures, candidate-selection and manual H1",
+    "R5": "run_build/check_build/register; human programming and acceptance remain pending"
+  },
+  "source_sha256": {
+    "algorithm/frontend/frontend_frame_pair.sv": "a02153a4812392838a53658d8c3606d33628b733d392c605741990aaa6e6c2d0",
+    "algorithm/frontend/sobel_pair.sv": "f4cdfb62223a1cd35a352ab26e13ee38fad29c4b618de03274af60948048a6a6",
+    "rtl/v7_algorithm_video_pair.sv": "3a384abbe1deca6dbf5bf0c32ebbc47bc62143fabcfbb024422efd8152aaf97a"
+  },
+  "scope_deviation": false,
+  "hardware_passed": false
+}

@@ -1,0 +1,16 @@
+{
+  "name": "sensor_gain-elaborate",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "sensor_gain",
+    "work.tb_sensor_gain"
+  ],
+  "returncode": 0,
+  "seconds": 2.250173330307007,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-001\\sensor_gain-elaborate-20261021-161320-264689.log"
+}

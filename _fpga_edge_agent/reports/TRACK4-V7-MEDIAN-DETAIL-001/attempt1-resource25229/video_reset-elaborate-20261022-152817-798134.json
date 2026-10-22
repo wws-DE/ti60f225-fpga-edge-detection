@@ -1,0 +1,28 @@
+{
+  "name": "video_reset-elaborate",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "video_reset",
+    "--generic_top",
+    "W=40",
+    "--generic_top",
+    "H=12",
+    "--generic_top",
+    "HT=100",
+    "--generic_top",
+    "FRAMES=3",
+    "--generic_top",
+    "FAULT_TEST=0",
+    "--generic_top",
+    "RESET_TEST=1",
+    "work.tb_five_modes"
+  ],
+  "returncode": 0,
+  "seconds": 4.5907721519470215,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\video_reset-elaborate-20261022-152817-798134.log"
+}

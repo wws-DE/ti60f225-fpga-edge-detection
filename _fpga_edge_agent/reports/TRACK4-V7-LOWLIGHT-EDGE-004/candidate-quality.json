@@ -1,0 +1,2782 @@
+{
+  "result": "SYNTHETIC_GATE_FAIL",
+  "selected_candidate": null,
+  "candidates": {
+    "A": {
+      "drop": 32,
+      "shapes": [
+        {
+          "name": "vertical-d17",
+          "kind": "vertical",
+          "delta": 17,
+          "old_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d17",
+          "kind": "horizontal",
+          "delta": 17,
+          "old_geometry": {
+            "points": 60,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 60,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d17",
+          "kind": "rectangle",
+          "delta": 17,
+          "old_geometry": {
+            "points": 108,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 108,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d17",
+          "kind": "diagonal",
+          "delta": 17,
+          "old_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d17",
+          "kind": "thin_horizontal",
+          "delta": 17,
+          "old_geometry": {
+            "points": 82,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 82,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d17",
+          "kind": "thin_vertical",
+          "delta": 17,
+          "old_geometry": {
+            "points": 66,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 66,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d17",
+          "kind": "curve",
+          "delta": 17,
+          "old_geometry": {
+            "points": 132,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 132,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d18",
+          "kind": "vertical",
+          "delta": 18,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d18",
+          "kind": "horizontal",
+          "delta": 18,
+          "old_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d18",
+          "kind": "rectangle",
+          "delta": 18,
+          "old_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 4,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d18",
+          "kind": "diagonal",
+          "delta": 18,
+          "old_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 2,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d18",
+          "kind": "thin_horizontal",
+          "delta": 18,
+          "old_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 2,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d18",
+          "kind": "thin_vertical",
+          "delta": 18,
+          "old_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 2,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d18",
+          "kind": "curve",
+          "delta": 18,
+          "old_geometry": {
+            "points": 132,
+            "covered": 116,
+            "complete_connected_contours": 0,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 132,
+            "covered": 116,
+            "complete_connected_contours": 0,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 4,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d19",
+          "kind": "vertical",
+          "delta": 19,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d19",
+          "kind": "horizontal",
+          "delta": 19,
+          "old_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d19",
+          "kind": "rectangle",
+          "delta": 19,
+          "old_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 4,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d19",
+          "kind": "diagonal",
+          "delta": 19,
+          "old_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 2,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d19",
+          "kind": "thin_horizontal",
+          "delta": 19,
+          "old_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 2,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d19",
+          "kind": "thin_vertical",
+          "delta": 19,
+          "old_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 2,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d19",
+          "kind": "curve",
+          "delta": 19,
+          "old_geometry": {
+            "points": 132,
+            "covered": 116,
+            "complete_connected_contours": 0,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 132,
+            "covered": 116,
+            "complete_connected_contours": 0,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 4,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d20",
+          "kind": "vertical",
+          "delta": 20,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d20",
+          "kind": "horizontal",
+          "delta": 20,
+          "old_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d20",
+          "kind": "rectangle",
+          "delta": 20,
+          "old_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 4,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d20",
+          "kind": "diagonal",
+          "delta": 20,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d20",
+          "kind": "thin_horizontal",
+          "delta": 20,
+          "old_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 2,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d20",
+          "kind": "thin_vertical",
+          "delta": 20,
+          "old_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 2,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d20",
+          "kind": "curve",
+          "delta": 20,
+          "old_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d24",
+          "kind": "vertical",
+          "delta": 24,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d24",
+          "kind": "horizontal",
+          "delta": 24,
+          "old_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d24",
+          "kind": "rectangle",
+          "delta": 24,
+          "old_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 4,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d24",
+          "kind": "diagonal",
+          "delta": 24,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d24",
+          "kind": "thin_horizontal",
+          "delta": 24,
+          "old_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 2,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d24",
+          "kind": "thin_vertical",
+          "delta": 24,
+          "old_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 2,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d24",
+          "kind": "curve",
+          "delta": 24,
+          "old_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d25",
+          "kind": "vertical",
+          "delta": 25,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d25",
+          "kind": "horizontal",
+          "delta": 25,
+          "old_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d25",
+          "kind": "rectangle",
+          "delta": 25,
+          "old_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 4,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d25",
+          "kind": "diagonal",
+          "delta": 25,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d25",
+          "kind": "thin_horizontal",
+          "delta": 25,
+          "old_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 2,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d25",
+          "kind": "thin_vertical",
+          "delta": 25,
+          "old_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 2,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d25",
+          "kind": "curve",
+          "delta": 25,
+          "old_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d64",
+          "kind": "vertical",
+          "delta": 64,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d64",
+          "kind": "horizontal",
+          "delta": 64,
+          "old_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d64",
+          "kind": "rectangle",
+          "delta": 64,
+          "old_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 4,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d64",
+          "kind": "diagonal",
+          "delta": 64,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d64",
+          "kind": "thin_horizontal",
+          "delta": 64,
+          "old_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d64",
+          "kind": "thin_vertical",
+          "delta": 64,
+          "old_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d64",
+          "kind": "curve",
+          "delta": 64,
+          "old_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        }
+      ],
+      "noise": [
+        {
+          "amplitude": 8,
+          "seed": 431,
+          "pixels": 31248,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "added": 0,
+          "removed": 0
+        },
+        {
+          "amplitude": 8,
+          "seed": 432,
+          "pixels": 31248,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "added": 0,
+          "removed": 0
+        },
+        {
+          "amplitude": 8,
+          "seed": 433,
+          "pixels": 31248,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "added": 0,
+          "removed": 0
+        },
+        {
+          "amplitude": 16,
+          "seed": 431,
+          "pixels": 31248,
+          "old_false_edges": 29,
+          "new_false_edges": 27,
+          "added": 0,
+          "removed": 2
+        },
+        {
+          "amplitude": 16,
+          "seed": 432,
+          "pixels": 31248,
+          "old_false_edges": 11,
+          "new_false_edges": 9,
+          "added": 0,
+          "removed": 2
+        },
+        {
+          "amplitude": 16,
+          "seed": 433,
+          "pixels": 31248,
+          "old_false_edges": 16,
+          "new_false_edges": 14,
+          "added": 0,
+          "removed": 2
+        },
+        {
+          "amplitude": 24,
+          "seed": 431,
+          "pixels": 31248,
+          "old_false_edges": 954,
+          "new_false_edges": 947,
+          "added": 38,
+          "removed": 45
+        },
+        {
+          "amplitude": 24,
+          "seed": 432,
+          "pixels": 31248,
+          "old_false_edges": 874,
+          "new_false_edges": 853,
+          "added": 21,
+          "removed": 42
+        },
+        {
+          "amplitude": 24,
+          "seed": 433,
+          "pixels": 31248,
+          "old_false_edges": 1057,
+          "new_false_edges": 1018,
+          "added": 29,
+          "removed": 68
+        }
+      ],
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "pixels": 93744,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "added": 0,
+          "removed": 0
+        },
+        {
+          "amplitude": 16,
+          "pixels": 93744,
+          "old_false_edges": 56,
+          "new_false_edges": 50,
+          "added": 0,
+          "removed": 6
+        },
+        {
+          "amplitude": 24,
+          "pixels": 93744,
+          "old_false_edges": 2885,
+          "new_false_edges": 2818,
+          "added": 88,
+          "removed": 155
+        }
+      ],
+      "failures": [
+        "No required delta18/19 diagonal/curve geometry improvement"
+      ],
+      "improved_weak_shapes": [],
+      "parallel_stripes": [
+        {
+          "delta": 18,
+          "edge_x_at_y24": [
+            19,
+            20,
+            22,
+            23,
+            25,
+            26,
+            28,
+            29
+          ],
+          "separated": true
+        },
+        {
+          "delta": 64,
+          "edge_x_at_y24": [
+            19,
+            20,
+            22,
+            23,
+            25,
+            26,
+            28,
+            29
+          ],
+          "separated": true
+        }
+      ],
+      "salt_pepper_edges": 0,
+      "post_seed_small_features": {
+        "isolated_single_removed": true,
+        "adjacent_two_preserved": true,
+        "scope": "post-Sobel seed map"
+      },
+      "weak_geometry_gain": 0,
+      "noise_sum": 2868,
+      "eligible": false
+    },
+    "B": {
+      "drop": 16,
+      "shapes": [
+        {
+          "name": "vertical-d17",
+          "kind": "vertical",
+          "delta": 17,
+          "old_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d17",
+          "kind": "horizontal",
+          "delta": 17,
+          "old_geometry": {
+            "points": 60,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 60,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d17",
+          "kind": "rectangle",
+          "delta": 17,
+          "old_geometry": {
+            "points": 108,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 108,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d17",
+          "kind": "diagonal",
+          "delta": 17,
+          "old_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d17",
+          "kind": "thin_horizontal",
+          "delta": 17,
+          "old_geometry": {
+            "points": 82,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 82,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d17",
+          "kind": "thin_vertical",
+          "delta": 17,
+          "old_geometry": {
+            "points": 66,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 66,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d17",
+          "kind": "curve",
+          "delta": 17,
+          "old_geometry": {
+            "points": 132,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 132,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d18",
+          "kind": "vertical",
+          "delta": 18,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d18",
+          "kind": "horizontal",
+          "delta": 18,
+          "old_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d18",
+          "kind": "rectangle",
+          "delta": 18,
+          "old_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d18",
+          "kind": "diagonal",
+          "delta": 18,
+          "old_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 2,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d18",
+          "kind": "thin_horizontal",
+          "delta": 18,
+          "old_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d18",
+          "kind": "thin_vertical",
+          "delta": 18,
+          "old_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d18",
+          "kind": "curve",
+          "delta": 18,
+          "old_geometry": {
+            "points": 132,
+            "covered": 116,
+            "complete_connected_contours": 0,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 132,
+            "covered": 116,
+            "complete_connected_contours": 0,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 4,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d19",
+          "kind": "vertical",
+          "delta": 19,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d19",
+          "kind": "horizontal",
+          "delta": 19,
+          "old_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d19",
+          "kind": "rectangle",
+          "delta": 19,
+          "old_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d19",
+          "kind": "diagonal",
+          "delta": 19,
+          "old_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 0,
+            "complete_connected_contours": 0,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 2,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d19",
+          "kind": "thin_horizontal",
+          "delta": 19,
+          "old_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d19",
+          "kind": "thin_vertical",
+          "delta": 19,
+          "old_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d19",
+          "kind": "curve",
+          "delta": 19,
+          "old_geometry": {
+            "points": 132,
+            "covered": 116,
+            "complete_connected_contours": 0,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 132,
+            "covered": 116,
+            "complete_connected_contours": 0,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 4,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d20",
+          "kind": "vertical",
+          "delta": 20,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d20",
+          "kind": "horizontal",
+          "delta": 20,
+          "old_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d20",
+          "kind": "rectangle",
+          "delta": 20,
+          "old_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d20",
+          "kind": "diagonal",
+          "delta": 20,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d20",
+          "kind": "thin_horizontal",
+          "delta": 20,
+          "old_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d20",
+          "kind": "thin_vertical",
+          "delta": 20,
+          "old_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d20",
+          "kind": "curve",
+          "delta": 20,
+          "old_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d24",
+          "kind": "vertical",
+          "delta": 24,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d24",
+          "kind": "horizontal",
+          "delta": 24,
+          "old_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d24",
+          "kind": "rectangle",
+          "delta": 24,
+          "old_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d24",
+          "kind": "diagonal",
+          "delta": 24,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d24",
+          "kind": "thin_horizontal",
+          "delta": 24,
+          "old_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d24",
+          "kind": "thin_vertical",
+          "delta": 24,
+          "old_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d24",
+          "kind": "curve",
+          "delta": 24,
+          "old_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d25",
+          "kind": "vertical",
+          "delta": 25,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d25",
+          "kind": "horizontal",
+          "delta": 25,
+          "old_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d25",
+          "kind": "rectangle",
+          "delta": 25,
+          "old_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 4,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d25",
+          "kind": "diagonal",
+          "delta": 25,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d25",
+          "kind": "thin_horizontal",
+          "delta": 25,
+          "old_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 2,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d25",
+          "kind": "thin_vertical",
+          "delta": 25,
+          "old_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 2,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d25",
+          "kind": "curve",
+          "delta": 25,
+          "old_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d64",
+          "kind": "vertical",
+          "delta": 64,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d64",
+          "kind": "horizontal",
+          "delta": 64,
+          "old_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 60,
+            "covered": 60,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d64",
+          "kind": "rectangle",
+          "delta": 64,
+          "old_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 108,
+            "covered": 108,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 4,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d64",
+          "kind": "diagonal",
+          "delta": 64,
+          "old_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 44,
+            "covered": 44,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d64",
+          "kind": "thin_horizontal",
+          "delta": 64,
+          "old_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 82,
+            "covered": 82,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d64",
+          "kind": "thin_vertical",
+          "delta": 64,
+          "old_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 66,
+            "covered": 66,
+            "complete_connected_contours": 1,
+            "expected_contours": 1,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d64",
+          "kind": "curve",
+          "delta": 64,
+          "old_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "new_geometry": {
+            "points": 132,
+            "covered": 132,
+            "complete_connected_contours": 2,
+            "expected_contours": 2,
+            "localization_tolerance_px": 1,
+            "connectivity": 8
+          },
+          "added": 0,
+          "removed": 0,
+          "old_off_band": 0,
+          "new_off_band": 0
+        }
+      ],
+      "noise": [
+        {
+          "amplitude": 8,
+          "seed": 431,
+          "pixels": 31248,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "added": 0,
+          "removed": 0
+        },
+        {
+          "amplitude": 8,
+          "seed": 432,
+          "pixels": 31248,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "added": 0,
+          "removed": 0
+        },
+        {
+          "amplitude": 8,
+          "seed": 433,
+          "pixels": 31248,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "added": 0,
+          "removed": 0
+        },
+        {
+          "amplitude": 16,
+          "seed": 431,
+          "pixels": 31248,
+          "old_false_edges": 29,
+          "new_false_edges": 27,
+          "added": 0,
+          "removed": 2
+        },
+        {
+          "amplitude": 16,
+          "seed": 432,
+          "pixels": 31248,
+          "old_false_edges": 11,
+          "new_false_edges": 9,
+          "added": 0,
+          "removed": 2
+        },
+        {
+          "amplitude": 16,
+          "seed": 433,
+          "pixels": 31248,
+          "old_false_edges": 16,
+          "new_false_edges": 14,
+          "added": 0,
+          "removed": 2
+        },
+        {
+          "amplitude": 24,
+          "seed": 431,
+          "pixels": 31248,
+          "old_false_edges": 954,
+          "new_false_edges": 946,
+          "added": 37,
+          "removed": 45
+        },
+        {
+          "amplitude": 24,
+          "seed": 432,
+          "pixels": 31248,
+          "old_false_edges": 874,
+          "new_false_edges": 853,
+          "added": 21,
+          "removed": 42
+        },
+        {
+          "amplitude": 24,
+          "seed": 433,
+          "pixels": 31248,
+          "old_false_edges": 1057,
+          "new_false_edges": 1017,
+          "added": 28,
+          "removed": 68
+        }
+      ],
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "pixels": 93744,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "added": 0,
+          "removed": 0
+        },
+        {
+          "amplitude": 16,
+          "pixels": 93744,
+          "old_false_edges": 56,
+          "new_false_edges": 50,
+          "added": 0,
+          "removed": 6
+        },
+        {
+          "amplitude": 24,
+          "pixels": 93744,
+          "old_false_edges": 2885,
+          "new_false_edges": 2816,
+          "added": 86,
+          "removed": 155
+        }
+      ],
+      "failures": [
+        "No required delta18/19 diagonal/curve geometry improvement"
+      ],
+      "improved_weak_shapes": [],
+      "parallel_stripes": [
+        {
+          "delta": 18,
+          "edge_x_at_y24": [
+            19,
+            20,
+            22,
+            23,
+            25,
+            26,
+            28,
+            29
+          ],
+          "separated": true
+        },
+        {
+          "delta": 64,
+          "edge_x_at_y24": [
+            19,
+            20,
+            22,
+            23,
+            25,
+            26,
+            28,
+            29
+          ],
+          "separated": true
+        }
+      ],
+      "salt_pepper_edges": 0,
+      "post_seed_small_features": {
+        "isolated_single_removed": true,
+        "adjacent_two_preserved": true,
+        "scope": "post-Sobel seed map"
+      },
+      "weak_geometry_gain": 0,
+      "noise_sum": 2866,
+      "eligible": false
+    }
+  },
+  "synthetic_only": true,
+  "real_camera_accuracy_measured": false,
+  "approved_gates_unchanged": true,
+  "source_sha256": {
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\tests\\quality_v4.py": "a6dd6d83b17bf604389180469a70d8b469e5122ebaf5b7c863a9335d068c99d8",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\tests\\reference_v4.py": "ffa90e3c79dd35d348b6e7922d5ccd15a247d5a23632c76a62eea9516bf4ba82",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\tests\\reference_v3.py": "97f67156eabdfbf6e0bc124660161a0815ea461f091963063fc147cd1e50de71",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\tests\\reference_v2.py": "733a2cd35fd90885a6f69b4281807af6a2c7885f20036d89782a04e1ad077c41",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\tests\\quality_v3.py": "b8f49f19959f5c3a817025e60316bb173017c8bab7e9da455ae7b63328594d85",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\tests\\quality_candidates.py": "609bd8d0b2ef081b12ff74d7ce9785858691eaeaa369aba4304a4fa9db3b3dea"
+  },
+  "context_core_result_sha256": "29acdf48f4b2afc30a47c4c8fc586c4425cfae26a062b9a0718f7a2d321ead33"
+}

@@ -1,0 +1,54 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-001",
+  "session_id": "TRACK4-V7-LOWLIGHT-EDGE-001-20261021",
+  "timestamp": "2026-10-21T16:19:35.537116+08:00",
+  "state": "WAITING_HUMAN_PROGRAM",
+  "design_version": "v1",
+  "approved_design_sha256": "f27f7a362f01357d771185766fe4b33cfb3de0ebc7b00c39ebed598e95dd3def",
+  "authorization_sha256": "25a7d618ea8126e164d24125c9c242cd0e6cd652f8d7476abaf4a242fad660a5",
+  "project": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_001_20261021\\ti60f225_oob.xml",
+  "tool": "Efinity 2026.1.132",
+  "device": "Ti60F225/I3",
+  "bit": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-LOWLIGHT-EDGE-001\\v7_lowlight_edge_001_v1_20261021.bit",
+    "bytes": 2428668,
+    "sha256": "32d81151f7c7e6bda332daa4a08103adb255965a667247d084c97dca53520a6f"
+  },
+  "parameters": {
+    "sensor_3e08": "0x81",
+    "sensor_3e09": "0x2A",
+    "analog_gain_nominal": 4.043,
+    "prior_analog_gain_nominal": 2.021,
+    "sobel_threshold": 96,
+    "prior_sobel_threshold": 256,
+    "median_enabled": true,
+    "exposure_changed": false
+  },
+  "setup_min_ns": 0.355,
+  "hold_min_ns": 0.026,
+  "resources": {
+    "xlr": 21846,
+    "ram": 169,
+    "dsp": 0
+  },
+  "mode_order": [
+    "COLOR",
+    "GRAY",
+    "MEDIAN",
+    "SOBEL",
+    "OVERLAY"
+  ],
+  "key_control_changed": false,
+  "full_resolution_compared_pixels": 10368000,
+  "checks_sha256": "ec183478e741a15b16f28b4c176cdc1a991c0a39267d92a278055bc3d58ca9fd",
+  "inputs_manifest_sha256": "59c9a8f2f4e08d061822a3e8b9514a6bb49ffa646db7b878f9efbadff2247da6",
+  "evidence_manifest_sha256": "2c32b5a862853deee2f15f429d43fe958e5b2006220b7074ea6977efdf048d98",
+  "rollback_bit": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-FULLSCREEN-MODE-001\\v7_fullscreen_mode_001_v1_20261021.bit",
+    "sha256": "759ffa9c928561c7d6ad95d796be101e83495ba25794542141bfd524402cfeb9"
+  },
+  "hardware_programmed": false,
+  "hardware_passed": false,
+  "local_audit_exception": true,
+  "formal_state_updated": false
+}

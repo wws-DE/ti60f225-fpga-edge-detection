@@ -1,0 +1,23 @@
+{
+  "name": "frontend-compile",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xvlog.bat",
+    "--sv",
+    "C:\\Efinity\\2026.1\\sim_models\\verilog\\efx_ram10.v",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\algorithm\\frontend\\frontend_frame_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\algorithm\\frontend\\line_store_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\algorithm\\frontend\\median9_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\algorithm\\frontend\\rgb_to_y_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\algorithm\\frontend\\sobel_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\algorithm\\frontend\\window3x3_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\algorithm\\edge\\edge_context_filter_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\algorithm\\edge\\edge_context_pack_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\algorithm\\edge\\edge_context_window_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\sim_frontend\\sobel_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\sim_frontend\\frontend_frame_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\tests\\tb_frontend_context.sv"
+  ],
+  "returncode": 0,
+  "seconds": 0.8626770973205566,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-004-REV1\\frontend-compile-20261021-215120-212365.log"
+}

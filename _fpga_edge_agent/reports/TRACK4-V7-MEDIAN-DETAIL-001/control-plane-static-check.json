@@ -1,0 +1,14 @@
+{
+  "result": "FAILED_STATIC_VALIDATION",
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\runtime\\validate_control_plane.py\", line 115, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\runtime\\validate_control_plane.py\", line 87, in main\n    schema = (ROOT / \"database/schema.sql\").read_text(encoding=\"utf-8\")\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\29147\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\29147\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\29147\\\\OneDrive\\\\Desktop\\\\FPGA\\\\_fpga_edge_agent\\\\database\\\\schema.sql'\n",
+  "validator_sha256": "73774b661f4b06a882a785dce19dbb39e2c3cd7dc705b9088ec35e6bf80dae48",
+  "unchanged_formal_files": {
+    "state/PROJECT_STATE.json": "87bf105c9da5c9304a3d7675520e1ca324d4ce51a055da18ff3da4b7665b2558",
+    "state/TASK_LEDGER.csv": "190b9ad4718dd2681732e66f20f05ee309a18a7f72015f737d6cc6da079c00bd",
+    "config/APPROVAL_MANIFEST.yaml": "7ac43241b211a52087dd74a5306778d307db57c732d78f104382bb42a5c8f76d"
+  },
+  "scope": "Known missing database/schema.sql; approved local audit only, no runtime/database acceptance",
+  "formal_state_updated": false
+}

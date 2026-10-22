@@ -1,0 +1,20 @@
+{
+  "name": "video_lowlight-run",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xsim.bat",
+    "video_lowlight",
+    "--runall",
+    "--onerror",
+    "quit",
+    "--onfinish",
+    "quit",
+    "--nolog",
+    "--testplusarg",
+    "INPUT=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_004_rev1_20261021/sim_fullscreen/lowlight-input.hex",
+    "--testplusarg",
+    "GOLD=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_004_rev1_20261021/sim_fullscreen/lowlight-gold.hex"
+  ],
+  "returncode": 0,
+  "seconds": 4.122041463851929,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-004-REV1\\video_lowlight-run-20261021-214817-878767.log"
+}

@@ -1,0 +1,54 @@
+{
+  "task_id": "TRACK4-V7-MEDIAN-DETAIL-001",
+  "timestamp": "2026-10-22T15:19:37.840442+08:00",
+  "original_authorization_sha256": "14ec44b9e288e6363ee318613fce894ec9e647f2cc5ffba27d87695259261419",
+  "user_reply_exact": "优先恢复弱细节，允许少量杂点增加后上板对比",
+  "source": "current user answer to explicit detail/noise acceptance choice after failed precheck and scene photos",
+  "candidate": "A",
+  "parameters": {
+    "difference": 16,
+    "similarity": 4
+  },
+  "original_quality_sha256": "eb675ef020c5d8d2818df00adeb94bcaa36344cbb5ee2ca9aa851608fafe08ef",
+  "accepted_failure_messages": [
+    "Correlated noise increased 16/433/0",
+    "Correlated noise increased 24/431/0",
+    "Correlated noise increased 24/432/1",
+    "Correlated noise increased 24/433/0"
+  ],
+  "accepted_correlated_cases": [
+    {
+      "amplitude": 16,
+      "seed": 433,
+      "axis": 0,
+      "old_edges": 0,
+      "new_edges": 2
+    },
+    {
+      "amplitude": 24,
+      "seed": 431,
+      "axis": 0,
+      "old_edges": 24,
+      "new_edges": 26
+    },
+    {
+      "amplitude": 24,
+      "seed": 432,
+      "axis": 1,
+      "old_edges": 40,
+      "new_edges": 42
+    },
+    {
+      "amplitude": 24,
+      "seed": 433,
+      "axis": 0,
+      "old_edges": 22,
+      "new_edges": 32
+    }
+  ],
+  "other_gates_unchanged": true,
+  "quality_state": "ACCEPTED_WITH_KNOWN_NOISE_TRADEOFF",
+  "card_sha256": "0500964f835ffc7958931a283aa93bc3369e0b27d49668801c6cd2d05447ee1e",
+  "formal_state_updated": false,
+  "hardware_operation": false
+}

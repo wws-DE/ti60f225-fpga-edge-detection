@@ -1,0 +1,123 @@
+{
+  "result": "PASS",
+  "runs": [
+    {
+      "W": 8,
+      "H": 5,
+      "context": true,
+      "thin": true,
+      "compare_real_thin_v11": false,
+      "owner": false,
+      "detail": true,
+      "vectors": {
+        "8-5-1-1-0-1-input.hex": "d702422da77d9f269620cebd3979d586f2ae7688e8e7896dff29806615728c52",
+        "8-5-1-1-0-1-gold0.hex": "7ca0da1295f2e1ac1fc219706972b5e9e37ca6533e0fce09f910742e67c675e6",
+        "8-5-1-1-0-1-gold1.hex": "a61b9c3ecfead13362254d65c74a29f8bbefe8eccb59113cda91ed5a7f24da3d"
+      },
+      "completion": "FRONTEND_DETAIL_PASS CONTEXT=1 COMPARE=0 OWNER=0 frames=3 statuses=5 stalls=32 external=0"
+    },
+    {
+      "W": 40,
+      "H": 12,
+      "context": true,
+      "thin": true,
+      "compare_real_thin_v11": false,
+      "owner": false,
+      "detail": true,
+      "vectors": {
+        "40-12-1-1-0-1-input.hex": "a494280ab526370b68e0048371fa2a3e0ed330aa0892bcda6849093c93ce32bc",
+        "40-12-1-1-0-1-gold0.hex": "1c2f81f98aaeb02ee229de29824dc1a8937f43270003b7c988a742a37f78ddef",
+        "40-12-1-1-0-1-gold1.hex": "b8128c9e93e83e686ed94d5912929692c601ff74507b4c2e7d74ed84f83539f2"
+      },
+      "completion": "FRONTEND_DETAIL_PASS CONTEXT=1 COMPARE=0 OWNER=0 frames=3 statuses=5 stalls=178 external=0"
+    },
+    {
+      "W": 8,
+      "H": 5,
+      "context": true,
+      "thin": true,
+      "compare_real_thin_v11": true,
+      "owner": false,
+      "detail": false,
+      "vectors": {
+        "8-5-1-1-0-0-input.hex": "d702422da77d9f269620cebd3979d586f2ae7688e8e7896dff29806615728c52",
+        "8-5-1-1-0-0-gold0.hex": "7ca0da1295f2e1ac1fc219706972b5e9e37ca6533e0fce09f910742e67c675e6",
+        "8-5-1-1-0-0-gold1.hex": "a61b9c3ecfead13362254d65c74a29f8bbefe8eccb59113cda91ed5a7f24da3d"
+      },
+      "completion": "FRONTEND_DETAIL_PASS CONTEXT=1 COMPARE=1 OWNER=0 frames=3 statuses=5 stalls=32 external=0"
+    },
+    {
+      "W": 8,
+      "H": 5,
+      "context": false,
+      "thin": false,
+      "compare_real_thin_v11": true,
+      "owner": false,
+      "detail": false,
+      "vectors": {
+        "8-5-0-0-0-0-input.hex": "d702422da77d9f269620cebd3979d586f2ae7688e8e7896dff29806615728c52",
+        "8-5-0-0-0-0-gold0.hex": "7ca0da1295f2e1ac1fc219706972b5e9e37ca6533e0fce09f910742e67c675e6",
+        "8-5-0-0-0-0-gold1.hex": "a61b9c3ecfead13362254d65c74a29f8bbefe8eccb59113cda91ed5a7f24da3d"
+      },
+      "completion": "FRONTEND_DETAIL_PASS CONTEXT=0 COMPARE=1 OWNER=0 frames=3 statuses=5 stalls=32 external=0"
+    },
+    {
+      "W": 8,
+      "H": 5,
+      "context": true,
+      "thin": true,
+      "compare_real_thin_v11": true,
+      "owner": true,
+      "detail": false,
+      "vectors": {
+        "8-5-1-1-1-0-input.hex": "d702422da77d9f269620cebd3979d586f2ae7688e8e7896dff29806615728c52",
+        "8-5-1-1-1-0-gold0.hex": "7ca0da1295f2e1ac1fc219706972b5e9e37ca6533e0fce09f910742e67c675e6",
+        "8-5-1-1-1-0-gold1.hex": "a61b9c3ecfead13362254d65c74a29f8bbefe8eccb59113cda91ed5a7f24da3d"
+      },
+      "completion": "FRONTEND_DETAIL_PASS CONTEXT=1 COMPARE=1 OWNER=1 frames=3 statuses=5 stalls=92 external=20"
+    },
+    {
+      "W": 8,
+      "H": 5,
+      "context": true,
+      "thin": true,
+      "compare_real_thin_v11": true,
+      "owner": true,
+      "detail": true,
+      "vectors": {
+        "8-5-1-1-1-1-input.hex": "d702422da77d9f269620cebd3979d586f2ae7688e8e7896dff29806615728c52",
+        "8-5-1-1-1-1-gold0.hex": "7ca0da1295f2e1ac1fc219706972b5e9e37ca6533e0fce09f910742e67c675e6",
+        "8-5-1-1-1-1-gold1.hex": "a61b9c3ecfead13362254d65c74a29f8bbefe8eccb59113cda91ed5a7f24da3d"
+      },
+      "completion": "FRONTEND_DETAIL_PASS CONTEXT=1 COMPARE=1 OWNER=1 frames=3 statuses=5 stalls=92 external=20"
+    }
+  ],
+  "sources": {
+    "C:\\Efinity\\2026.1\\sim_models\\verilog\\efx_ram10.v": "dd8db45116a67b9754920856dc380eb2dc73ca51e0a6a62cc74cda01c0e31a33",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\frontend_frame_pair.sv": "a71ea0169e5936fa7ca2ec80e4a4a1e01730aca9f194cad9cd872a7579c49fe8",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\line_store_pair.sv": "5c9f41a260cc9792f4900debb96cd8fc9aab7f0094c2bac3a08d8d4bcc40e65f",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\median9_detail_pair.sv": "628d1cf6b37e66f81317bedd16b5464782a6aee2203833aed438a980c18d04c8",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\median9_pair.sv": "c9fb7d69f2bf286ea8aa707eca2ec9d34a364658e9d100e338e92de791adde8f",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\rgb_to_y_pair.sv": "d98a5ada8711b0920f7ab7cbe5cff1dcb8b3baa302a3a45f9407747353ce1c31",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\sobel_pair.sv": "ce2e9f70d93eb616c803f8bc9b34f9c2a07e06e660a5a5c652608be8f84ceeb6",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\window3x3_pair.sv": "6e8b3b9d2ca22b93bfefbe08d35ce96bb5b38530c5a1311472ecbd269afd9321",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\edge\\edge_context_filter_pair.sv": "fceab374f3248e4526ddef2238107612f60eea481e33729086fd6e91c4c49fb2",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\edge\\edge_context_pack_pair.sv": "bf704887112a1e1044f46554c75c46ed6bd21bf60fd8b9d67cc420efae575fe0",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\edge\\edge_context_window_pair.sv": "5d8d872f338c2fe3b054ff541e161c761cc5881fbd0ffb34461de3e93f0ac8c4",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\edge\\edge_thin_filter_pair.sv": "b1b37ce83baed93a1beb60af3874a2c8ad41255bbb28f377c7791f76d1652bff",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\edge\\edge_thin_pack_pair.sv": "a06a8a35d52c71d4d5b3d8ee1b350eaef3125bdf34c22dde79e482df4e17b566",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\edge\\edge_thin_window_pair.sv": "526b80d44afbdb1706b977c020af8cf13f3802b230e9586794224f929ef28323",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\sim_frontend_detail\\frontend_frame_pair_baseline.sv": "11d266857de6cb0c94a49d3960b75f15dac0c7973996911aa6c4d60d4711cdc4",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\tb_frontend_detail.sv": "9ddce376ea5947fb0b9d2874badad3302f0a112194592a946b86e4f904c58b29",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\run_frontend_detail_checks.py": "ed24f3a5bb3917c163fd3dd65930decfbdaf4c8f9ce6ef841b125205cff448a6",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\reference_median_detail.py": "62ff19043ac84f1848e0cfb7b8a0d50cc2835fee29013d4e72408fd9ca56bce0",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\reference_thin_v11.py": "987d08bf980c616cc9c9a8ee6ec49868d864c93a50619dbd580f359b717310ec",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\reference_thin.py": "1e8b22760b4d73daead011328d611219d2aed120241052a268bf2597af8050d9",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\reference_v41.py": "21592eb4cfed669380f5a2905f77bf55326977ecfbcca78ea5399b0db5bd8c6d",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\reference_v4.py": "ffa90e3c79dd35d348b6e7922d5ccd15a247d5a23632c76a62eea9516bf4ba82",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\reference_v3.py": "97f67156eabdfbf6e0bc124660161a0815ea461f091963063fc147cd1e50de71"
+  },
+  "actual_baseline": {
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\algorithm\\frontend\\frontend_frame_pair.sv": "ccb07977813fc96083380269123a70c74665917f6af2fc3621233416ce286d10"
+  }
+}

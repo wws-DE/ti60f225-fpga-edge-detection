@@ -1,0 +1,11 @@
+{
+  "result": "LOCAL_DELIVERY_UNDER_EXISTING_APPROVAL",
+  "failed_check": "control-plane-static-check.json",
+  "cause": "Existing database/schema.sql is absent",
+  "approval": "authorization.json local_audit_exception=true",
+  "scope": "Local algorithm/video tests, Efinity software build and staging only",
+  "database_runtime_accepted": false,
+  "static_control_plane_accepted": false,
+  "formal_state_updated": false,
+  "hardware_passed": false
+}

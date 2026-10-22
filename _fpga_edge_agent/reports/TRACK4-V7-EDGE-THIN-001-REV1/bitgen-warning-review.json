@@ -1,0 +1,15 @@
+{
+  "result": "REVIEWED_INHERITED",
+  "warning": [
+    "WARNING: cannot find correct IV value"
+  ],
+  "new_warnings": [],
+  "baseline_log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-004-REV1\\build-pgm-20261021-220022-471813.log",
+  "baseline_log_sha256": "826e33f7b270c30373fc6cf29a0ab91182622172401924b7ea71f77f970e369d",
+  "current_log_sha256": "826e33f7b270c30373fc6cf29a0ab91182622172401924b7ea71f77f970e369d",
+  "bitstream_encryption": "off",
+  "generator_log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\outflow\\ti60f225_oob.pgm.out",
+  "generator_log_sha256": "88bd26c331f2ab37468d2d596fed8f4819b0cfcfef68fb3fdd933359036fddd2",
+  "tool_source": "C:/Efinity/2026.1/scripts/efx_run.py:934-939",
+  "assessment": "The wrapper checks absent fixed IV while encryption is disabled; identical to accepted baseline. Actual bitstream generator has no warnings/errors and completes. No configuration/security changes were made."
+}

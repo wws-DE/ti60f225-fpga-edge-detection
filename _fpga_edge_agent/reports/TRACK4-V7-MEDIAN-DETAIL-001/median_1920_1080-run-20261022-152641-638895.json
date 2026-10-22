@@ -1,0 +1,20 @@
+{
+  "name": "median_1920_1080-run",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xsim.bat",
+    "median_1920_1080",
+    "--runall",
+    "--onerror",
+    "quit",
+    "--onfinish",
+    "quit",
+    "--nolog",
+    "--testplusarg",
+    "INPUT=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_median_detail_001_20261022/sim_median_detail/1920-1080-input.hex",
+    "--testplusarg",
+    "GOLD=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_median_detail_001_20261022/sim_median_detail/1920-1080-gold.hex"
+  ],
+  "returncode": 0,
+  "seconds": 3.1756134033203125,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\median_1920_1080-run-20261022-152641-638895.log"
+}

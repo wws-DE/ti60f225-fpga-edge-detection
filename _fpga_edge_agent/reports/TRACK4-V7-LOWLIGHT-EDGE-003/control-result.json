@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "method": "reuse unchanged control evidence with source-hash binding",
+  "prior_result": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-002\\control-result.json",
+  "prior_result_sha256": "0a8e126da12621a2358e50e25e9050bf4d70aab530affb2bcb83407b6d2787d5",
+  "source_sha256": {
+    "algorithm/control/key_press_debouncer.sv": "88ebaf3ddddff5dcbd6da94903b273d4098be4a0f71f2a283b53b9e4580c6681",
+    "rtl/v7_fullscreen_mode_control.sv": "cafd9f8c63b8bd005a9066061db963dad5ad558e48d00792dd563810c59203d1"
+  }
+}

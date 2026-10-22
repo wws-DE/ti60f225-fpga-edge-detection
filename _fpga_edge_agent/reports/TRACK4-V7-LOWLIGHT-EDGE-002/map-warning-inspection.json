@@ -1,0 +1,13 @@
+{
+  "added": [
+    "[EFX-0657 WARNING] Mapping into logic memory block 'row_difference_s1' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'column_difference_s1' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'support_x_s2' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'support_y_s2' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'support_x_s3' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'support_y_s3' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)"
+  ],
+  "removed": [],
+  "new_count": 1416,
+  "old_count": 1410
+}

@@ -1,0 +1,51 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-003",
+  "design_version": "优化v3",
+  "state": "READY_FOR_REVIEW",
+  "approval": "PENDING",
+  "timestamp": "2026-10-21T17:35:09.283293+08:00",
+  "design": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\planning\\design-TRACK4-V7-LOWLIGHT-EDGE-003.md",
+  "design_sha256": "717cffb801e440de98a5932a924594f0a0897cdc5b1d7259e7de5355f0d65cbf",
+  "saved_readback_and_presented": true,
+  "baseline": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_002_20261021",
+  "baseline_input_hashes_verified": 156,
+  "baseline_bit_sha256": "d152bfc760fac94cb87da6f4b0b3728eb5d927879262092cb1772f2658d65e32",
+  "baseline_bit_hash_verified": true,
+  "business_file_scope": [
+    "rtl/v7_algorithm_video_pair.sv",
+    "algorithm/frontend/frontend_frame_pair.sv",
+    "algorithm/frontend/sobel_pair.sv"
+  ],
+  "base_branch": {
+    "threshold": 64,
+    "min_diff": 20,
+    "required_support": 2
+  },
+  "weak_branch_candidates": [
+    {
+      "name": "A",
+      "min_diff": 16,
+      "threshold_drop": 8,
+      "required_support": 3
+    },
+    {
+      "name": "B",
+      "min_diff": 18,
+      "threshold_drop": 0,
+      "required_support": 3
+    }
+  ],
+  "synthetic_noise_limits": {
+    "amplitude_8": 0,
+    "amplitude_16": 58,
+    "amplitude_24": 3304
+  },
+  "database_env_configured": false,
+  "formal_state_updated": false,
+  "new_business_rtl_generated": false,
+  "new_executable_tests_generated": false,
+  "new_work_copy_created": false,
+  "build_started": false,
+  "bit_generated": false,
+  "hardware_operation": false
+}

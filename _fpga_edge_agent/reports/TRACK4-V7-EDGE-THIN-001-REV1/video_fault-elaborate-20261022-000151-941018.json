@@ -1,0 +1,28 @@
+{
+  "name": "video_fault-elaborate",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "video_fault",
+    "--generic_top",
+    "W=40",
+    "--generic_top",
+    "H=12",
+    "--generic_top",
+    "HT=100",
+    "--generic_top",
+    "FRAMES=3",
+    "--generic_top",
+    "FAULT_TEST=1",
+    "--generic_top",
+    "RESET_TEST=0",
+    "work.tb_five_modes"
+  ],
+  "returncode": 0,
+  "seconds": 4.327469110488892,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-EDGE-THIN-001-REV1\\video_fault-elaborate-20261022-000151-941018.log"
+}

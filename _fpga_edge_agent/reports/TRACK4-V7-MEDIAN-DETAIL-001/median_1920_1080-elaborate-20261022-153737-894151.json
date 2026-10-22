@@ -1,0 +1,22 @@
+{
+  "name": "median_1920_1080-elaborate",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "median_1920_1080",
+    "--generic_top",
+    "W=1920",
+    "--generic_top",
+    "H=1080",
+    "--generic_top",
+    "N=12000",
+    "work.tb_median_detail"
+  ],
+  "returncode": 0,
+  "seconds": 2.2808713912963867,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\median_1920_1080-elaborate-20261022-153737-894151.log"
+}

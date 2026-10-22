@@ -1,0 +1,191 @@
+{
+  "result": "PASS",
+  "runs": [
+    {
+      "test": "direct spatial filter",
+      "vectors": 6720,
+      "vector_sha256": "da1ce22f7b8b9f50e8a02713b1dcb0d0daf1d9809dbcbfb46fb417e678129941",
+      "completion": "CONTEXT_FILTER_PASS vectors=6720 checks=6760 stalls=40"
+    },
+    {
+      "test": "pack/window/filter",
+      "W": 40,
+      "H": 12,
+      "drop": 32,
+      "threshold": 64,
+      "frames": 5,
+      "interrupts": 3,
+      "vector_sha256": {
+        "context-40-12-32-64-input.hex": "8b9d6e2cf295286b3c5428bb644d25bb06b247ce8c1a345f0e2708ad55029f95",
+        "context-40-12-32-64-gold.hex": "56b76ac97635d6bcef4dbf5d150a5836acde2708a698d5ae767a3b16907c8049"
+      },
+      "completion": "CONTEXT_CHAIN_PASS W=40 H=12 DROP=32 T=64 frames=5 interrupts=3 stalls=114"
+    },
+    {
+      "test": "pack/window/filter",
+      "W": 40,
+      "H": 12,
+      "drop": 16,
+      "threshold": 64,
+      "frames": 5,
+      "interrupts": 3,
+      "vector_sha256": {
+        "context-40-12-16-64-input.hex": "988965696282e3b455d587cc2ad5a76500e4a275a6dec611e7d6f8c7797d9cf2",
+        "context-40-12-16-64-gold.hex": "f9ec09a59380a1e80d1695235de76898bfeb22b14d2a749dde94c551d7b14012"
+      },
+      "completion": "CONTEXT_CHAIN_PASS W=40 H=12 DROP=16 T=64 frames=5 interrupts=3 stalls=114"
+    },
+    {
+      "test": "pack/window/filter",
+      "W": 8,
+      "H": 5,
+      "drop": 32,
+      "threshold": 0,
+      "frames": 5,
+      "interrupts": 3,
+      "vector_sha256": {
+        "context-8-5-32-0-input.hex": "41d56c7f284e686f09c8ec7135515f5c4fd31d322a8307609adef153abf6b992",
+        "context-8-5-32-0-gold.hex": "1989052b4c1a306f9682387e315e82aa0e34071502accfe1f1a0368bced94ef0"
+      },
+      "completion": "CONTEXT_CHAIN_PASS W=8 H=5 DROP=32 T=0 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "pack/window/filter",
+      "W": 8,
+      "H": 5,
+      "drop": 32,
+      "threshold": 7,
+      "frames": 5,
+      "interrupts": 3,
+      "vector_sha256": {
+        "context-8-5-32-7-input.hex": "7548ed8124363098ac4ce84a2ce758ad345bd20b2b40b6db3f3b360f4537e7dc",
+        "context-8-5-32-7-gold.hex": "cb15c0a15365333a96988b717a6c4e681cbeac32232e30547c9e10eb3b1c9021"
+      },
+      "completion": "CONTEXT_CHAIN_PASS W=8 H=5 DROP=32 T=7 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "pack/window/filter",
+      "W": 8,
+      "H": 5,
+      "drop": 32,
+      "threshold": 16,
+      "frames": 5,
+      "interrupts": 3,
+      "vector_sha256": {
+        "context-8-5-32-16-input.hex": "ed64558779c19ac86257550454bf35157ca0bdc151b48628120224fdf4a42d54",
+        "context-8-5-32-16-gold.hex": "5c2b73dcd05153ee61af13fe4be11ca202d2b87534172afb9f144d89653627d9"
+      },
+      "completion": "CONTEXT_CHAIN_PASS W=8 H=5 DROP=32 T=16 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "pack/window/filter",
+      "W": 8,
+      "H": 5,
+      "drop": 32,
+      "threshold": 32,
+      "frames": 5,
+      "interrupts": 3,
+      "vector_sha256": {
+        "context-8-5-32-32-input.hex": "dbb5ead3b3fc73c2ec7150096c6d37814bd7c51946bbd0fb2c444831d392a2b9",
+        "context-8-5-32-32-gold.hex": "fa55b71acddaa4f33673346cb561d8998198c8e2a604a779a5825df974cb4fe7"
+      },
+      "completion": "CONTEXT_CHAIN_PASS W=8 H=5 DROP=32 T=32 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "pack/window/filter",
+      "W": 8,
+      "H": 5,
+      "drop": 32,
+      "threshold": 2047,
+      "frames": 5,
+      "interrupts": 3,
+      "vector_sha256": {
+        "context-8-5-32-2047-input.hex": "7e117c72dd658a52b337cc913ecd3a9deb6a5b72bb52a92beccf0679aba0fb53",
+        "context-8-5-32-2047-gold.hex": "b69faeba0eae608e9063aa95d61265aabdda394cc91c3b00f28778db4e9157a5"
+      },
+      "completion": "CONTEXT_CHAIN_PASS W=8 H=5 DROP=32 T=2047 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "pack/window/filter",
+      "W": 8,
+      "H": 5,
+      "drop": 16,
+      "threshold": 0,
+      "frames": 5,
+      "interrupts": 3,
+      "vector_sha256": {
+        "context-8-5-16-0-input.hex": "d348e88e7895d092c0df1548a776ad4da2b372622111133138e5fa20f9c99552",
+        "context-8-5-16-0-gold.hex": "1dc06fe0a89f993d290e382a390bf41fc67689e0471ed803a0215cbeaf82b196"
+      },
+      "completion": "CONTEXT_CHAIN_PASS W=8 H=5 DROP=16 T=0 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "pack/window/filter",
+      "W": 8,
+      "H": 5,
+      "drop": 16,
+      "threshold": 7,
+      "frames": 5,
+      "interrupts": 3,
+      "vector_sha256": {
+        "context-8-5-16-7-input.hex": "f9d71373b1b5da23b69a9f683c980b83a254ec73ebc7b88206829cd99f4a9caa",
+        "context-8-5-16-7-gold.hex": "d8080db6c2ea942932e131efcb9b431a547d01adf8982ed79568bbb88d4ed4b6"
+      },
+      "completion": "CONTEXT_CHAIN_PASS W=8 H=5 DROP=16 T=7 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "pack/window/filter",
+      "W": 8,
+      "H": 5,
+      "drop": 16,
+      "threshold": 16,
+      "frames": 5,
+      "interrupts": 3,
+      "vector_sha256": {
+        "context-8-5-16-16-input.hex": "481a603558c8a375bfcc832dec3a30da34f2b36b811effe6c5f5530de2246757",
+        "context-8-5-16-16-gold.hex": "81eaf1ec2e0faef844a7efe69755342dd839ad6c6a45ea4a280bfaf8a4bbd15a"
+      },
+      "completion": "CONTEXT_CHAIN_PASS W=8 H=5 DROP=16 T=16 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "pack/window/filter",
+      "W": 8,
+      "H": 5,
+      "drop": 16,
+      "threshold": 32,
+      "frames": 5,
+      "interrupts": 3,
+      "vector_sha256": {
+        "context-8-5-16-32-input.hex": "26814f3ccdd3af6c819c345e173984f09e7eae9b79b3e8c55266c2ae6838584c",
+        "context-8-5-16-32-gold.hex": "2005c3a62e4218f2b60a939f82ac9ae20b79284ef7b09efa6ea3cef8e8fbed6f"
+      },
+      "completion": "CONTEXT_CHAIN_PASS W=8 H=5 DROP=16 T=32 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "pack/window/filter",
+      "W": 8,
+      "H": 5,
+      "drop": 16,
+      "threshold": 2047,
+      "frames": 5,
+      "interrupts": 3,
+      "vector_sha256": {
+        "context-8-5-16-2047-input.hex": "4fe2ec95b49a61eec9c0df0b8ebb358b8e69de734ac48a75ff999f09262fdcc2",
+        "context-8-5-16-2047-gold.hex": "6dff18a817f1a7e6817021b3484d13098cdfb21dd6b7929763097e587e529334"
+      },
+      "completion": "CONTEXT_CHAIN_PASS W=8 H=5 DROP=16 T=2047 frames=5 interrupts=3 stalls=3"
+    }
+  ],
+  "sources": {
+    "C:\\Efinity\\2026.1\\sim_models\\verilog\\efx_ram10.v": "dd8db45116a67b9754920856dc380eb2dc73ca51e0a6a62cc74cda01c0e31a33",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\algorithm\\edge\\edge_context_filter_pair.sv": "fceab374f3248e4526ddef2238107612f60eea481e33729086fd6e91c4c49fb2",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\algorithm\\edge\\edge_context_pack_pair.sv": "bf704887112a1e1044f46554c75c46ed6bd21bf60fd8b9d67cc420efae575fe0",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\algorithm\\edge\\edge_context_window_pair.sv": "5d8d872f338c2fe3b054ff541e161c761cc5881fbd0ffb34461de3e93f0ac8c4",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\tests\\tb_context_chain.sv": "56d04f8dda89f50a28efe82817080801fcedf19b23edf3648e3e3991df214bbc",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\tests\\tb_context_filter.sv": "ef33c77ec95ad8a169bcb7028eb13a67b003c4e2d653594eb75719da50189ff2",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\tests\\run_context_checks.py": "60d47c03c75b72636e01a102733680e3e565108a62ebbc458dd01573a97391a6",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\tests\\reference_v4.py": "ffa90e3c79dd35d348b6e7922d5ccd15a247d5a23632c76a62eea9516bf4ba82",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\tests\\reference_v2.py": "733a2cd35fd90885a6f69b4281807af6a2c7885f20036d89782a04e1ad077c41",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\tests\\reference_v3.py": "97f67156eabdfbf6e0bc124660161a0815ea461f091963063fc147cd1e50de71"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "video_full-run",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xsim.bat",
+    "video_full",
+    "--runall",
+    "--onerror",
+    "quit",
+    "--onfinish",
+    "quit",
+    "--nolog",
+    "--testplusarg",
+    "INPUT=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/sim_fullscreen/full-input.hex",
+    "--testplusarg",
+    "GOLD=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/sim_fullscreen/full-gold.hex"
+  ],
+  "returncode": 0,
+  "seconds": 247.3149812221527,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-003\\video_full-run-20261021-174520-089220.log"
+}

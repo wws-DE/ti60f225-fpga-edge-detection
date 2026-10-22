@@ -1,0 +1,64 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-004-REV1",
+  "session_id": "TRACK4-V7-LOWLIGHT-EDGE-004-REV1-20261021",
+  "timestamp": "2026-10-21T22:00:24.818223+08:00",
+  "state": "WAITING_HUMAN_PROGRAM",
+  "design_version": "优化v4.1",
+  "approved_design_sha256": "34c0dc732cf8e0056e46fe2a78608a836c5018d12b14f280c618d6f56fcbe1c8",
+  "authorization_sha256": "0fd8852be0317e8aeaf65c1037fdc0749c2f1eb87f05978e85b36e2a07f9c28b",
+  "project": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\ti60f225_oob.xml",
+  "tool": "Efinity 2026.1.132",
+  "device": "Ti60F225/I3",
+  "bit": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-LOWLIGHT-EDGE-004-REV1\\v7_lowlight_edge_004_v4_1_20261021.bit",
+    "bytes": 2450544,
+    "sha256": "c194210fb0ff0e3f5e81da6746557b36e280fb16c0aa3ec24fa057e5c25ac77f"
+  },
+  "parameters": {
+    "sobel_threshold": 64,
+    "base_min_diff": 20,
+    "base_support": 2,
+    "weak_enabled": true,
+    "weak_min_diff": 18,
+    "weak_support": 3,
+    "weak_threshold_drop": 0,
+    "diagonal_enabled": true,
+    "diagonal_min_diff": 18,
+    "diagonal_support": "both axes at least2-of3 and max(absGx,absGy)<=2*min; sign aligned",
+    "context_threshold_drop": 16,
+    "context_support": "one-pixel tangent gap repair and isolated seed rejection",
+    "video_latency_cycles": 6602,
+    "sensor_gain_registers": "0x81/0x2A",
+    "median_enabled": true
+  },
+  "setup_min_ns": 0.454,
+  "hold_min_ns": 0.026,
+  "resources": {
+    "xlr": 22913,
+    "ram": 175,
+    "dsp": 0
+  },
+  "mode_order": [
+    "COLOR",
+    "GRAY",
+    "MEDIAN",
+    "SOBEL",
+    "OVERLAY"
+  ],
+  "full_resolution_compared_pixels": 10368000,
+  "checks_sha256": "0cde3efd884199c3b4d016cc43c9c507601c703d05631cab9823f7ef05cea9df",
+  "selection_sha256": "4dd6fc54738fbf2e5d06db857cdf840dc5378e8681e4bf0348a232a9a6677094",
+  "inputs_manifest_sha256": "944b77610c16d2269340a917ab2869270089d280c3a68fc720f78e470a00ac4b",
+  "test_inputs_manifest_sha256": "d55f769290f6967b834f240de83e553e358b6f358af7c6fe8f0063a145b19111",
+  "rollback_bit": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-LOWLIGHT-EDGE-003\\v7_lowlight_edge_003_v3_20261021.bit",
+    "sha256": "f3825f7e99b9626746df4cb21e21eab9fa32e219af3051e4fde38612764aec0e"
+  },
+  "hardware_programmed": false,
+  "hardware_passed": false,
+  "real_camera_accuracy_measured": false,
+  "local_audit_exception": true,
+  "formal_state_updated": false,
+  "evidence_manifest_sha256": "0a8c81822faefa6899147daeba1c967e00daa6a08fba249fd59b98c71c09b610",
+  "documentation_clarification": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-004-REV1\\guide-clarification.json"
+}

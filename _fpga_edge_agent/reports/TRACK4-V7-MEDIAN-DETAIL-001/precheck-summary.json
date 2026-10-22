@@ -1,0 +1,25 @@
+{
+  "task_id": "TRACK4-V7-MEDIAN-DETAIL-001",
+  "timestamp": "2026-10-22T15:09:49.136407+08:00",
+  "state": "PRECHECK_FAILED_NEEDS_DESIGN_REVISION",
+  "result": "SYNTHETIC_GATE_FAIL",
+  "selected_candidate": null,
+  "approval_sha256": "14ec44b9e288e6363ee318613fce894ec9e647f2cc5ffba27d87695259261419",
+  "quality_sha256": "eb675ef020c5d8d2818df00adeb94bcaa36344cbb5ee2ca9aa851608fafe08ef",
+  "reference_verification_sha256": "296139c62aafe09a725b7dabf02c3c9db07e63e434514b804d37ade3d4c4bc29",
+  "existing_inputs_unchanged": 161,
+  "new_functional_files": {
+    "reference_median_detail.py": "62ff19043ac84f1848e0cfb7b8a0d50cc2835fee29013d4e72408fd9ca56bce0",
+    "quality_median_detail.py": "61cd841271b55945a2bda1335e715fc7cd9b8ca05e5d73c5cd5b41df93d2a8bc",
+    "verify_median_detail.py": "280186e166433184baad271a1b53d498e4effb61f415766280107a9856a3fde9"
+  },
+  "rtl_generated": false,
+  "rtl_simulated": false,
+  "efinity_build": false,
+  "bit_generated": false,
+  "hardware_operation": false,
+  "hardware_passed": false,
+  "formal_state_updated": false,
+  "rollback_bit_sha256": "c407819ed8fcbbf0bc5e9a9b38d219299d2f6489988d1c19dda036f44e21bd43",
+  "next_needed": "Same-scene GRAY/MEDIAN/SOBEL photos in ordinary light, distance and disappearing detail"
+}

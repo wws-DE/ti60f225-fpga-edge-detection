@@ -1,0 +1,908 @@
+{
+  "result": "SYNTHETIC_GATE_FAIL",
+  "threshold": 64,
+  "selected_d": null,
+  "selected_d_requires_rtl_checks": true,
+  "candidates": {
+    "16": {
+      "shapes": [
+        {
+          "name": "vertical-d17",
+          "kind": "vertical",
+          "delta": 17,
+          "old_core_hits": 0,
+          "new_core_hits": 88,
+          "core_pixels": 176,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d17",
+          "kind": "horizontal",
+          "delta": 17,
+          "old_core_hits": 0,
+          "new_core_hits": 120,
+          "core_pixels": 240,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d17",
+          "kind": "rectangle",
+          "delta": 17,
+          "old_core_hits": 0,
+          "new_core_hits": 160,
+          "core_pixels": 320,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d17",
+          "kind": "diagonal",
+          "delta": 17,
+          "old_core_hits": 88,
+          "new_core_hits": 88,
+          "core_pixels": 352,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d17",
+          "kind": "thin_horizontal",
+          "delta": 17,
+          "old_core_hits": 0,
+          "new_core_hits": 128,
+          "core_pixels": 224,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d17",
+          "kind": "thin_vertical",
+          "delta": 17,
+          "old_core_hits": 0,
+          "new_core_hits": 96,
+          "core_pixels": 168,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d17",
+          "kind": "curve",
+          "delta": 17,
+          "old_core_hits": 96,
+          "new_core_hits": 256,
+          "core_pixels": 592,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d20",
+          "kind": "vertical",
+          "delta": 20,
+          "old_core_hits": 0,
+          "new_core_hits": 88,
+          "core_pixels": 176,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d20",
+          "kind": "horizontal",
+          "delta": 20,
+          "old_core_hits": 0,
+          "new_core_hits": 120,
+          "core_pixels": 240,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d20",
+          "kind": "rectangle",
+          "delta": 20,
+          "old_core_hits": 0,
+          "new_core_hits": 160,
+          "core_pixels": 320,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d20",
+          "kind": "diagonal",
+          "delta": 20,
+          "old_core_hits": 88,
+          "new_core_hits": 88,
+          "core_pixels": 352,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d20",
+          "kind": "thin_horizontal",
+          "delta": 20,
+          "old_core_hits": 0,
+          "new_core_hits": 128,
+          "core_pixels": 224,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d20",
+          "kind": "thin_vertical",
+          "delta": 20,
+          "old_core_hits": 0,
+          "new_core_hits": 96,
+          "core_pixels": 168,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d20",
+          "kind": "curve",
+          "delta": 20,
+          "old_core_hits": 96,
+          "new_core_hits": 256,
+          "core_pixels": 592,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d24",
+          "kind": "vertical",
+          "delta": 24,
+          "old_core_hits": 0,
+          "new_core_hits": 88,
+          "core_pixels": 176,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d24",
+          "kind": "horizontal",
+          "delta": 24,
+          "old_core_hits": 0,
+          "new_core_hits": 120,
+          "core_pixels": 240,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d24",
+          "kind": "rectangle",
+          "delta": 24,
+          "old_core_hits": 0,
+          "new_core_hits": 160,
+          "core_pixels": 320,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d24",
+          "kind": "diagonal",
+          "delta": 24,
+          "old_core_hits": 88,
+          "new_core_hits": 88,
+          "core_pixels": 352,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d24",
+          "kind": "thin_horizontal",
+          "delta": 24,
+          "old_core_hits": 0,
+          "new_core_hits": 128,
+          "core_pixels": 224,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d24",
+          "kind": "thin_vertical",
+          "delta": 24,
+          "old_core_hits": 0,
+          "new_core_hits": 96,
+          "core_pixels": 168,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d24",
+          "kind": "curve",
+          "delta": 24,
+          "old_core_hits": 96,
+          "new_core_hits": 256,
+          "core_pixels": 592,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d25",
+          "kind": "vertical",
+          "delta": 25,
+          "old_core_hits": 88,
+          "new_core_hits": 88,
+          "core_pixels": 176,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d25",
+          "kind": "horizontal",
+          "delta": 25,
+          "old_core_hits": 120,
+          "new_core_hits": 120,
+          "core_pixels": 240,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d25",
+          "kind": "rectangle",
+          "delta": 25,
+          "old_core_hits": 160,
+          "new_core_hits": 160,
+          "core_pixels": 320,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d25",
+          "kind": "diagonal",
+          "delta": 25,
+          "old_core_hits": 88,
+          "new_core_hits": 88,
+          "core_pixels": 352,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d25",
+          "kind": "thin_horizontal",
+          "delta": 25,
+          "old_core_hits": 128,
+          "new_core_hits": 128,
+          "core_pixels": 224,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d25",
+          "kind": "thin_vertical",
+          "delta": 25,
+          "old_core_hits": 96,
+          "new_core_hits": 96,
+          "core_pixels": 168,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d25",
+          "kind": "curve",
+          "delta": 25,
+          "old_core_hits": 256,
+          "new_core_hits": 256,
+          "core_pixels": 592,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d64",
+          "kind": "vertical",
+          "delta": 64,
+          "old_core_hits": 88,
+          "new_core_hits": 88,
+          "core_pixels": 176,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d64",
+          "kind": "horizontal",
+          "delta": 64,
+          "old_core_hits": 120,
+          "new_core_hits": 120,
+          "core_pixels": 240,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d64",
+          "kind": "rectangle",
+          "delta": 64,
+          "old_core_hits": 160,
+          "new_core_hits": 160,
+          "core_pixels": 320,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d64",
+          "kind": "diagonal",
+          "delta": 64,
+          "old_core_hits": 176,
+          "new_core_hits": 88,
+          "core_pixels": 352,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d64",
+          "kind": "thin_horizontal",
+          "delta": 64,
+          "old_core_hits": 128,
+          "new_core_hits": 128,
+          "core_pixels": 224,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d64",
+          "kind": "thin_vertical",
+          "delta": 64,
+          "old_core_hits": 96,
+          "new_core_hits": 96,
+          "core_pixels": 168,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d64",
+          "kind": "curve",
+          "delta": 64,
+          "old_core_hits": 352,
+          "new_core_hits": 256,
+          "core_pixels": 592,
+          "old_off_band": 0,
+          "new_off_band": 0
+        }
+      ],
+      "noise": [
+        {
+          "amplitude": 8,
+          "seed": 431,
+          "pixels": 31248,
+          "old_false_edges": 0,
+          "new_false_edges": 0
+        },
+        {
+          "amplitude": 8,
+          "seed": 432,
+          "pixels": 31248,
+          "old_false_edges": 0,
+          "new_false_edges": 0
+        },
+        {
+          "amplitude": 8,
+          "seed": 433,
+          "pixels": 31248,
+          "old_false_edges": 0,
+          "new_false_edges": 0
+        },
+        {
+          "amplitude": 16,
+          "seed": 431,
+          "pixels": 31248,
+          "old_false_edges": 73,
+          "new_false_edges": 224
+        },
+        {
+          "amplitude": 16,
+          "seed": 432,
+          "pixels": 31248,
+          "old_false_edges": 52,
+          "new_false_edges": 180
+        },
+        {
+          "amplitude": 16,
+          "seed": 433,
+          "pixels": 31248,
+          "old_false_edges": 68,
+          "new_false_edges": 267
+        },
+        {
+          "amplitude": 24,
+          "seed": 431,
+          "pixels": 31248,
+          "old_false_edges": 1452,
+          "new_false_edges": 2710
+        },
+        {
+          "amplitude": 24,
+          "seed": 432,
+          "pixels": 31248,
+          "old_false_edges": 1371,
+          "new_false_edges": 2654
+        },
+        {
+          "amplitude": 24,
+          "seed": 433,
+          "pixels": 31248,
+          "old_false_edges": 1580,
+          "new_false_edges": 2865
+        }
+      ],
+      "failures": [
+        "diagonal-d64: high-contrast core loss",
+        "curve-d64: high-contrast core loss",
+        "noise amplitude 16: false edges increased",
+        "noise amplitude 24: false edges increased"
+      ],
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 16,
+          "old_false_edges": 193,
+          "new_false_edges": 671,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 24,
+          "old_false_edges": 4403,
+          "new_false_edges": 8229,
+          "pixels": 93744
+        }
+      ],
+      "salt_pepper_edges": 0,
+      "eligible": false,
+      "noise_sum": 8900,
+      "weak_hits": 2808
+    },
+    "20": {
+      "shapes": [
+        {
+          "name": "vertical-d17",
+          "kind": "vertical",
+          "delta": 17,
+          "old_core_hits": 0,
+          "new_core_hits": 0,
+          "core_pixels": 176,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d17",
+          "kind": "horizontal",
+          "delta": 17,
+          "old_core_hits": 0,
+          "new_core_hits": 0,
+          "core_pixels": 240,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d17",
+          "kind": "rectangle",
+          "delta": 17,
+          "old_core_hits": 0,
+          "new_core_hits": 0,
+          "core_pixels": 320,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d17",
+          "kind": "diagonal",
+          "delta": 17,
+          "old_core_hits": 88,
+          "new_core_hits": 0,
+          "core_pixels": 352,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d17",
+          "kind": "thin_horizontal",
+          "delta": 17,
+          "old_core_hits": 0,
+          "new_core_hits": 0,
+          "core_pixels": 224,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d17",
+          "kind": "thin_vertical",
+          "delta": 17,
+          "old_core_hits": 0,
+          "new_core_hits": 0,
+          "core_pixels": 168,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d17",
+          "kind": "curve",
+          "delta": 17,
+          "old_core_hits": 96,
+          "new_core_hits": 0,
+          "core_pixels": 592,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d20",
+          "kind": "vertical",
+          "delta": 20,
+          "old_core_hits": 0,
+          "new_core_hits": 88,
+          "core_pixels": 176,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d20",
+          "kind": "horizontal",
+          "delta": 20,
+          "old_core_hits": 0,
+          "new_core_hits": 120,
+          "core_pixels": 240,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d20",
+          "kind": "rectangle",
+          "delta": 20,
+          "old_core_hits": 0,
+          "new_core_hits": 160,
+          "core_pixels": 320,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d20",
+          "kind": "diagonal",
+          "delta": 20,
+          "old_core_hits": 88,
+          "new_core_hits": 88,
+          "core_pixels": 352,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d20",
+          "kind": "thin_horizontal",
+          "delta": 20,
+          "old_core_hits": 0,
+          "new_core_hits": 128,
+          "core_pixels": 224,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d20",
+          "kind": "thin_vertical",
+          "delta": 20,
+          "old_core_hits": 0,
+          "new_core_hits": 96,
+          "core_pixels": 168,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d20",
+          "kind": "curve",
+          "delta": 20,
+          "old_core_hits": 96,
+          "new_core_hits": 256,
+          "core_pixels": 592,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d24",
+          "kind": "vertical",
+          "delta": 24,
+          "old_core_hits": 0,
+          "new_core_hits": 88,
+          "core_pixels": 176,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d24",
+          "kind": "horizontal",
+          "delta": 24,
+          "old_core_hits": 0,
+          "new_core_hits": 120,
+          "core_pixels": 240,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d24",
+          "kind": "rectangle",
+          "delta": 24,
+          "old_core_hits": 0,
+          "new_core_hits": 160,
+          "core_pixels": 320,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d24",
+          "kind": "diagonal",
+          "delta": 24,
+          "old_core_hits": 88,
+          "new_core_hits": 88,
+          "core_pixels": 352,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d24",
+          "kind": "thin_horizontal",
+          "delta": 24,
+          "old_core_hits": 0,
+          "new_core_hits": 128,
+          "core_pixels": 224,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d24",
+          "kind": "thin_vertical",
+          "delta": 24,
+          "old_core_hits": 0,
+          "new_core_hits": 96,
+          "core_pixels": 168,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d24",
+          "kind": "curve",
+          "delta": 24,
+          "old_core_hits": 96,
+          "new_core_hits": 256,
+          "core_pixels": 592,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d25",
+          "kind": "vertical",
+          "delta": 25,
+          "old_core_hits": 88,
+          "new_core_hits": 88,
+          "core_pixels": 176,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d25",
+          "kind": "horizontal",
+          "delta": 25,
+          "old_core_hits": 120,
+          "new_core_hits": 120,
+          "core_pixels": 240,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d25",
+          "kind": "rectangle",
+          "delta": 25,
+          "old_core_hits": 160,
+          "new_core_hits": 160,
+          "core_pixels": 320,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d25",
+          "kind": "diagonal",
+          "delta": 25,
+          "old_core_hits": 88,
+          "new_core_hits": 88,
+          "core_pixels": 352,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d25",
+          "kind": "thin_horizontal",
+          "delta": 25,
+          "old_core_hits": 128,
+          "new_core_hits": 128,
+          "core_pixels": 224,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d25",
+          "kind": "thin_vertical",
+          "delta": 25,
+          "old_core_hits": 96,
+          "new_core_hits": 96,
+          "core_pixels": 168,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d25",
+          "kind": "curve",
+          "delta": 25,
+          "old_core_hits": 256,
+          "new_core_hits": 256,
+          "core_pixels": 592,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "vertical-d64",
+          "kind": "vertical",
+          "delta": 64,
+          "old_core_hits": 88,
+          "new_core_hits": 88,
+          "core_pixels": 176,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "horizontal-d64",
+          "kind": "horizontal",
+          "delta": 64,
+          "old_core_hits": 120,
+          "new_core_hits": 120,
+          "core_pixels": 240,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "rectangle-d64",
+          "kind": "rectangle",
+          "delta": 64,
+          "old_core_hits": 160,
+          "new_core_hits": 160,
+          "core_pixels": 320,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "diagonal-d64",
+          "kind": "diagonal",
+          "delta": 64,
+          "old_core_hits": 176,
+          "new_core_hits": 88,
+          "core_pixels": 352,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_horizontal-d64",
+          "kind": "thin_horizontal",
+          "delta": 64,
+          "old_core_hits": 128,
+          "new_core_hits": 128,
+          "core_pixels": 224,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "thin_vertical-d64",
+          "kind": "thin_vertical",
+          "delta": 64,
+          "old_core_hits": 96,
+          "new_core_hits": 96,
+          "core_pixels": 168,
+          "old_off_band": 0,
+          "new_off_band": 0
+        },
+        {
+          "name": "curve-d64",
+          "kind": "curve",
+          "delta": 64,
+          "old_core_hits": 352,
+          "new_core_hits": 256,
+          "core_pixels": 592,
+          "old_off_band": 0,
+          "new_off_band": 0
+        }
+      ],
+      "noise": [
+        {
+          "amplitude": 8,
+          "seed": 431,
+          "pixels": 31248,
+          "old_false_edges": 0,
+          "new_false_edges": 0
+        },
+        {
+          "amplitude": 8,
+          "seed": 432,
+          "pixels": 31248,
+          "old_false_edges": 0,
+          "new_false_edges": 0
+        },
+        {
+          "amplitude": 8,
+          "seed": 433,
+          "pixels": 31248,
+          "old_false_edges": 0,
+          "new_false_edges": 0
+        },
+        {
+          "amplitude": 16,
+          "seed": 431,
+          "pixels": 31248,
+          "old_false_edges": 73,
+          "new_false_edges": 25
+        },
+        {
+          "amplitude": 16,
+          "seed": 432,
+          "pixels": 31248,
+          "old_false_edges": 52,
+          "new_false_edges": 10
+        },
+        {
+          "amplitude": 16,
+          "seed": 433,
+          "pixels": 31248,
+          "old_false_edges": 68,
+          "new_false_edges": 14
+        },
+        {
+          "amplitude": 24,
+          "seed": 431,
+          "pixels": 31248,
+          "old_false_edges": 1452,
+          "new_false_edges": 911
+        },
+        {
+          "amplitude": 24,
+          "seed": 432,
+          "pixels": 31248,
+          "old_false_edges": 1371,
+          "new_false_edges": 833
+        },
+        {
+          "amplitude": 24,
+          "seed": 433,
+          "pixels": 31248,
+          "old_false_edges": 1580,
+          "new_false_edges": 1010
+        }
+      ],
+      "failures": [
+        "diagonal-d64: high-contrast core loss",
+        "curve-d64: high-contrast core loss"
+      ],
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 16,
+          "old_false_edges": 193,
+          "new_false_edges": 49,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 24,
+          "old_false_edges": 4403,
+          "new_false_edges": 2754,
+          "pixels": 93744
+        }
+      ],
+      "salt_pepper_edges": 0,
+      "eligible": false,
+      "noise_sum": 2803,
+      "weak_hits": 1872
+    }
+  },
+  "synthetic_only": true,
+  "real_camera_accuracy_measured": false,
+  "reference_sha256": "733a2cd35fd90885a6f69b4281807af6a2c7885f20036d89782a04e1ad077c41",
+  "benchmark_sha256": "99b127fde49efdd8539b0f63ce85d3f09aeaca9cc3550be78de756c6b81664cf"
+}

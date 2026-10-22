@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "W": 128,
+  "H": 48,
+  "frames": 5,
+  "pixels": 30720,
+  "fault_test": false,
+  "reset_test": false,
+  "vector_sha256": {
+    "lowlight-input.hex": "ff4ce562cd5894fd109429dd25b3911aa4835399ccc73091162aab23d6f1799e",
+    "lowlight-gold.hex": "a85e712e1eb5448b3d09c4e09fc8a008d163ca7a9e0f11acc1962dc489f51671"
+  },
+  "completion": "FIVE_MODES_PASS W=128 H=48 frames=5 pixels=30720 checked_cycles=65105 latency=562 statuses=5 fault_test=0 reset_test=0"
+}

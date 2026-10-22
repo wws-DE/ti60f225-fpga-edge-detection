@@ -1,0 +1,97 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-004",
+  "timestamp": "2026-10-21T21:34:01.414354+08:00",
+  "state": "DESIGN_REVISION",
+  "outcome": "IMPLEMENTED_BUT_QUALITY_GATE_FAILED",
+  "approved_design_sha256": "2b8f8cdb51d67aef05b596bd4ddd0027c00f51255ec33df994942669949afd5b",
+  "core_result": "PASS",
+  "core_result_sha256": "29acdf48f4b2afc30a47c4c8fc586c4425cfae26a062b9a0718f7a2d321ead33",
+  "direct_windows": 6720,
+  "chain_configurations": 12,
+  "full_chain_frames": 60,
+  "interruptions": 36,
+  "quality_result": "SYNTHETIC_GATE_FAIL",
+  "quality_sha256": "0ae0f293c488214b04c1c78042d865e068f7b21eea66ec1009ebf453452882f6",
+  "selected_candidate": null,
+  "candidates": {
+    "A": {
+      "failures": [
+        "No required delta18/19 diagonal/curve geometry improvement"
+      ],
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "pixels": 93744,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "added": 0,
+          "removed": 0
+        },
+        {
+          "amplitude": 16,
+          "pixels": 93744,
+          "old_false_edges": 56,
+          "new_false_edges": 50,
+          "added": 0,
+          "removed": 6
+        },
+        {
+          "amplitude": 24,
+          "pixels": 93744,
+          "old_false_edges": 2885,
+          "new_false_edges": 2818,
+          "added": 88,
+          "removed": 155
+        }
+      ],
+      "improved_weak_shapes": []
+    },
+    "B": {
+      "failures": [
+        "No required delta18/19 diagonal/curve geometry improvement"
+      ],
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "pixels": 93744,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "added": 0,
+          "removed": 0
+        },
+        {
+          "amplitude": 16,
+          "pixels": 93744,
+          "old_false_edges": 56,
+          "new_false_edges": 50,
+          "added": 0,
+          "removed": 6
+        },
+        {
+          "amplitude": 24,
+          "pixels": 93744,
+          "old_false_edges": 2885,
+          "new_false_edges": 2816,
+          "added": 86,
+          "removed": 155
+        }
+      ],
+      "improved_weak_shapes": []
+    }
+  },
+  "unexecuted": [
+    "frontend default/external-owner/full-job regression",
+    "full video and serialization regression",
+    "Efinity map/interface/pnr/pgm",
+    "hardware acceptance"
+  ],
+  "build_started": false,
+  "bit_generated": false,
+  "source_snapshot_input_count": 159,
+  "source_manifest_sha256": "bb689fac097dfb0cdcfc4f662b25e6a656b4c6a25da911480e1e2f74f409030e",
+  "baseline_v3_unchanged": true,
+  "stop_reason": "Both fixed candidates failed required weak diagonal/curve geometry improvement; approved design requires stopping without relaxing gates",
+  "hardware_operation": false,
+  "hardware_passed": false,
+  "formal_state_updated": false
+}

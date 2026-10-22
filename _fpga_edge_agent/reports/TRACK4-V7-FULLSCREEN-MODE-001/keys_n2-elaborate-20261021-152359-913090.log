@@ -1,0 +1,6 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --debug typical --timescale 1ns/1ps --snapshot keys_n2 --generic_top N 2 work.tb_fullscreen_control 
+Multi-threading is on. Using 20 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit work.2 in library work located at xsim.dir/work.

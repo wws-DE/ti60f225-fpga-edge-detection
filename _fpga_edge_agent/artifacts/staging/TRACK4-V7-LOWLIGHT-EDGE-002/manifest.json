@@ -1,0 +1,55 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-002",
+  "session_id": "TRACK4-V7-LOWLIGHT-EDGE-002-20261021",
+  "timestamp": "2026-10-21T17:08:07.395041+08:00",
+  "state": "WAITING_HUMAN_PROGRAM",
+  "design_version": "优化v2",
+  "approved_design_sha256": "98df9817e492e80baa2df5be0e4b20f3c0f1e12e530859ca29760d3c502a0683",
+  "authorization_sha256": "7914de5198ed3b3d88b85e0f9a16f55f34d95ed728b92b58b6f0b9a98c51fe77",
+  "project": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_002_20261021\\ti60f225_oob.xml",
+  "tool": "Efinity 2026.1.132",
+  "device": "Ti60F225/I3",
+  "bit": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-LOWLIGHT-EDGE-002\\v7_lowlight_edge_002_v2_20261021.bit",
+    "bytes": 2434464,
+    "sha256": "d152bfc760fac94cb87da6f4b0b3728eb5d927879262092cb1772f2658d65e32"
+  },
+  "parameters": {
+    "sobel_threshold": 64,
+    "coherence_enabled": true,
+    "minimum_directional_difference": 20,
+    "support": "at least 2 of 3 on dominant gradient axis; sign aligned; ties accept either axis",
+    "sensor_gain_registers": "0x81/0x2A",
+    "median_enabled": true
+  },
+  "setup_min_ns": 0.349,
+  "hold_min_ns": 0.026,
+  "resources": {
+    "xlr": 22107,
+    "ram": 169,
+    "dsp": 0
+  },
+  "mode_order": [
+    "COLOR",
+    "GRAY",
+    "MEDIAN",
+    "SOBEL",
+    "OVERLAY"
+  ],
+  "full_resolution_compared_pixels": 10368000,
+  "checks_sha256": "8e08667db2491cb048acf16dd1006bece74a62557dd5b3081a9212fc6354ff0e",
+  "selection_sha256": "133114c570b04b262c758b5098491e80b8d0b6fab5bdc67e7c9eb277e14ac03b",
+  "inputs_manifest_sha256": "a58e4e717db6a5eab4fc4aa3b950cddc6615ed0bf184e13e97f30576682b5a79",
+  "rollback_bit": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-LOWLIGHT-EDGE-001\\v7_lowlight_edge_001_v1_20261021.bit",
+    "sha256": "32d81151f7c7e6bda332daa4a08103adb255965a667247d084c97dca53520a6f"
+  },
+  "hardware_programmed": false,
+  "hardware_passed": false,
+  "real_camera_accuracy_measured": false,
+  "local_audit_exception": true,
+  "formal_state_updated": false,
+  "evidence_manifest_sha256": "e4d8ca62f5175f630eb8fa3cff21216f44a7c592cf4c81bf8acd204cbf5138c7",
+  "final_test_manifest_sha256": "d9210662b567bfbf8a08e77b744c3466c3bbc8e3c6d4b924322a0ef572741252",
+  "delivery_verification_sha256": "162e526ba1e94129baba7c3675a485353dc068a13f97ea17dc4bd851a58a9d22"
+}

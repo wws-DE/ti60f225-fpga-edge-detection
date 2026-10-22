@@ -1,0 +1,24 @@
+{
+  "result": "FINAL_IMPLEMENTATION_VERIFIED_WITH_EXPLICIT_ACCEPTANCE",
+  "quality_state": "ACCEPTED_WITH_KNOWN_NOISE_TRADEOFF",
+  "checks_sha256": "fda42c08e01316e803b43f01ed00ac47dbc3462085868511027837a8c532ed54",
+  "core_sha256": "4300ea19fe3f13758a286b50a7e1785322c3b467f2f77a7963b2f3f650584387",
+  "frontend_sha256": "a2151a0153e7d8a83554981219eb2c8ad70850d7a821fb8c93ae7b135ca280c5",
+  "full_video_sha256": "f9fad3134b94c8b6819c7f792f891c30c9e5b61f44150e3a910f219556c486bd",
+  "resource_attempts": [
+    25229,
+    24991
+  ],
+  "final_resources": {
+    "xlr": 24991,
+    "ram": 181,
+    "dsp": 0
+  },
+  "setup_min_ns": 0.38,
+  "hold_min_ns": 0.026,
+  "original_failed_quality_preserved": true,
+  "accepted_noise_tradeoff_sha256": "900be6ddd1d9a26ffa4668a4be3b72e816f4eadc7775a36fa4356cffefe8885c",
+  "timestamp": "2026-10-22T15:50:46.216823+08:00",
+  "hardware_passed": false,
+  "formal_state_updated": false
+}

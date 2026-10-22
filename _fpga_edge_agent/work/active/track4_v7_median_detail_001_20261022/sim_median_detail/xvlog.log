@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_median_detail_001_20261022/algorithm/frontend/median9_pair.sv" into library work
+INFO: [VRFC 10-311] analyzing module median9_pair
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_median_detail_001_20261022/algorithm/frontend/median9_detail_pair.sv" into library work
+INFO: [VRFC 10-311] analyzing module median9_detail_pair
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_median_detail_001_20261022/tests/tb_median_detail.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_median_detail

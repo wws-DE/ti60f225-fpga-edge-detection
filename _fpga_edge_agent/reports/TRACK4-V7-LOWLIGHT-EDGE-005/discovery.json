@@ -1,0 +1,50 @@
+{
+  "time": "2026-10-21T22:44:01.461424+08:00",
+  "baseline": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021",
+  "verified_input_count": 159,
+  "baseline_manifest": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-004-REV1\\final-build-inputs.json",
+  "baseline_manifest_sha256": "944b77610c16d2269340a917ab2869270089d280c3a68fc720f78e470a00ac4b",
+  "bit_sha256": "c194210fb0ff0e3f5e81da6746557b36e280fb16c0aa3ec24fa057e5c25ac77f",
+  "baseline_unchanged": true,
+  "database_environment_configured": false,
+  "source_facts": [
+    "原seed仍需L1>64且满足D20多数、D18全项或D18双轴斜向支持",
+    "后处理只有原seed邻域筛除和切向一像素补点，不能从整段无seed创建轮廓",
+    "当前不做梯度峰值抑制/定位",
+    "已有16bit窗口的24bit扩展可保持同一握手和周期结构，仍须新验证"
+  ],
+  "hand_checked_counterexample": {
+    "window": [
+      [
+        32,
+        32,
+        44
+      ],
+      [
+        32,
+        32,
+        44
+      ],
+      [
+        32,
+        32,
+        44
+      ]
+    ],
+    "gx": 48,
+    "gy": 0,
+    "l1": 48,
+    "v41_seed": false,
+    "v41_post_edge": false,
+    "reason": "L1<=64且行跨度12<18/20；整条同样弱阶跃没有原seed，补点无法创建整条边"
+  },
+  "inference_limits": "合成反例证明算法盲区；实际相机信噪比、当前bit身份及镜头条件尚未独立测得，不能据此断言全部实机成因",
+  "source_locations": {
+    "sobel": "algorithm/frontend/sobel_pair.sv:threshold_compare / majority_support / unanimous_support",
+    "pack": "algorithm/edge/edge_context_pack_pair.sv:low_threshold / direction",
+    "filter": "algorithm/edge/edge_context_filter_pair.sv:spatial_evidence / out_edge_pair"
+  },
+  "business_code_changed": false,
+  "tests_generated": false,
+  "tests_run": false
+}

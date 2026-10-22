@@ -1,0 +1,59 @@
+{
+  "result": "SCALAR_AND_VECTOR_AGREE",
+  "rounding_sums": 32641,
+  "direction_vectors": 65543,
+  "scalar_smoothing_pixels": 604140,
+  "scalar_filter_pixels": 606192,
+  "weak_step_witness": [
+    {
+      "candidate": "P1A",
+      "mid_row_positions": [
+        31
+      ],
+      "maximum_l1": 36,
+      "low_threshold": 24,
+      "old_edge_count": 0
+    },
+    {
+      "candidate": "P1B",
+      "mid_row_positions": [
+        31
+      ],
+      "maximum_l1": 36,
+      "low_threshold": 32,
+      "old_edge_count": 0
+    },
+    {
+      "candidate": "P2A",
+      "mid_row_positions": [
+        31
+      ],
+      "maximum_l1": 30,
+      "low_threshold": 24,
+      "old_edge_count": 0
+    },
+    {
+      "candidate": "P2B",
+      "mid_row_positions": [],
+      "maximum_l1": 30,
+      "low_threshold": 32,
+      "old_edge_count": 0
+    },
+    {
+      "candidate": "P3A",
+      "mid_row_positions": [
+        31
+      ],
+      "maximum_l1": 26,
+      "low_threshold": 24,
+      "old_edge_count": 0
+    },
+    {
+      "candidate": "P3B",
+      "mid_row_positions": [],
+      "maximum_l1": 26,
+      "low_threshold": 32,
+      "old_edge_count": 0
+    }
+  ]
+}

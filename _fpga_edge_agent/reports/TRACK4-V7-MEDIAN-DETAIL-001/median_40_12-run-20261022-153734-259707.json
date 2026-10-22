@@ -1,0 +1,20 @@
+{
+  "name": "median_40_12-run",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xsim.bat",
+    "median_40_12",
+    "--runall",
+    "--onerror",
+    "quit",
+    "--onfinish",
+    "quit",
+    "--nolog",
+    "--testplusarg",
+    "INPUT=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_median_detail_001_20261022/sim_median_detail/40-12-input.hex",
+    "--testplusarg",
+    "GOLD=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_median_detail_001_20261022/sim_median_detail/40-12-gold.hex"
+  ],
+  "returncode": 0,
+  "seconds": 2.9746530055999756,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\median_40_12-run-20261022-153734-259707.log"
+}

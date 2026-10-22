@@ -1,0 +1,18 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Thu Oct 22 14:34:14 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/video_full/xsim_script.tcl
+# xsim {video_full} -testplusarg INPUT=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_edge_thin_001_rev1_20261021/sim_fullscreen/full-input.hex -testplusarg GOLD=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_edge_thin_001_rev1_20261021/sim_fullscreen/full-gold.hex -autoloadwcfg -runall -onfinish quit -onerror quit
+Time resolution is 1 ps
+run -all
+FIVE_MODES_PASS W=1920 H=1080 frames=5 pixels=10368000 checked_cycles=6187505 latency=6602 statuses=5 fault_test=0 reset_test=0
+$finish called at time : 83422321618 ps : File "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_edge_thin_001_rev1_20261021/tests/tb_five_modes.sv" Line 120
+exit 0
+INFO: xsimkernel Simulation Memory Usage: 580928 KB (Peak: 580928 KB), Simulation CPU Usage: 407202 ms
+INFO: [Common 17-206] Exiting xsim at Thu Oct 22 14:41:14 2026...

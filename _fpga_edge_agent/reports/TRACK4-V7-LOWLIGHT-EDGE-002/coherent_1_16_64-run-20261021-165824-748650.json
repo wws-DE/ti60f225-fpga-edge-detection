@@ -1,0 +1,18 @@
+{
+  "name": "coherent_1_16_64-run",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xsim.bat",
+    "coherent_1_16_64",
+    "--runall",
+    "--onerror",
+    "quit",
+    "--onfinish",
+    "quit",
+    "--nolog",
+    "--testplusarg",
+    "DATA=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_002_20261021/sim_fullscreen/coherent-1-16-64.hex"
+  ],
+  "returncode": 0,
+  "seconds": 5.49640417098999,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-002\\coherent_1_16_64-run-20261021-165824-748650.log"
+}

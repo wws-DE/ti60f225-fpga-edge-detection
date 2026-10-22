@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "method": "Reuse hash-identical debounce/controller local evidence; current boundary and complete video integration separately reverified",
+  "prior_result": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-EDGE-THIN-001-REV1\\control-result.json",
+  "prior_result_sha256": "3b21713b353f5f0fcbdb0fc7c373990c2fd0b25f82c81deab55915d893f4151e",
+  "source_sha256": {
+    "algorithm/control/key_press_debouncer.sv": "88ebaf3ddddff5dcbd6da94903b273d4098be4a0f71f2a283b53b9e4580c6681",
+    "rtl/v7_fullscreen_mode_control.sv": "cafd9f8c63b8bd005a9066061db963dad5ad558e48d00792dd563810c59203d1"
+  }
+}

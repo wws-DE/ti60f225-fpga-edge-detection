@@ -1,0 +1,142 @@
+{
+  "result": "SCALAR_AND_VECTOR_AGREE",
+  "rounding_sums": 32641,
+  "direction_vectors": 65543,
+  "scalar_smoothing_pixels": 604140,
+  "scalar_filter_pixels": 606192,
+  "weak_step_witness": [
+    {
+      "candidate": "P1A",
+      "mid_row_positions": [
+        31
+      ],
+      "maximum_l1": 36,
+      "low_threshold": 24,
+      "old_edge_count": 0
+    },
+    {
+      "candidate": "P1B",
+      "mid_row_positions": [
+        31
+      ],
+      "maximum_l1": 36,
+      "low_threshold": 32,
+      "old_edge_count": 0
+    },
+    {
+      "candidate": "P2A",
+      "mid_row_positions": [
+        31
+      ],
+      "maximum_l1": 30,
+      "low_threshold": 24,
+      "old_edge_count": 0
+    },
+    {
+      "candidate": "P2B",
+      "mid_row_positions": [],
+      "maximum_l1": 30,
+      "low_threshold": 32,
+      "old_edge_count": 0
+    },
+    {
+      "candidate": "P3A",
+      "mid_row_positions": [
+        31
+      ],
+      "maximum_l1": 26,
+      "low_threshold": 24,
+      "old_edge_count": 0
+    },
+    {
+      "candidate": "P3B",
+      "mid_row_positions": [],
+      "maximum_l1": 26,
+      "low_threshold": 32,
+      "old_edge_count": 0
+    }
+  ],
+  "failure_inputs": [
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude8-seed431-P1A.npz",
+      "sha256": "676e54f464c57099b74c15989de336e95e5ffead1ebba320e3aaa7350ed55d4f"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude8-seed431-P1B.npz",
+      "sha256": "1790bd9c5a875f9cc711ec28f077c23a9181d62911463f846055bb3c849191e2"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude8-seed431-P2A.npz",
+      "sha256": "f32a8ada8e62d59eac47b308ec3d48a860578dce0aeddfa6d6ccccf06c6431cf"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude8-seed431-P2B.npz",
+      "sha256": "0c3541f40e794c30282d6b3a198c6327cfe8635eadb522747365c6e90a7873c7"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude8-seed431-P3A.npz",
+      "sha256": "7e04cd0e7dc959c3b0751041fd0674c3d1c1d68429ed15f0069d68197f266713"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude8-seed431-P3B.npz",
+      "sha256": "7e04cd0e7dc959c3b0751041fd0674c3d1c1d68429ed15f0069d68197f266713"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude16-seed431-P1A.npz",
+      "sha256": "19fb5f125963930c107681c1cae6a7e896cf72985d0c707effce4287a97f066e"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude16-seed431-P1B.npz",
+      "sha256": "ce9ed248cb289f6f0a41d79e3bcbc27f378da8f07b3fb65b2133bea30afd0bc7"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude16-seed431-P2A.npz",
+      "sha256": "99914707e78852848fddade7686e631ad9491735a4ac13ab2bc43a60a3d37ac7"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude16-seed431-P2B.npz",
+      "sha256": "7802f56c35ec428c7ffd73f2a68cc9e3d627ff7df585680da74ba5f11132decd"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude16-seed431-P3A.npz",
+      "sha256": "a690077005863aa74bf5a1f6be81e588613265be388ec7e480296cc75bd3490d"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude16-seed431-P3B.npz",
+      "sha256": "5564473690b9929c5fbbca90b7ae66db9d7ba0ed342f039d3173d67e59299f71"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude24-seed431-P1A.npz",
+      "sha256": "58e7e00f7c140ad526bba35d0e98438709248f115936a2f9364add6291f148ed"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude24-seed431-P1B.npz",
+      "sha256": "e7b0624c1a1230044acbc9d57b02542800d798ba7696a8fdc014524e19733f2a"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude24-seed431-P2A.npz",
+      "sha256": "c096bc20d6a8af21476d52b9af2d5b7182fd09b0dfc16306b45674ab0de12674"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude24-seed431-P2B.npz",
+      "sha256": "534340fed918fd2ece1ca3671517429c963a2d2f37c9eba44a7684aa9745dab2"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude24-seed431-P3A.npz",
+      "sha256": "0618d002197ccf3bcd0b361735a33bd05cbe149454719f9bf4fff261337af6be"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-005-REV1\\fixed-noise-amplitude24-seed431-P3B.npz",
+      "sha256": "747d842d40e9b8bc0da0368b11f438090cffbff2fb36a9045932658d3bf7b611"
+    }
+  ],
+  "source_sha256": {
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_005_rev1_20261021\\tests\\verify_v51_reference.py": "02e8cd6e29d04e05792a90a614d564b95213527fd4a03e02b899c4f7961f1b26",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_005_rev1_20261021\\tests\\reference_v51.py": "9cd07cd39e24d870db2095f7b913c8b9486dd16b23bbd6930259d5e42cd72ca6",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_005_rev1_20261021\\tests\\reference_v5.py": "8a4a1f3e9989e9a00c5067aa522856d291b953eb2f0d3a34e48bc5ad9bf57a39",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_005_rev1_20261021\\tests\\verify_v5_reference.py": "507f734580b2e4189c626744a7ac7a56d3411efac3ff7fe1612e5f966dec24dc",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_005_rev1_20261021\\tests\\quality_v51.py": "e2fb0ce7aaf065f95a25eae84a3c9a6369f413317aca523e64be04a0d0b128d9"
+  },
+  "rtl_checked": false,
+  "hardware_checked": false
+}

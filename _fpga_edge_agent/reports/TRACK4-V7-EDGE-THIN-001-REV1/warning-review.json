@@ -1,0 +1,22 @@
+{
+  "result": "REVIEWED_NO_ADDED_WARNINGS",
+  "reviewed_map_added": [],
+  "reviewed_flow_added": [],
+  "unreviewed": [],
+  "source_normalizations": [],
+  "timestamp": "2026-10-22T14:36:26.856163+08:00",
+  "baseline": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021",
+  "current_log_sha256": {
+    "ti60f225_oob.warn.log": "7c49de245e66bdba0e6092bc8ceb4aa69ba14491dfcb713797a18c5ad87e8da3",
+    "ti60f225_oob.place.out": "d1c7c8f4b8862d000b9408bb0842c48d7e6f197d32ca0a62bfa7140e9788d947",
+    "ti60f225_oob.route.out": "4d3f4d63b77b2eb4d1cd03281786a8ea8057faf3c78188dbb3a41c340165c69b"
+  },
+  "baseline_log_sha256": {
+    "ti60f225_oob.warn.log": "b25b779245447ae2f881490f8e60f048ec84d241bc8aa12a2860ed23eb576be0",
+    "ti60f225_oob.place.out": "39fc29876e47b1d6eea282bf45132f3654a992b76b36f88329b5fab051807560",
+    "ti60f225_oob.route.out": "f05e847a1a3ab5fe448030bd861e04030be4b0bbd273fabe161334b7811965a3"
+  },
+  "map_warning_delta_sha256": "1148bc85baba9b79943964d2721258f7b7541979aabff83546637a5740243d22",
+  "flow_warning_delta_sha256": "39561fc19f1f4271d73b192ac411a7214d3a29cc6b7d83e4446fb489e374429c",
+  "assessment": "No added or removed source-normalized map warnings. All 1287 placement/routing warning instances match v4.1 after source/LUT/pin-graph resolution of generated cell IDs and path normalization. This retains existing warnings; it does not establish every inherited CDC or timing constraint is complete. Physical key input synchronizer note remains explicitly recorded in checks.json."
+}

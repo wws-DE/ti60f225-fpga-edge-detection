@@ -1,0 +1,20 @@
+{
+  "name": "sobel_threshold-run",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xsim.bat",
+    "sobel_threshold",
+    "--runall",
+    "--onerror",
+    "quit",
+    "--onfinish",
+    "quit",
+    "--nolog",
+    "--testplusarg",
+    "DATA=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_001_20261021/sim_fullscreen/sobel-threshold-256.hex",
+    "--testplusarg",
+    "THRESHOLD=256"
+  ],
+  "returncode": 0,
+  "seconds": 2.4135935306549072,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-001\\sobel_threshold-run-20261021-161330-030271.log"
+}

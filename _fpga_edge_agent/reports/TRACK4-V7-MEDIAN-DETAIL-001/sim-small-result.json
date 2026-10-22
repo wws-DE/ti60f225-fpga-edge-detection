@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "W": 40,
+  "H": 12,
+  "frames": 5,
+  "pixels": 2400,
+  "fault_test": false,
+  "reset_test": false,
+  "vector_sha256": {
+    "small-input.hex": "37d2df38a1a2707da09f1ba2453c1ee32557ecbed95da28dc619f429af4f1d0e",
+    "small-gold.hex": "a6eabdb26dafc9d3407ab064dc93bcd42771c9fac7f8cd984bcdb6302ebfb6a0"
+  },
+  "completion": "FIVE_MODES_PASS W=40 H=12 frames=5 pixels=2400 checked_cycles=28505 latency=602 statuses=5 fault_test=0 reset_test=0"
+}

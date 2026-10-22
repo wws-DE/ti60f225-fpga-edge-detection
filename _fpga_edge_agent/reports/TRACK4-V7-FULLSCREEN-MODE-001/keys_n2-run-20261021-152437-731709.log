@@ -1,0 +1,17 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Wed Oct 21 15:24:38 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/keys_n2/xsim_script.tcl
+# xsim {keys_n2} -autoloadwcfg -runall -onfinish quit -onerror quit
+Time resolution is 1 ps
+run -all
+FULLSCREEN_CONTROL_PASS N=2 production=0
+$finish called at time : 5920186 ps : File "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_fullscreen_mode_001_20261021/tests/tb_fullscreen_control.sv" Line 51
+exit 0
+INFO: [Common 17-206] Exiting xsim at Wed Oct 21 15:24:42 2026...

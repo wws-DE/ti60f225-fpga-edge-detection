@@ -1,0 +1,29 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-005-REV1",
+  "design_version": "优化v5.1",
+  "time": "2026-10-21T23:05:34.005708+08:00",
+  "result": "DESIGN_REVISION_REQUIRED",
+  "eligible_candidates": [],
+  "fixed_candidate_count": 6,
+  "reason": "No candidate satisfies inherited noise and weak-detail gates simultaneously",
+  "quality_report_sha256": "677efa20eabbc66f43b611584517714b1bc7fc33e1745dc437af9a775830236f",
+  "reference_verification_sha256": "d9ffeaf92f6ae656f2b847c020d3360ff5e9bd56567f082fe38a4b9890140345",
+  "baseline_input_count": 159,
+  "all_business_inputs_unchanged": true,
+  "v41_desktop_bit_unchanged": true,
+  "new_functional_files": {
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_005_rev1_20261021\\tests\\reference_v51.py": "9cd07cd39e24d870db2095f7b913c8b9486dd16b23bbd6930259d5e42cd72ca6",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_005_rev1_20261021\\tests\\quality_v51.py": "e2fb0ce7aaf065f95a25eae84a3c9a6369f413317aca523e64be04a0d0b128d9",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_005_rev1_20261021\\tests\\verify_v51_reference.py": "02e8cd6e29d04e05792a90a614d564b95213527fd4a03e02b899c4f7961f1b26",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_005_rev1_20261021\\tests\\reference_v5.py": "8a4a1f3e9989e9a00c5067aa522856d291b953eb2f0d3a34e48bc5ad9bf57a39",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_005_rev1_20261021\\tests\\verify_v5_reference.py": "507f734580b2e4189c626744a7ac7a56d3411efac3ff7fe1612e5f966dec24dc"
+  },
+  "rtl_generated": false,
+  "rtl_simulation_run": false,
+  "efinity_build_run": false,
+  "bit_generated": false,
+  "hardware_operation": false,
+  "formal_state_updated": false,
+  "execution_scope": "Mathematical precheck and independent scalar validation; early noise failures stop unexecuted negative-diagonal/short-stroke additions, RTL, video and build checks",
+  "next_evidence_needed": "Current ordinary-light median and Sobel views of the same stationary scene; original image frames if already available. Screen photos are qualitative evidence, not exact sensor grayscale."
+}

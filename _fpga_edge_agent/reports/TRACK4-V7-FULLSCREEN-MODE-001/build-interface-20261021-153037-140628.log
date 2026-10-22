@@ -1,0 +1,9 @@
+WARNING: cannot find correct IV value
+Running: efx_run_pt_unified.py ti60f225_oob Titanium Ti60F225 --output_dir outflow --timing_model I3 --project_xml ti60f225_oob.xml --work_dir work_compile
+   ERROR: Design file has error : ti60f225_oob.peri.xml
+
+   ERROR: Fail to load design from ti60f225_oob.peri.xml
+
+   ERROR encountered running Interface Designer
+
+   interface :	FAIL 

@@ -1,0 +1,31 @@
+{
+  "scope": "Precheck root reports; functional source and failure inputs separately bound by their records",
+  "sha256": {
+    "A-correlated-amp16-seed433-axis0.npz": "4ea2f43a68a830b099e44714472a1ad901ef78d3cd22d38079132c9412e995de",
+    "A-correlated-amp24-seed431-axis0.npz": "b3a7b5089d904c6ceff3f2d8a5e5ec56a79f0f61f06e2d12440a0d0edfd04eac",
+    "A-correlated-amp24-seed432-axis1.npz": "da1af051b482990cc840476e099d0aac5687dc2c18fefd68a2e39ae6e681feba",
+    "A-correlated-amp24-seed433-axis0.npz": "eea07c5314c637e822953f2744d800bfb78c8a2e0d7a89a3356ed97388add90d",
+    "approved-design-median-detail-v1.md": "6dc29c14b6a2ab364b9eee37107be94a03602f5818de4f8fb7da9862300203f5",
+    "authorization.json": "14ec44b9e288e6363ee318613fce894ec9e647f2cc5ffba27d87695259261419",
+    "B-correlated-amp16-seed431-axis0.npz": "18ec2f6fdd14b87acfd4ff4c7f8eb0a204be67602fc7cd28d00a504844396579",
+    "B-correlated-amp24-seed431-axis0.npz": "db4a203ec0ca786d9927251b1d1a4909a9661f3901bf3a4a9158285c491e8dfb",
+    "B-correlated-amp24-seed431-axis1.npz": "2f2f84576cd7d84dcc19102f5d01e677eb94aaf4cf3f1f014919fca98cbce6ce",
+    "B-correlated-amp24-seed432-axis0.npz": "8f50268ba4cde82d7e1b6ddaf56fc93cd37687425e621e43adfc60cf5f465334",
+    "B-correlated-amp24-seed432-axis1.npz": "b207f7f830be29f5367243d7f8dc73b1a9129a48de17fa461640939b93fb092e",
+    "B-correlated-amp24-seed433-axis0.npz": "bd245dbaca30549ec39200b07cd0a6ec39fe573fc4a954adb4ebe0089139f128",
+    "B-correlated-amp24-seed433-axis1.npz": "969bf5a6e7aabc393911da236388e6799d4682addaadba5defc1916ef6101d00",
+    "B-noise-amp16-seed433.npz": "a3239d391d62110193e496f9b9eaf3d6fb73ca8318069e55d6e71f6e4203ca2f",
+    "candidate-quality.json": "eb675ef020c5d8d2818df00adeb94bcaa36344cbb5ee2ca9aa851608fafe08ef",
+    "copy-review.json": "56ec3f177ad6c827e70b2e1f128c6b7122b352a6b12c425575a3430187f426ed",
+    "design-review.json": "27b2129499daadb5928751094324dacb3fdc585c867ed50d01ef6774d0914e49",
+    "discovery.json": "e5399d492b6aa3fd1c4cb1f2aa1671edabd75d122cf8e34ce98a9bdce2ea45b9",
+    "initial-inputs.json": "0208728fa2aca7843843bf8b2c420b9e8f4c3c955d0dcf60b3de0eaa025e83a4",
+    "precheck-summary.json": "9cc2ff0df0101e46465964769ef0c112afb3d48da909a2aa11c20dcce0ab75f3",
+    "quality-confirm-run.json": "d506171eea2200a30a710750913032dd5b568933bda0858dac8005c531122813",
+    "quality-confirm-run.log": "cc7eb3e80995a9bf32cfac9da36252149f4ebf59f4a75899f384a54ebbc59238",
+    "reference-run.json": "a0944a22fde1d5eeb80a37aefc1344d3ce2d1ca3e36e92a54e3a8a8b862f7b4d",
+    "reference-run.log": "88428aeba3015f3fb7de9245910e2a7e9855ef9154d994914bfabeceb93b0f08",
+    "reference-verification.json": "296139c62aafe09a725b7dabf02c3c9db07e63e434514b804d37ade3d4c4bc29",
+    "\u8f6f\u4ef6\u9884\u68c0\u7ed3\u679c.md": "dc2ac75314a2940dfea7b5326bb7e08dcfb16602c2e9afe866b6985e08e74d75"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "method": "REUSE_UNCHANGED_SOURCE_EVIDENCE",
+  "prior_result": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-FULLSCREEN-MODE-001\\control-result.json",
+  "prior_result_sha256": "c343975864d94c80e5b764db53cfe964067ca8e2d3cb4e0e078f78b3de8d3e4b",
+  "source_sha256": {
+    "rtl/v7_fullscreen_mode_control.sv": "cafd9f8c63b8bd005a9066061db963dad5ad558e48d00792dd563810c59203d1",
+    "algorithm/control/key_press_debouncer.sv": "88ebaf3ddddff5dcbd6da94903b273d4098be4a0f71f2a283b53b9e4580c6681"
+  }
+}

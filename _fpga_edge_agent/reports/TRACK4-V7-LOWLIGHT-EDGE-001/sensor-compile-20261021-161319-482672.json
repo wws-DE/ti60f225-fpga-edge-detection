@@ -1,0 +1,13 @@
+{
+  "name": "sensor-compile",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xvlog.bat",
+    "--sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_001_20261021\\rtl\\cam_i2c_ctrl\\i2c\\i2c_master_reg_set.v",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_001_20261021\\rtl\\cam_i2c_ctrl\\i2c\\i2c_master_reg_rom.v",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_001_20261021\\tests\\tb_sensor_gain.sv"
+  ],
+  "returncode": 0,
+  "seconds": 0.7810144424438477,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-001\\sensor-compile-20261021-161319-482672.log"
+}

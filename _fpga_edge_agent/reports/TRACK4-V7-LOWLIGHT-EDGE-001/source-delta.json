@@ -1,0 +1,9 @@
+{
+  "baseline": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021",
+  "copied_file_count": 156,
+  "changed": [
+    "rtl/ti60f225_oob_top.v",
+    "rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v"
+  ],
+  "unchanged_count": 154
+}

@@ -1,0 +1,13 @@
+{
+  "name": "weak-compile",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xvlog.bat",
+    "--sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_003_20261021\\algorithm\\frontend\\sobel_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_003_20261021\\sim_fullscreen\\sobel_pair_baseline.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_003_20261021\\tests\\tb_coherent_sobel.sv"
+  ],
+  "returncode": 0,
+  "seconds": 1.0550034046173096,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-003\\weak-compile-20261021-174224-783860.log"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "keys_production-elaborate",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "keys_production",
+    "--generic_top",
+    "N=1485000",
+    "--generic_top",
+    "PRODUCTION=1",
+    "work.tb_fullscreen_control"
+  ],
+  "returncode": 0,
+  "seconds": 0.8273847103118896,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-FULLSCREEN-MODE-001\\keys_production-elaborate-20261021-152449-813008.log"
+}

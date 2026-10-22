@@ -1,0 +1,12 @@
+{
+  "result": "PASS_REUSED_UNCHANGED",
+  "prior_result": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-004\\context-core-result.json",
+  "prior_result_sha256": "29acdf48f4b2afc30a47c4c8fc586c4425cfae26a062b9a0718f7a2d321ead33",
+  "shared_source_sha256": {
+    "algorithm/edge/edge_context_pack_pair.sv": "bf704887112a1e1044f46554c75c46ed6bd21bf60fd8b9d67cc420efae575fe0",
+    "algorithm/edge/edge_context_window_pair.sv": "5d8d872f338c2fe3b054ff541e161c761cc5881fbd0ffb34461de3e93f0ac8c4",
+    "algorithm/edge/edge_context_filter_pair.sv": "fceab374f3248e4526ddef2238107612f60eea481e33729086fd6e91c4c49fb2",
+    "tests/reference_v4.py": "ffa90e3c79dd35d348b6e7922d5ccd15a247d5a23632c76a62eea9516bf4ba82"
+  },
+  "scope": "Only unchanged pack/window/filter numerical/protocol tests; new full frontend/video tests still required"
+}

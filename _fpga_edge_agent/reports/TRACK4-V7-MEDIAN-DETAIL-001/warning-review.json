@@ -1,0 +1,141 @@
+{
+  "result": "REVIEWED_ALL_ADDED_WARNINGS",
+  "reviewed_map_added": [
+    "[EFX-0657 WARNING] Mapping into logic memory block 'pair_min_s1' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'pair_max_s1' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'near_s1' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'positive_s1' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'negative_s1' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'qualified_s2' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'minimum_s2' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'maximum_s2' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'keep_s3' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'keep_s4' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'keep_tail' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/detail_median.median/legacy/candidates_s4' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/detail_median.median/legacy/row_order' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/detail_median.median/legacy/row_second_s2' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/detail_median.median/legacy/row_first_s1' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer."
+  ],
+  "reviewed_flow_added": [],
+  "unreviewed": [],
+  "source_normalizations": [],
+  "timestamp": "2026-10-22T15:43:10.703960+08:00",
+  "map_message_reviews": [
+    {
+      "message": "[EFX-0657 WARNING] Mapping into logic memory block 'pair_min_s1' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+      "classification": "EXPECTED_SMALL_REGISTER_ARRAY",
+      "assessment": "Fixed-size pipeline metadata/compare registers with constant indices; distributed flip-flops are intended, no additional RAM ports/storage or timing stages",
+      "source": "algorithm/frontend/median9_detail_pair.sv",
+      "source_sha256": "628d1cf6b37e66f81317bedd16b5464782a6aee2203833aed438a980c18d04c8"
+    },
+    {
+      "message": "[EFX-0657 WARNING] Mapping into logic memory block 'pair_max_s1' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+      "classification": "EXPECTED_SMALL_REGISTER_ARRAY",
+      "assessment": "Fixed-size pipeline metadata/compare registers with constant indices; distributed flip-flops are intended, no additional RAM ports/storage or timing stages",
+      "source": "algorithm/frontend/median9_detail_pair.sv",
+      "source_sha256": "628d1cf6b37e66f81317bedd16b5464782a6aee2203833aed438a980c18d04c8"
+    },
+    {
+      "message": "[EFX-0657 WARNING] Mapping into logic memory block 'near_s1' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+      "classification": "EXPECTED_SMALL_REGISTER_ARRAY",
+      "assessment": "Fixed-size pipeline metadata/compare registers with constant indices; distributed flip-flops are intended, no additional RAM ports/storage or timing stages",
+      "source": "algorithm/frontend/median9_detail_pair.sv",
+      "source_sha256": "628d1cf6b37e66f81317bedd16b5464782a6aee2203833aed438a980c18d04c8"
+    },
+    {
+      "message": "[EFX-0657 WARNING] Mapping into logic memory block 'positive_s1' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+      "classification": "EXPECTED_SMALL_REGISTER_ARRAY",
+      "assessment": "Fixed-size pipeline metadata/compare registers with constant indices; distributed flip-flops are intended, no additional RAM ports/storage or timing stages",
+      "source": "algorithm/frontend/median9_detail_pair.sv",
+      "source_sha256": "628d1cf6b37e66f81317bedd16b5464782a6aee2203833aed438a980c18d04c8"
+    },
+    {
+      "message": "[EFX-0657 WARNING] Mapping into logic memory block 'negative_s1' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+      "classification": "EXPECTED_SMALL_REGISTER_ARRAY",
+      "assessment": "Fixed-size pipeline metadata/compare registers with constant indices; distributed flip-flops are intended, no additional RAM ports/storage or timing stages",
+      "source": "algorithm/frontend/median9_detail_pair.sv",
+      "source_sha256": "628d1cf6b37e66f81317bedd16b5464782a6aee2203833aed438a980c18d04c8"
+    },
+    {
+      "message": "[EFX-0657 WARNING] Mapping into logic memory block 'qualified_s2' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+      "classification": "EXPECTED_SMALL_REGISTER_ARRAY",
+      "assessment": "Fixed-size pipeline metadata/compare registers with constant indices; distributed flip-flops are intended, no additional RAM ports/storage or timing stages",
+      "source": "algorithm/frontend/median9_detail_pair.sv",
+      "source_sha256": "628d1cf6b37e66f81317bedd16b5464782a6aee2203833aed438a980c18d04c8"
+    },
+    {
+      "message": "[EFX-0657 WARNING] Mapping into logic memory block 'minimum_s2' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+      "classification": "EXPECTED_SMALL_REGISTER_ARRAY",
+      "assessment": "Fixed-size pipeline metadata/compare registers with constant indices; distributed flip-flops are intended, no additional RAM ports/storage or timing stages",
+      "source": "algorithm/frontend/median9_detail_pair.sv",
+      "source_sha256": "628d1cf6b37e66f81317bedd16b5464782a6aee2203833aed438a980c18d04c8"
+    },
+    {
+      "message": "[EFX-0657 WARNING] Mapping into logic memory block 'maximum_s2' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+      "classification": "EXPECTED_SMALL_REGISTER_ARRAY",
+      "assessment": "Fixed-size pipeline metadata/compare registers with constant indices; distributed flip-flops are intended, no additional RAM ports/storage or timing stages",
+      "source": "algorithm/frontend/median9_detail_pair.sv",
+      "source_sha256": "628d1cf6b37e66f81317bedd16b5464782a6aee2203833aed438a980c18d04c8"
+    },
+    {
+      "message": "[EFX-0657 WARNING] Mapping into logic memory block 'keep_s3' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+      "classification": "EXPECTED_SMALL_REGISTER_ARRAY",
+      "assessment": "Fixed-size pipeline metadata/compare registers with constant indices; distributed flip-flops are intended, no additional RAM ports/storage or timing stages",
+      "source": "algorithm/frontend/median9_detail_pair.sv",
+      "source_sha256": "628d1cf6b37e66f81317bedd16b5464782a6aee2203833aed438a980c18d04c8"
+    },
+    {
+      "message": "[EFX-0657 WARNING] Mapping into logic memory block 'keep_s4' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+      "classification": "EXPECTED_SMALL_REGISTER_ARRAY",
+      "assessment": "Fixed-size pipeline metadata/compare registers with constant indices; distributed flip-flops are intended, no additional RAM ports/storage or timing stages",
+      "source": "algorithm/frontend/median9_detail_pair.sv",
+      "source_sha256": "628d1cf6b37e66f81317bedd16b5464782a6aee2203833aed438a980c18d04c8"
+    },
+    {
+      "message": "[EFX-0657 WARNING] Mapping into logic memory block 'keep_tail' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+      "classification": "EXPECTED_SMALL_REGISTER_ARRAY",
+      "assessment": "Fixed-size pipeline metadata/compare registers with constant indices; distributed flip-flops are intended, no additional RAM ports/storage or timing stages",
+      "source": "algorithm/frontend/median9_detail_pair.sv",
+      "source_sha256": "628d1cf6b37e66f81317bedd16b5464782a6aee2203833aed438a980c18d04c8"
+    },
+    {
+      "message": "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/detail_median.median/legacy/candidates_s4' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+      "classification": "RELOCATED_UNCHANGED_MEDIAN_SORTER",
+      "old_message": "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/median/candidates_s4' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+      "source_sha256": "c9fb7d69f2bf286ea8aa707eca2ec9d34a364658e9d100e338e92de791adde8f"
+    },
+    {
+      "message": "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/detail_median.median/legacy/row_order' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+      "classification": "RELOCATED_UNCHANGED_MEDIAN_SORTER",
+      "old_message": "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/median/row_order' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+      "source_sha256": "c9fb7d69f2bf286ea8aa707eca2ec9d34a364658e9d100e338e92de791adde8f"
+    },
+    {
+      "message": "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/detail_median.median/legacy/row_second_s2' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+      "classification": "RELOCATED_UNCHANGED_MEDIAN_SORTER",
+      "old_message": "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/median/row_second_s2' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+      "source_sha256": "c9fb7d69f2bf286ea8aa707eca2ec9d34a364658e9d100e338e92de791adde8f"
+    },
+    {
+      "message": "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/detail_median.median/legacy/row_first_s1' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+      "classification": "RELOCATED_UNCHANGED_MEDIAN_SORTER",
+      "old_message": "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/median/row_first_s1' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+      "source_sha256": "c9fb7d69f2bf286ea8aa707eca2ec9d34a364658e9d100e338e92de791adde8f"
+    }
+  ],
+  "baseline": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021",
+  "current_log_sha256": {
+    "ti60f225_oob.warn.log": "d095af2b2b483e2bac266bbc9771c05c32ba7410552539468c305b7ec1193e5f",
+    "ti60f225_oob.place.out": "004d2056335858b0d113ba3d942c111b057679bdfb1090a315ade464acbe1730",
+    "ti60f225_oob.route.out": "e7c95e87c049fe555d7441c0fce9d5f5f943f3c0eb263e378a1c167047eedebd"
+  },
+  "baseline_log_sha256": {
+    "ti60f225_oob.warn.log": "7c49de245e66bdba0e6092bc8ceb4aa69ba14491dfcb713797a18c5ad87e8da3",
+    "ti60f225_oob.place.out": "d1c7c8f4b8862d000b9408bb0842c48d7e6f197d32ca0a62bfa7140e9788d947",
+    "ti60f225_oob.route.out": "4d3f4d63b77b2eb4d1cd03281786a8ea8057faf3c78188dbb3a41c340165c69b"
+  },
+  "scope_current_sha256": "6ba44aecdc836ce157d1495dfceee4803def71230ee9b734b32966b993528420",
+  "scope_baseline_sha256": "1415024103f2e53316c56b92706ea0044d411ff03b3abec30d757e7490826e70",
+  "assessment": "11 expected small register arrays plus4 hierarchy relocations of unchanged sorter. PNR warning multiset1287 unchanged, resolving generated loop cells by source/LUT/pin graph. warn.log appends multiple synthesis runs; current complete section selected and timestamp-bound to latest map execution, whole log retained. Existing CDC/constraint warnings remain, not globally resolved."
+}

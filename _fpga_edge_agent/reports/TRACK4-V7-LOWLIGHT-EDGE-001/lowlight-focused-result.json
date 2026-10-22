@@ -1,0 +1,31 @@
+{
+  "result": "PASS",
+  "sensor_completion": "SENSOR_GAIN_PASS complete_sequences=2 restart_after=17 checked_writes=345 last_index=163 gain=81/2a mock_completion_only=1",
+  "numeric": [
+    {
+      "threshold": 96,
+      "pairs": 13,
+      "vector_sha256": "14a4e00b9da7bb15b5a7a8d0f58e8c24b113674f6f910fc0a0d7c48ccc35eb94",
+      "completion": "SOBEL_THRESHOLD_PASS threshold=96 pairs=13 lanes=26"
+    },
+    {
+      "threshold": 256,
+      "pairs": 13,
+      "vector_sha256": "3968762c46a2dd3e03a0d5eef29a4471f0481a263ff24b895e89419322530c99",
+      "completion": "SOBEL_THRESHOLD_PASS threshold=256 pairs=13 lanes=26"
+    }
+  ],
+  "changed": [
+    "rtl/ti60f225_oob_top.v",
+    "rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v"
+  ],
+  "hardware_verified": false,
+  "sources": {
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_001_20261021\\rtl\\cam_i2c_ctrl\\i2c\\i2c_master_reg_set.v": "8bb2f5e862a606097f312bb90c2a501fc5f29e8a21737ffcd0a4ab62d90101ea",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_001_20261021\\rtl\\cam_i2c_ctrl\\i2c\\i2c_master_reg_rom.v": "9a5a6fab81c5aac94208a171742cb8ee9f7589cde1fe77cda8856cfc0bdf7455",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_001_20261021\\tests\\tb_sensor_gain.sv": "42ef8eabf81005524dd14152acf6b0b81ca1fd8feb2893b0c98c0c3e6a519904",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_001_20261021\\algorithm\\frontend\\sobel_pair.sv": "1bf1247ef68b5573dfa3e8c64191d090507b1c0ed10589ef24157e9366a740dd",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_001_20261021\\tests\\tb_sobel_threshold.sv": "18b81392b71915e54c74dacedab7f2de67dd11795a597be73f001667767929c9",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_001_20261021\\tests\\run_lowlight_checks.py": "ca8a297087d2a903f8b45f9dc9b0b47bc49193cbd0eeaca4155711087ad996be"
+  }
+}

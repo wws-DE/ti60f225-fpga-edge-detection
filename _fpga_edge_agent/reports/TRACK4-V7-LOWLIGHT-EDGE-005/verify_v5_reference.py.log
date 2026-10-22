@@ -1,0 +1,24 @@
+{
+  "result": "SCALAR_AND_VECTOR_AGREE",
+  "direction_vectors": 65543,
+  "scalar_filter_pixels": 214176,
+  "unchanged_raw_gradient_pixels": 294912,
+  "weak_step_witness": [
+    {
+      "candidate": "A",
+      "old_edge_count": 0,
+      "new_edge_count": 46,
+      "mid_row_positions": [
+        31
+      ]
+    },
+    {
+      "candidate": "B",
+      "old_edge_count": 0,
+      "new_edge_count": 46,
+      "mid_row_positions": [
+        31
+      ]
+    }
+  ]
+}

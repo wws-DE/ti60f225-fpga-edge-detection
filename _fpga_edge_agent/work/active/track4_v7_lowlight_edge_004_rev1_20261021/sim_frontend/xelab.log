@@ -1,0 +1,22 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --debug typical --timescale 1ns/1ps --snapshot frontend_0_1 --generic_top CONTEXT=0 --generic_top DIAG=18 --generic_top COMPARE=1 --generic_top OWNER=1 work.tb_frontend_context 
+Multi-threading is on. Using 20 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.rgb_to_y_pair
+Compiling module work.EFX_RAM10(READ_WIDTH=8,WRITE_WID...
+Compiling module work.line_store_pair(W=8)
+Compiling module work.window3x3_pair(W=8,H=5)
+Compiling module work.median9_pair
+Compiling module work.sobel_pair(COHERENCE_ENABLE=1,CO...
+Compiling module work.frontend_frame_pair(W=8,H=5,SOBE...
+Compiling module work.sobel_pair_baseline(COHERENCE_EN...
+Compiling module work.frontend_frame_pair_baseline(W=8...
+Compiling module work.tb_frontend_context(CONTEXT=0,CO...
+Built simulation snapshot frontend_0_1

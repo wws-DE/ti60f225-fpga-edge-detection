@@ -1,0 +1,40 @@
+{
+  "reviewed_map_added": [
+    "[EFX-0657 WARNING] Mapping into logic memory block 'weak_x_s2' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'weak_y_s2' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'weak_x_s3' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'weak_y_s3' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)"
+  ],
+  "reviewed_flow_added": [],
+  "unreviewed": [],
+  "source_normalizations": [],
+  "assessment": "Four EFX-0657 notes are approved small arrays with sixteen explicit EFX_FF pipeline registers. RAM169/DSP0 unchanged. All1287 PNR messages inherited after source/LUT/pin-graph comparison; historical CDC/KEY warnings are not resolved by this change.",
+  "flip_flop_proof": {
+    "weak_x_s2": [
+      "algorithm_bridge/algorithms/sobel/i1414/weak_x_s2[0][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1414/weak_x_s2[0][1]~FF",
+      "algorithm_bridge/algorithms/sobel/i1414/weak_x_s2[1][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1414/weak_x_s2[1][1]~FF"
+    ],
+    "weak_y_s2": [
+      "algorithm_bridge/algorithms/sobel/i1415/weak_y_s2[0][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1415/weak_y_s2[0][1]~FF",
+      "algorithm_bridge/algorithms/sobel/i1415/weak_y_s2[1][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1415/weak_y_s2[1][1]~FF"
+    ],
+    "weak_x_s3": [
+      "algorithm_bridge/algorithms/sobel/i1416/weak_x_s3[0][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1416/weak_x_s3[0][1]~FF",
+      "algorithm_bridge/algorithms/sobel/i1416/weak_x_s3[1][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1416/weak_x_s3[1][1]~FF"
+    ],
+    "weak_y_s3": [
+      "algorithm_bridge/algorithms/sobel/i1417/weak_y_s3[0][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1417/weak_y_s3[0][1]~FF",
+      "algorithm_bridge/algorithms/sobel/i1417/weak_y_s3[1][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1417/weak_y_s3[1][1]~FF"
+    ]
+  },
+  "map_netlist_sha256": "2ccacbedebeee5af03a3ca394c639166a778c53a8e6db8a6d1545bf5ec9a0562",
+  "hardware_passed": false
+}

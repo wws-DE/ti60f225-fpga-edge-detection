@@ -1,0 +1,24 @@
+{
+  "name": "coherent_1_20_64-elaborate",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "coherent_1_20_64",
+    "--generic_top",
+    "N=201760",
+    "--generic_top",
+    "ENABLE=1",
+    "--generic_top",
+    "D=20",
+    "--generic_top",
+    "T=64",
+    "work.tb_coherent_sobel"
+  ],
+  "returncode": 0,
+  "seconds": 1.7469940185546875,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-002\\coherent_1_20_64-elaborate-20261021-165833-399925.log"
+}

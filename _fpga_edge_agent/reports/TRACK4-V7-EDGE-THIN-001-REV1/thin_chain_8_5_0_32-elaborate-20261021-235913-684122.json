@@ -1,0 +1,24 @@
+{
+  "name": "thin_chain_8_5_0_32-elaborate",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "thin_chain_8_5_0_32",
+    "--generic_top",
+    "W=8",
+    "--generic_top",
+    "H=5",
+    "--generic_top",
+    "MODE=0",
+    "--generic_top",
+    "T=32",
+    "work.tb_thin_chain"
+  ],
+  "returncode": 0,
+  "seconds": 2.4135923385620117,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-EDGE-THIN-001-REV1\\thin_chain_8_5_0_32-elaborate-20261021-235913-684122.log"
+}

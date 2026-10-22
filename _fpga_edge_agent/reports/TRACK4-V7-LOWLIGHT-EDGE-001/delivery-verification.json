@@ -1,0 +1,16 @@
+{
+  "result": "DELIVERY_VERIFIED",
+  "timestamp": "2026-10-21T16:22:31.540395+08:00",
+  "state": "WAITING_HUMAN_PROGRAM",
+  "bit_sha256": "32d81151f7c7e6bda332daa4a08103adb255965a667247d084c97dca53520a6f",
+  "bytes": 2428668,
+  "baseline_sources_preserved": true,
+  "all_156_final_build_input_hashes_verified": true,
+  "approved_design_snapshot_verified": true,
+  "rollback_bit_verified": true,
+  "guide_sha256": "8bb327f75914c1e3791f0f7a614d178e0fc086c38b46d3fe216a3bc7093b2e6f",
+  "current_plan_sha256": "0b3518cdf687f46786ca875e8b4838f02f3a2f37887c21d8842b382409d66bda",
+  "formal_database_write": false,
+  "hardware_operation": false,
+  "hardware_effect_verified": false
+}

@@ -1,0 +1,16 @@
+{
+  "name": "mode_boundary-run",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xsim.bat",
+    "mode_boundary",
+    "--runall",
+    "--onerror",
+    "quit",
+    "--onfinish",
+    "quit",
+    "--nolog"
+  ],
+  "returncode": 0,
+  "seconds": 2.5597188472747803,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-004-REV1\\mode_boundary-run-20261021-214748-029035.log"
+}

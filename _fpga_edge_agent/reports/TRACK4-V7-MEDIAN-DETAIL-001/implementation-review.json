@@ -1,0 +1,18 @@
+{
+  "new_modules": [
+    "algorithm/frontend/median9_detail_pair.sv"
+  ],
+  "changed_existing": [
+    "algorithm/frontend/frontend_frame_pair.sv",
+    "rtl/v7_algorithm_video_pair.sv",
+    "ti60f225_oob.xml"
+  ],
+  "inventory_files": 162,
+  "unchanged_existing": 158,
+  "latency": "nine common advances; whole-video6602 pending simulation",
+  "parameters": "selected A D16/S4",
+  "quality": "ACCEPTED_WITH_KNOWN_NOISE_TRADEOFF",
+  "old_sorter_unchanged": true,
+  "formal_state_updated": false,
+  "hardware_operation": false
+}

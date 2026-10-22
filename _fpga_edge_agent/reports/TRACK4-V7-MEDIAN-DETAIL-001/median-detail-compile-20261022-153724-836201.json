@@ -1,0 +1,13 @@
+{
+  "name": "median-detail-compile",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xvlog.bat",
+    "--sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\median9_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\median9_detail_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\tb_median_detail.sv"
+  ],
+  "returncode": 0,
+  "seconds": 0.6245706081390381,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\median-detail-compile-20261022-153724-836201.log"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "sensor_gain-run",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xsim.bat",
+    "sensor_gain",
+    "--runall",
+    "--onerror",
+    "quit",
+    "--onfinish",
+    "quit",
+    "--nolog",
+    "--testplusarg",
+    "GOLD=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_001_20261021/tests/sensor-init-golden.hex"
+  ],
+  "returncode": 0,
+  "seconds": 3.418278455734253,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-001\\sensor_gain-run-20261021-161322-514862.log"
+}

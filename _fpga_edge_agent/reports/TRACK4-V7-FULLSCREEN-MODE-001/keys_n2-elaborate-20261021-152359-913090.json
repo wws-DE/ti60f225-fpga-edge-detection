@@ -1,0 +1,21 @@
+{
+  "name": "keys_n2-elaborate",
+  "argv": [
+    "C:\\WINDOWS\\system32\\cmd.exe",
+    "/d",
+    "/c",
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "keys_n2",
+    "--generic_top",
+    "N=2",
+    "work.tb_fullscreen_control"
+  ],
+  "returncode": 1,
+  "seconds": 0.5134079456329346,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-FULLSCREEN-MODE-001\\keys_n2-elaborate-20261021-152359-913090.log"
+}

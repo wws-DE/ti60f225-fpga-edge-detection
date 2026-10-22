@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_001_20261021/rtl/cam_i2c_ctrl/i2c/i2c_master_reg_set.v" into library work
+INFO: [VRFC 10-311] analyzing module i2c_master_reg_set
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_001_20261021/rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v" into library work
+INFO: [VRFC 10-311] analyzing module i2c_master_reg_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_001_20261021/tests/tb_sensor_gain.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_sensor_gain

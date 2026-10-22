@@ -1,0 +1,26 @@
+{
+  "name": "frontend-detail-compile",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xvlog.bat",
+    "--sv",
+    "C:\\Efinity\\2026.1\\sim_models\\verilog\\efx_ram10.v",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\frontend_frame_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\line_store_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\median9_detail_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\median9_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\rgb_to_y_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\sobel_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\window3x3_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\edge\\edge_context_filter_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\edge\\edge_context_pack_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\edge\\edge_context_window_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\edge\\edge_thin_filter_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\edge\\edge_thin_pack_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\edge\\edge_thin_window_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\sim_frontend_detail\\frontend_frame_pair_baseline.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\tb_frontend_detail.sv"
+  ],
+  "returncode": 0,
+  "seconds": 0.7028460502624512,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\frontend-detail-compile-20261022-152712-509563.log"
+}

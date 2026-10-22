@@ -1,0 +1,28 @@
+{
+  "name": "weak_1_16_8_2047_1-elaborate",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "weak_1_16_8_2047_1",
+    "--generic_top",
+    "N=2180",
+    "--generic_top",
+    "ENABLE=1",
+    "--generic_top",
+    "D=16",
+    "--generic_top",
+    "DROP=8",
+    "--generic_top",
+    "T=2047",
+    "--generic_top",
+    "KIND=1",
+    "work.tb_coherent_sobel"
+  ],
+  "returncode": 0,
+  "seconds": 2.013221025466919,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-003\\weak_1_16_8_2047_1-elaborate-20261021-174316-208269.log"
+}

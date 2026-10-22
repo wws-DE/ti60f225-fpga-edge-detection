@@ -1,0 +1,42 @@
+{
+  "result": "PASS",
+  "runs": [
+    {
+      "W": 6,
+      "H": 5,
+      "vectors": 12000,
+      "vector_sha256": {
+        "6-5-input.hex": "04f179e232f9006da53268b3864f4034c14626d5773f01ab3a4baf56cf8d2a5e",
+        "6-5-gold.hex": "e93862a5ec510e3c5fea6d99bab5d5cb36f4b76a92fc45f703b6a28619edd14f"
+      },
+      "completion": "MEDIAN_DETAIL_PASS N=12000 W=6 H=5 checks=13699 restored=3323 stalls=4511 cancels=3"
+    },
+    {
+      "W": 40,
+      "H": 12,
+      "vectors": 12000,
+      "vector_sha256": {
+        "40-12-input.hex": "970da742bf87111bd50d64a463cded9060d1082adb32bd306ffcdd98d4bdf34b",
+        "40-12-gold.hex": "06b96f13fd3c444b9d6049052d255075ec754d89b0fef44124d6097a86afd5d7"
+      },
+      "completion": "MEDIAN_DETAIL_PASS N=12000 W=40 H=12 checks=13699 restored=6210 stalls=4511 cancels=3"
+    },
+    {
+      "W": 1920,
+      "H": 1080,
+      "vectors": 12000,
+      "vector_sha256": {
+        "1920-1080-input.hex": "cef4ed9b2529a828b33b5606a753a922aa1d32ac2c35383208c91ce6eb44a9cc",
+        "1920-1080-gold.hex": "1cdf1325a51209fd8a9753f4217502547578023f0bd896db09c94328c2891898"
+      },
+      "completion": "MEDIAN_DETAIL_PASS N=12000 W=1920 H=1080 checks=13699 restored=7662 stalls=4511 cancels=3"
+    }
+  ],
+  "sources": {
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\median9_pair.sv": "c9fb7d69f2bf286ea8aa707eca2ec9d34a364658e9d100e338e92de791adde8f",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\algorithm\\frontend\\median9_detail_pair.sv": "628d1cf6b37e66f81317bedd16b5464782a6aee2203833aed438a980c18d04c8",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\tb_median_detail.sv": "847bfec8f86f3985f1972b7c0f892ff004130dca47c4eb560feb29f8e5073080",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\run_median_checks.py": "5de6678b2015fa25fb496a67d4aaf4d63df9fd6a7d3691ddb280bd98a831fa81",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\reference_median_detail.py": "62ff19043ac84f1848e0cfb7b8a0d50cc2835fee29013d4e72408fd9ca56bce0"
+  }
+}

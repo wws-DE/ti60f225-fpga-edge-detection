@@ -1,0 +1,37 @@
+{
+  "task_id": "TRACK4-V7-MEDIAN-DETAIL-001",
+  "stage": "DISCOVERY",
+  "baseline_manifest": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-EDGE-THIN-001-REV1\\manifest.json",
+  "baseline_manifest_sha256": "592f33b00c7d9f8502e71be0f0404876802e19cac277742badbf458476294424",
+  "build_inputs_manifest": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-EDGE-THIN-001-REV1\\final-build-inputs.json",
+  "build_inputs_manifest_sha256": "3bec08f84fac25f257c17beaf282d93408f4434f127ce50a6efc07ab712fc026",
+  "verified_present_baseline_files": 161,
+  "missing_nonbuild_metadata": [
+    {
+      "relative": "rtl/frame_buffer_V4/~$璋冭瘯鎬荤粨 .docx",
+      "recorded_sha256": "bc377db68ce1732df37407009d1cd382220cae5e3b62939b010bf3549d52462d"
+    }
+  ],
+  "missing_metadata_note": "Office lock absent in work and final snapshot; historical hash retained but cannot reverify its bytes. Not referenced by Efinity XML; no business source mismatch. No files restored or deleted.",
+  "observation": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\observations\\structured\\TRACK4-V7-EDGE-THIN-001-REV1-20261022-145756.json",
+  "observation_sha256": "ab385e6685bf79f8a7ae750c8ae64cf939a780955a0dee9629d7b7dde59386de",
+  "facts": [
+    "median9_pair selects ordinary nine-point median when enabled",
+    "top enables median and sets Sobel threshold64",
+    "directional contrast support remains D20/D18",
+    "thin v1.1 only removes qualified old edge pixels"
+  ],
+  "inferences": [
+    "Median detail loss can contribute to close-range failure; no defocus inferred from clear color/gray",
+    "Lowering Sobel threshold cannot restore information already removed before gradients"
+  ],
+  "prior_failed_approaches": [
+    "TRACK4-V7-LOWLIGHT-EDGE-005",
+    "TRACK4-V7-LOWLIGHT-EDGE-005-REV1"
+  ],
+  "business_sources_changed": false,
+  "tests_generated": false,
+  "tests_run": false,
+  "bit_generated": false,
+  "formal_state_updated": false
+}

@@ -1,0 +1,17 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Wed Oct 21 16:13:23 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/sensor_gain/xsim_script.tcl
+# xsim {sensor_gain} -testplusarg GOLD=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_001_20261021/tests/sensor-init-golden.hex -autoloadwcfg -runall -onfinish quit -onerror quit
+Time resolution is 1 ps
+run -all
+SENSOR_GAIN_PASS complete_sequences=2 restart_after=17 checked_writes=345 last_index=163 gain=81/2a mock_completion_only=1
+$finish called at time : 38326 ns : File "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_001_20261021/tests/tb_sensor_gain.sv" Line 53
+exit 0
+INFO: [Common 17-206] Exiting xsim at Wed Oct 21 16:13:25 2026...

@@ -1,0 +1,18 @@
+{
+  "name": "diagonal_1_18_32_1-run",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xsim.bat",
+    "diagonal_1_18_32_1",
+    "--runall",
+    "--onerror",
+    "quit",
+    "--onfinish",
+    "quit",
+    "--nolog",
+    "--testplusarg",
+    "DATA=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_004_rev1_20261021/sim_fullscreen/diagonal_1_18_32_1.hex"
+  ],
+  "returncode": 0,
+  "seconds": 2.978803873062134,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-004-REV1\\diagonal_1_18_32_1-run-20261021-214530-317964.log"
+}

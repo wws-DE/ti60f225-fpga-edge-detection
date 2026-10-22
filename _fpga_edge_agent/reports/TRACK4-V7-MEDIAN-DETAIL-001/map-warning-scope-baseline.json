@@ -1,0 +1,29 @@
+{
+  "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\outflow\\ti60f225_oob.warn.log",
+  "sha256": "7c49de245e66bdba0e6092bc8ceb4aa69ba14491dfcb713797a18c5ad87e8da3",
+  "synthesis_sections": 1,
+  "selected": "last complete synthesis run",
+  "selected_timestamp": "Oct 22, 2026 00:03:13",
+  "selected_section_sha256": "e75bf7171764df5903c4c8b46c50e3fc0ff26356dae5fb7962e22c1bf6251179",
+  "build_record": {
+    "stage": "map",
+    "argv": [
+      "C:\\Efinity\\2026.1\\python311\\bin\\python.exe",
+      "C:\\Efinity\\2026.1\\scripts\\efx_run.py",
+      "ti60f225_oob.xml",
+      "--flow",
+      "map",
+      "--output_dir",
+      "outflow",
+      "--work_dir",
+      "work_compile",
+      "--timeout",
+      "10800"
+    ],
+    "cwd": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021",
+    "started_at": "2026-10-22T00:03:11.660177+08:00",
+    "hardware_operation": false,
+    "returncode": 0,
+    "ended_at": "2026-10-22T00:04:02.985423+08:00"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "context-compile",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xvlog.bat",
+    "--sv",
+    "C:\\Efinity\\2026.1\\sim_models\\verilog\\efx_ram10.v",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\algorithm\\edge\\edge_context_filter_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\algorithm\\edge\\edge_context_pack_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\algorithm\\edge\\edge_context_window_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\tests\\tb_context_chain.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_20261021\\tests\\tb_context_filter.sv"
+  ],
+  "returncode": 0,
+  "seconds": 0.9895415306091309,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-004\\context-compile-20261021-212900-177917.log"
+}

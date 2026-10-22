@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "same_full_input_sha256": "629176b669f369252be6d0eaa61cd122248ba478b54c41d223a499c140f14675",
+  "equivalent_modes": [
+    "COLOR",
+    "GRAY",
+    "MEDIAN"
+  ],
+  "compared_pixels": 6220800,
+  "golden_prefix_sha256": "8ae7c40fc4b3358b05876df3d1400a450ba91e335d61eb93ec19a51a638d71bd",
+  "golden_prefix_bytes": 40435200,
+  "method": "Exact same 1080p RGB input file; exact byte equality of first three independent reference frames against v1; actual new RTL/serializer comparison recorded separately in sim-full-result.json"
+}

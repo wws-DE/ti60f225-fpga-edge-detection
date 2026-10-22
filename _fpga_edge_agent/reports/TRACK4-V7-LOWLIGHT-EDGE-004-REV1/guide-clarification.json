@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-10-21T22:02:15.588163+08:00",
+  "change": "Clarify that each axis support aligns to its own gradient sign, not that Gx and Gy must have equal signs",
+  "algorithm_changed": false,
+  "numeric_tests_changed": false,
+  "bit_changed": false,
+  "prior_manifest_sha256": "c3cb17032f1666bbb6b03573b9fef71ea38939f3f19db383ab63e1e0d639bd92",
+  "original_generator_retained": "register-initial.py.txt"
+}

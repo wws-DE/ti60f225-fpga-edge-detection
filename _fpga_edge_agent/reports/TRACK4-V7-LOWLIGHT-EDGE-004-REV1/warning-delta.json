@@ -1,0 +1,9 @@
+{
+  "added": [
+    "[EFX-0657 WARNING] Mapping into logic memory block 'diagonal_x_s2' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'diagonal_y_s2' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'diagonal_x_s3' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'diagonal_y_s3' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)"
+  ],
+  "removed": []
+}

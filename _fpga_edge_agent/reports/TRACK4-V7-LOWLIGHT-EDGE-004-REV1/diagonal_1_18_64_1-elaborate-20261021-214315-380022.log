@@ -1,0 +1,6 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --debug typical --timescale 1ns/1ps --snapshot diagonal_1_18_64_1 --generic_top N=276839 --generic_top ENABLE=1 --generic_top D=18 --generic_top DROP=0 --generic_top T=64 --generic_top KIND=1 work.tb_diagonal_sobel 
+Multi-threading is on. Using 20 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit work.tb_diagonal_sobel in library work located at xsim.dir/work.

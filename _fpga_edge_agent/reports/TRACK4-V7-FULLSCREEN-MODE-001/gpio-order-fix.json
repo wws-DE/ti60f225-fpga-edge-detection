@@ -1,0 +1,8 @@
+{
+  "change": "Move comp_gpio before global_unused_config and bus nodes to satisfy vendor XSD sequence",
+  "before_schema_valid": false,
+  "before_schema_error": "file:/C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_fullscreen_mode_001_20261021/ti60f225_oob.peri.xml:330:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element '{http://www.efinixinc.com/peri_design_db}comp_gpio': This element is not expected. Expected is ( {http://www.efinixinc.com/peri_design_db}bus ).",
+  "after_schema_valid": true,
+  "behavior_changed": false,
+  "after_sha256": "5fdd512c88f5944e73dd3c4a5e301beceaa006dcfbaa2fed29f3e8f1eb1b89b1"
+}

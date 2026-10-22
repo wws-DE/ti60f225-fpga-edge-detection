@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "debounce_cycles": [
+    2,
+    4,
+    31,
+    1485000
+  ]
+}

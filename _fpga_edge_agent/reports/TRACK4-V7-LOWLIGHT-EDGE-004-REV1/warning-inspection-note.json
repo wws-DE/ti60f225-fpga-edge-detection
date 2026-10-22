@@ -1,0 +1,5 @@
+{
+  "initial_inspection": "Expected four diagonal notes plus two gradient-delay notes; actual normalized delta was four and inspection stopped",
+  "finding": "Gradient-delay notes already exist in v3; they are inherited, not added",
+  "correction": "Review exact four new notes and sixteen EFX_FF declarations; no RTL, quality gate or warning suppressed"
+}

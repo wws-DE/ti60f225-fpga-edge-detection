@@ -1,0 +1,21 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-001",
+  "session_id": "TRACK4-V7-LOWLIGHT-EDGE-001-20261021",
+  "source": "user_chat",
+  "reply_exact": "批准优化 v1，继续使用本地报告",
+  "approved_design_version": "v1",
+  "approved_design_sha256": "f27f7a362f01357d771185766fe4b33cfb3de0ebc7b00c39ebed598e95dd3def",
+  "approved_design_snapshot": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-001\\approved-design-v1.md",
+  "scope": "Analog gain ROM word and threshold constant in independent copy; necessary RTL tests and scripts; existing XSim/Efinity software build; bit staging; stop for human observation",
+  "local_audit_exception": true,
+  "formal_database_write": false,
+  "hardware_operation": false,
+  "baseline_hashes": {
+    "rtl/ti60f225_oob_top.v": "0d6ad1563854add1d2c780923e82bcc7314091e7854bc1c6efe885c28f40e4c3",
+    "rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v": "db13d1eed22a9478fd0affb9ac86b8265302a474886d7fff688447af2470ffe3",
+    "rtl/cam_i2c_ctrl/i2c/i2c_master_ctrl_top.v": "2534b3d0cd1793b9f91320fc8d5495820252d0221c38ca9dea247e27aea1dc7f",
+    "rtl/v7_algorithm_video_pair.sv": "734a08b3d0f0a671ad2312af7c150b5793f241abe4bcb3c15329e452e9b055c0",
+    "rtl/v7_fullscreen_mode_control.sv": "cafd9f8c63b8bd005a9066061db963dad5ad558e48d00792dd563810c59203d1",
+    "algorithm/frontend/sobel_pair.sv": "1bf1247ef68b5573dfa3e8c64191d090507b1c0ed10589ef24157e9366a740dd"
+  }
+}

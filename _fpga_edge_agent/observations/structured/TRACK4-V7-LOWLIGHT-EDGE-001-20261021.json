@@ -1,0 +1,18 @@
+{
+  "project_id": "FPGA_EDGE_TI60",
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-001",
+  "timestamp": "2026-10-21T16:45:46.733783+08:00",
+  "source": "user_chat",
+  "reply_exact": "这一版效果较之前有所优化，能否在此基础上再优化一下，进一步提高识别灵敏度",
+  "clarification_exact": "轮廓仍漏检，同时噪点较多",
+  "assessment": "PARTIAL_IMPROVEMENT_REWORK_REQUESTED",
+  "bit_sha256_context": "32d81151f7c7e6bda332daa4a08103adb255965a667247d084c97dca53520a6f",
+  "artifact_binding": "conversation_context_only_not_board_readback",
+  "verified_local_input_count": 156,
+  "raw_observation": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\observations\\incoming\\TRACK4-V7-LOWLIGHT-EDGE-001-20261021.md",
+  "raw_observation_sha256": "8403afd9a98f4dfff6418d8cc52daf6c4a4cc7d666f7e79b6aa56dbc46621816",
+  "full_hardware_acceptance": false,
+  "sensor_readback": false,
+  "scene_measurements": null,
+  "formal_state_updated": false
+}

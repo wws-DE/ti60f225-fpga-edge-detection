@@ -1,0 +1,25 @@
+{
+  "task": "TRACK4-V7-LOWLIGHT-EDGE-002",
+  "timestamp": "2026-10-21T17:06:58.461889+08:00",
+  "reviewed_map_added": [
+    "[EFX-0657 WARNING] Mapping into logic memory block 'row_difference_s1' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'column_difference_s1' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'support_x_s2' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'support_y_s2' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'support_x_s3' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'support_y_s3' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)"
+  ],
+  "reviewed_flow_added": [],
+  "unreviewed": [],
+  "decision": "SOFTWARE_CHECKED_FOR_BIT_GENERATION",
+  "source_normalizations": [],
+  "reason": "Six exact EFX-0657 messages correspond to new small in-flight arrays. EFX_FF primitives verified per named array; physical RAM remains 169 and DSP 0. New XLR count 22107, +261 within estimated +512. All 1287 PNR warnings match v1 via unchanged-source/LUT/pin-graph normalization. Existing CSI/DDR/key warnings remain documented; no blanket CDC waiver.",
+  "legacy_map_count": 1410,
+  "current_map_count": 1416,
+  "legacy_pnr_count": 1287,
+  "current_pnr_count": 1287,
+  "netlist_review_sha256": "3977de94e4f7a454d325d201069a411af94e330281ba6650a26129752e39021d",
+  "hardware_acceptance": "PENDING",
+  "setup_min_ns": 0.349,
+  "hold_min_ns": 0.026
+}

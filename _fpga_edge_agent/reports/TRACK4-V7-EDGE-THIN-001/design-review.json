@@ -1,0 +1,24 @@
+{
+  "task_id": "TRACK4-V7-EDGE-THIN-001",
+  "design_version": "细化v1",
+  "time": "2026-10-21T23:26:12.577561+08:00",
+  "stage": "READY_FOR_REVIEW",
+  "approval_status": "NOT_APPROVED",
+  "design_path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\planning\\design-TRACK4-V7-EDGE-THIN-001.md",
+  "design_sha256": "ada5e0079a5dbcd9f039f1940eb8c99568ff5a61818bd3cb410035805ee59a7f",
+  "design_saved_and_full_readback": true,
+  "baseline_manifest_sha256": "944b77610c16d2269340a917ab2869270089d280c3a68fc720f78e470a00ac4b",
+  "baseline_input_count": 159,
+  "baseline_unchanged": true,
+  "first_increment": "protected peak thinning of existing v4.1 edges",
+  "remaining_overall_goals": [
+    "weak small contour detection",
+    "jagged and broken contour improvement"
+  ],
+  "new_business_code_generated": false,
+  "new_tests_generated": false,
+  "new_tests_run": false,
+  "new_bit_generated": false,
+  "formal_state_updated": false,
+  "hardware_operation": false
+}

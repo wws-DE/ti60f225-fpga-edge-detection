@@ -1,0 +1,74 @@
+{
+  "task_id": "TRACK4-V7-EDGE-THIN-001-REV1",
+  "session_id": "TRACK4-V7-EDGE-THIN-001-REV1-20261021",
+  "timestamp": "2026-10-22T14:42:09.294074+08:00",
+  "state": "WAITING_HUMAN_PROGRAM",
+  "design_version": "细化v1.1",
+  "approved_design_sha256": "fb16f0eef8b7d5fd2c924b7d0cd3475728ef2d493c7837f8c4b20777df935e7c",
+  "authorization_sha256": "0efee0ca12de9147bc26d1c61662beaba0d26d9aafe3e194325b1acf24202f6a",
+  "project": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\ti60f225_oob.xml",
+  "tool": "Efinity 2026.1.132",
+  "device": "Ti60F225/I3",
+  "bit": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-EDGE-THIN-001-REV1\\edge_thin_v1_1_20261022.bit",
+    "desktop_path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\FPGA_细化v1.1.bit",
+    "bytes": 2474082,
+    "sha256": "c407819ed8fcbbf0bc5e9a9b38d219299d2f6489988d1c19dda036f44e21bd43"
+  },
+  "parameters": {
+    "candidate": "B",
+    "thin_mode": 1,
+    "sobel_threshold": 64,
+    "diagonal_min_diff": 18,
+    "context_threshold_drop": 16,
+    "video_latency_cycles": 6602,
+    "rule": "v4.1 edge AND direction-junction-protected axis-only peak retention",
+    "diagonal_handling": "retain v4.1 edges",
+    "sensor_gain": "unchanged 0x81/0x2A"
+  },
+  "setup_min_ns": 0.261,
+  "hold_min_ns": 0.026,
+  "resources": {
+    "xlr": 23953,
+    "ram": 181,
+    "dsp": 0
+  },
+  "mode_order": [
+    "COLOR",
+    "GRAY",
+    "MEDIAN",
+    "SOBEL",
+    "OVERLAY"
+  ],
+  "full_resolution_compared_pixels": 10368000,
+  "unchanged_first_three_mode_pixels": 6220800,
+  "checks_sha256": "433af4673041357f39db5390d1b3e32b4e4d3d454b3e7fa6a3f098ee9f62bbe1",
+  "selection_sha256": "77c18aa3ddbdb774c950c3a46f98c3b847fe7e1f4d52607459fc85e108bd52ab",
+  "inputs_manifest_sha256": "3bec08f84fac25f257c17beaf282d93408f4434f127ce50a6efc07ab712fc026",
+  "test_inputs_manifest_sha256": "af13605dc51980eef457d839d00738b96ecceec9f3b739cfdc33f48665afcd02",
+  "baseline_manifest_sha256": "944b77610c16d2269340a917ab2869270089d280c3a68fc720f78e470a00ac4b",
+  "unchanged_original_inputs": 156,
+  "changed_existing_inputs": [
+    "algorithm/frontend/frontend_frame_pair.sv",
+    "rtl/v7_algorithm_video_pair.sv",
+    "ti60f225_oob.xml"
+  ],
+  "new_modules": [
+    "algorithm/edge/edge_thin_pack_pair.sv",
+    "algorithm/edge/edge_thin_window_pair.sv",
+    "algorithm/edge/edge_thin_filter_pair.sv"
+  ],
+  "rollback_bit": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-LOWLIGHT-EDGE-004-REV1\\v7_lowlight_edge_004_v4_1_20261021.bit",
+    "desktop_path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\FPGA_v4.1.bit",
+    "sha256": "c194210fb0ff0e3f5e81da6746557b36e280fb16c0aa3ec24fa057e5c25ac77f"
+  },
+  "hardware_programmed": false,
+  "hardware_passed": false,
+  "real_camera_accuracy_measured": false,
+  "local_audit_exception": true,
+  "formal_state_updated": false,
+  "control_plane_static_result": "FAILED_STATIC_VALIDATION",
+  "control_plane_static_evidence_sha256": "baf3220f85f817b95c94a017b2a9bdd515425d6daf29238d1bbde53a92e39f66",
+  "evidence_manifest_sha256": "4fc4dcdb75df15406882a8162efefd1f7de8f56ade85f5ee26c11b5043857587"
+}

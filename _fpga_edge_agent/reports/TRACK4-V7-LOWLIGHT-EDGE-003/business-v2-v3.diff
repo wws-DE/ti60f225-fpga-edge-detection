@@ -1,0 +1,142 @@
+--- v2/algorithm/frontend/frontend_frame_pair.sv
++++ v3/algorithm/frontend/frontend_frame_pair.sv
+@@ -2,7 +2,10 @@
+ module frontend_frame_pair #(
+     parameter integer W = 1920, parameter integer H = 1080,
+     parameter integer SOBEL_COHERENCE_ENABLE = 0,
+-    parameter integer SOBEL_COHERENCE_MIN_DIFF = 16
++    parameter integer SOBEL_COHERENCE_MIN_DIFF = 16,
++    parameter integer SOBEL_WEAK_ENABLE = 0,
++    parameter integer SOBEL_WEAK_MIN_DIFF = 18,
++    parameter integer SOBEL_WEAK_THRESHOLD_DROP = 0
+ ) (
+     input wire clk, input wire rst,
+     input wire job_valid, output wire job_ready,
+@@ -116,7 +119,9 @@
+         .out_x_even(wx2), .out_y(wy2), .out_sof(w2s), .out_eol(w2l), .out_eof(w2e), .empty(win2_empty)
+     );
+     sobel_pair #(.COHERENCE_ENABLE(SOBEL_COHERENCE_ENABLE),
+-        .COHERENCE_MIN_DIFF(SOBEL_COHERENCE_MIN_DIFF)) sobel (
++        .COHERENCE_MIN_DIFF(SOBEL_COHERENCE_MIN_DIFF),
++        .WEAK_ENABLE(SOBEL_WEAK_ENABLE),.WEAK_MIN_DIFF(SOBEL_WEAK_MIN_DIFF),
++        .WEAK_THRESHOLD_DROP(SOBEL_WEAK_THRESHOLD_DROP)) sobel (
+         .clk(clk), .rst(rst), .frame_start(shared_start), .flush(shared_flush),
+         .output_kind(external_sobel_owner?2'd1:kind_locked), .threshold(external_sobel_owner?11'd0:threshold_locked),
+         .in_valid(win2_valid&&shared_open), .in_ready(sobel_ready), .in_window_pair(window2_pair),
+--- v2/algorithm/frontend/sobel_pair.sv
++++ v3/algorithm/frontend/sobel_pair.sv
+@@ -1,7 +1,10 @@
+ // FE-04 / OP-07：六级Sobel；中心、梯度诊断及edge共用一次输出握手。
+ module sobel_pair #(
+     parameter integer COHERENCE_ENABLE = 0,
+-    parameter integer COHERENCE_MIN_DIFF = 16
++    parameter integer COHERENCE_MIN_DIFF = 16,
++    parameter integer WEAK_ENABLE = 0,
++    parameter integer WEAK_MIN_DIFF = 18,
++    parameter integer WEAK_THRESHOLD_DROP = 0
+ ) (
+     input  wire         clk,
+     input  wire         rst,
+@@ -56,6 +59,23 @@
+     logic [1:0] support_x_s2 [0:1], support_y_s2 [0:1];
+     logic [1:0] support_x_s3 [0:1], support_y_s3 [0:1];
+     logic [1:0] coherence_s4, coherence_s5;
++    // v3/R1～R3：全三项支持只补充原edge；与基础旁路共用推进事件。
++    localparam logic signed [8:0] WEAK_MIN = WEAK_MIN_DIFF;
++    localparam logic signed [8:0] WEAK_NEG_MIN = -WEAK_MIN;
++    localparam logic [10:0] WEAK_DROP = WEAK_THRESHOLD_DROP;
++    wire [10:0] weak_threshold = (threshold >= WEAK_DROP)
++        ? threshold - WEAK_DROP : 11'd0; // 低阈值饱和，禁止无符号回绕。
++    logic [1:0] weak_x_s2 [0:1], weak_y_s2 [0:1];
++    logic [1:0] weak_x_s3 [0:1], weak_y_s3 [0:1];
++    logic [1:0] weak_coherence_s4, weak_coherence_s5;
++
++    function automatic [1:0] unanimous_support(
++        input logic signed [8:0] first, second, third
++    );
++        unanimous_support = {
++            (first <= WEAK_NEG_MIN) && (second <= WEAK_NEG_MIN) && (third <= WEAK_NEG_MIN),
++            (first >= WEAK_MIN) && (second >= WEAK_MIN) && (third >= WEAK_MIN)};
++    endfunction
+ 
+     function automatic [1:0] majority_support(
+         input logic signed [8:0] first, second, third
+@@ -96,10 +116,12 @@
+     assign out_gx_pair = {gradient_delay_x[2][1], gradient_delay_x[2][0]};
+     assign out_gy_pair = {gradient_delay_y[2][1], gradient_delay_y[2][0]};
+     assign {out_eof, out_eol, out_sof, out_y, out_x_even} = coordinate_pipe[5];
+-    assign threshold_compare[0] = (output_kind == 2'd1) && (l1_magnitude[0] > threshold)
+-        && ((COHERENCE_ENABLE == 0) || coherence_s5[0]);
+-    assign threshold_compare[1] = (output_kind == 2'd1) && (l1_magnitude[1] > threshold)
+-        && ((COHERENCE_ENABLE == 0) || coherence_s5[1]);
++    assign threshold_compare[0] = (output_kind == 2'd1) && (
++        ((l1_magnitude[0] > threshold) && ((COHERENCE_ENABLE == 0) || coherence_s5[0]))
++        || ((WEAK_ENABLE != 0) && (l1_magnitude[0] > weak_threshold) && weak_coherence_s5[0]));
++    assign threshold_compare[1] = (output_kind == 2'd1) && (
++        ((l1_magnitude[1] > threshold) && ((COHERENCE_ENABLE == 0) || coherence_s5[1]))
++        || ((WEAK_ENABLE != 0) && (l1_magnitude[1] > weak_threshold) && weak_coherence_s5[1]));
+ 
+     always_ff @(posedge clk) begin : sobel_pipeline
+         if (rst || flush || frame_start) begin
+@@ -128,6 +150,13 @@
+                     column_difference_s1[lane][1], column_difference_s1[lane][2]);
+                 support_x_s3[lane] <= support_x_s2[lane];
+                 support_y_s3[lane] <= support_y_s2[lane];
++                // S2/S3：同一窗口的三行或三列全部达到较低差值门槛。
++                weak_x_s2[lane] <= unanimous_support(row_difference_s1[lane][0],
++                    row_difference_s1[lane][1], row_difference_s1[lane][2]);
++                weak_y_s2[lane] <= unanimous_support(column_difference_s1[lane][0],
++                    column_difference_s1[lane][1], column_difference_s1[lane][2]);
++                weak_x_s3[lane] <= weak_x_s2[lane];
++                weak_y_s3[lane] <= weak_y_s2[lane];
+                 // S4：主梯度方向需与多数支持同号；幅值相等时两方向对称处理。
+                 coherence_s4[lane] <=
+                     ((absolute_gradient11(signed_gradient_x[lane]) >= absolute_gradient11(signed_gradient_y[lane]))
+@@ -135,6 +164,12 @@
+                     || ((absolute_gradient11(signed_gradient_y[lane]) >= absolute_gradient11(signed_gradient_x[lane]))
+                         && direction_supported(signed_gradient_y[lane], support_y_s3[lane]));
+                 coherence_s5[lane] <= coherence_s4[lane];
++                weak_coherence_s4[lane] <=
++                    ((absolute_gradient11(signed_gradient_x[lane]) >= absolute_gradient11(signed_gradient_y[lane]))
++                        && direction_supported(signed_gradient_x[lane], weak_x_s3[lane]))
++                    || ((absolute_gradient11(signed_gradient_y[lane]) >= absolute_gradient11(signed_gradient_x[lane]))
++                        && direction_supported(signed_gradient_y[lane], weak_y_s3[lane]));
++                weak_coherence_s5[lane] <= weak_coherence_s4[lane];
+                 // S1：先扩9bit；a,b,c/d,e,f/g,h,i分别是0…8字节。
+                 corner_sums_s1[lane][0] <= {1'b0, in_window_pair[lane*72+16 +: 8]}
+                     + {1'b0, in_window_pair[lane*72+64 +: 8]};
+@@ -178,5 +213,9 @@
+     initial if (COHERENCE_ENABLE != 0 &&
+         COHERENCE_MIN_DIFF != 16 && COHERENCE_MIN_DIFF != 20)
+         $fatal(1, "sobel_pair: v2 supports D=16 or D=20");
++    initial if (WEAK_ENABLE != 0 && ((COHERENCE_ENABLE == 0) || (COHERENCE_MIN_DIFF != 20)
++        || !((WEAK_MIN_DIFF == 16 && WEAK_THRESHOLD_DROP == 8)
++            || (WEAK_MIN_DIFF == 18 && WEAK_THRESHOLD_DROP == 0))))
++        $fatal(1, "sobel_pair: v3 requires base D20 and approved weak candidate A or B");
+     // synthesis translate_on
+ endmodule
+--- v2/rtl/v7_algorithm_video_pair.sv
++++ v3/rtl/v7_algorithm_video_pair.sv
+@@ -2,7 +2,10 @@
+ // 输入低 24 位为前一个像素，像素内部高字节为实际显示红色；不沿用旧信号名猜颜色。
+ module v7_algorithm_video_pair #(
+     parameter integer W=1920, H=1080, HTOTAL=1100,
+-    parameter integer SOBEL_COHERENCE_MIN_DIFF=20
++    parameter integer SOBEL_COHERENCE_MIN_DIFF=20,
++    // v3：候选B，仅补三项全部同向的较弱轮廓；原T64/D20分支保留。
++    parameter integer SOBEL_WEAK_MIN_DIFF=18,
++    parameter integer SOBEL_WEAK_THRESHOLD_DROP=0
+ )(
+     input wire clk, rst,
+     input wire in_vs, in_hs, in_de,
+@@ -44,7 +47,9 @@
+ 
+     // 此桥接固定external_sobel_owner=0；只在本版摄像显示路径启用方向支持。
+     frontend_frame_pair #(.W(W),.H(H),.SOBEL_COHERENCE_ENABLE(1),
+-        .SOBEL_COHERENCE_MIN_DIFF(SOBEL_COHERENCE_MIN_DIFF)) algorithms(
++        .SOBEL_COHERENCE_MIN_DIFF(SOBEL_COHERENCE_MIN_DIFF),.SOBEL_WEAK_ENABLE(1),
++        .SOBEL_WEAK_MIN_DIFF(SOBEL_WEAK_MIN_DIFF),
++        .SOBEL_WEAK_THRESHOLD_DROP(SOBEL_WEAK_THRESHOLD_DROP)) algorithms(
+         .clk(clk),.rst(rst||frame_boundary),
+         .job_valid(job_pending&&!frame_boundary),.job_ready(job_ready),
+         .job_epoch(32'd1),.job_frame_id(input_frame),.job_config_id(input_frame),

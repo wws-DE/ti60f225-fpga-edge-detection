@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "C:\\Users\\29147\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\quality_median_detail.py"
+  ],
+  "cwd": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022",
+  "returncode": 2,
+  "started_at": "2026-10-22T15:07:45.512314+08:00",
+  "log_sha256": "cc7eb3e80995a9bf32cfac9da36252149f4ebf59f4a75899f384a54ebbc59238",
+  "hardware_operation": false
+}

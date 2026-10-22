@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-21T22:20:20.352688+08:00",
+  "source": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-LOWLIGHT-EDGE-004-REV1\\v7_lowlight_edge_004_v4_1_20261021.bit",
+  "target": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\FPGA_v4.1.bit",
+  "size": 2450544,
+  "sha256": "c194210fb0ff0e3f5e81da6746557b36e280fb16c0aa3ec24fa057e5c25ac77f",
+  "created": true,
+  "state": "WAITING_HUMAN_PROGRAM",
+  "hardware_operation": false,
+  "formal_state_updated": false
+}

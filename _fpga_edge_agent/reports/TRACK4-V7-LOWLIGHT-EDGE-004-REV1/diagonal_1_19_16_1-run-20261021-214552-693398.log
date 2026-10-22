@@ -1,0 +1,17 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Wed Oct 21 21:45:53 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/diagonal_1_19_16_1/xsim_script.tcl
+# xsim {diagonal_1_19_16_1} -testplusarg DATA=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_004_rev1_20261021/sim_fullscreen/diagonal_1_19_16_1.hex -autoloadwcfg -runall -onfinish quit -onerror quit
+Time resolution is 1 ps
+run -all
+DIAGONAL_SOBEL_PASS enabled=1 D=19 T=16 vectors=21863 accepted=23950 delivered=23932 flushed=18 stalls=674 checks=24609
+$finish called at time : 251577 ns : File "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_004_rev1_20261021/tests/tb_diagonal_sobel.sv" Line 106
+exit 0
+INFO: [Common 17-206] Exiting xsim at Wed Oct 21 21:45:55 2026...

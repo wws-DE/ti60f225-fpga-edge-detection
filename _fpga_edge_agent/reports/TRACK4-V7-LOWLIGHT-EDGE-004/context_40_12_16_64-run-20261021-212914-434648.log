@@ -1,0 +1,17 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Wed Oct 21 21:29:14 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/context_40_12_16_64/xsim_script.tcl
+# xsim {context_40_12_16_64} -testplusarg INPUT=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_004_20261021/sim_fullscreen/context-40-12-16-64-input.hex -testplusarg GOLD=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_004_20261021/sim_fullscreen/context-40-12-16-64-gold.hex -autoloadwcfg -runall -onfinish quit -onerror quit
+Time resolution is 1 ps
+run -all
+CONTEXT_CHAIN_PASS W=40 H=12 DROP=16 T=64 frames=5 interrupts=3 stalls=114
+$finish called at time : 15690 ns : File "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_004_20261021/tests/tb_context_chain.sv" Line 108
+exit 0
+INFO: [Common 17-206] Exiting xsim at Wed Oct 21 21:29:16 2026...

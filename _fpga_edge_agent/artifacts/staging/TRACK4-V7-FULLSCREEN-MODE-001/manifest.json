@@ -1,0 +1,41 @@
+{
+  "task_id": "TRACK4-V7-FULLSCREEN-MODE-001",
+  "session_id": "TRACK4-V7-FULLSCREEN-MODE-001-20261021",
+  "timestamp": "2026-10-21T15:39:50.550120+08:00",
+  "state": "WAITING_HUMAN_PROGRAM",
+  "design_version": "v1",
+  "authorization_sha256": "ede732d9dce65f77acf7d5abda07e6076464e85fb58a769168f532de312e04a9",
+  "project": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\ti60f225_oob.xml",
+  "tool": "Efinity 2026.1.132",
+  "device": "Ti60F225/I3",
+  "bit": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-FULLSCREEN-MODE-001\\v7_fullscreen_mode_001_v1_20261021.bit",
+    "bytes": 2429412,
+    "sha256": "759ffa9c928561c7d6ad95d796be101e83495ba25794542141bfd524402cfeb9"
+  },
+  "setup_min_ns": 0.499,
+  "hold_min_ns": 0.026,
+  "resources": {
+    "xlr": 21800,
+    "ram": 169,
+    "dsp": 0
+  },
+  "key3": "A3/GPIOL_03,3.3V,active-low",
+  "mode_order": [
+    "COLOR",
+    "GRAY",
+    "MEDIAN",
+    "SOBEL",
+    "OVERLAY"
+  ],
+  "fixed_sobel_threshold": 256,
+  "debounce_ms": 20,
+  "full_resolution_compared_pixels": 10368000,
+  "checks_sha256": "3ba93546fa135ff38bb44a1ce635bcc1357a836142015ca8723cffd5b1612f8e",
+  "inputs_manifest_sha256": "d10c8ea328577b243e854679e51305b525c4cac02ae6a35d77b93c99b21ffaac",
+  "rollback_bit": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\downloads\\github-releases\\handoff-2026-10-19\\v7_algorithm_bridge_001_v1_20261018.bit",
+  "hardware_programmed": false,
+  "hardware_passed": false,
+  "local_audit_exception": true,
+  "formal_state_updated": false
+}

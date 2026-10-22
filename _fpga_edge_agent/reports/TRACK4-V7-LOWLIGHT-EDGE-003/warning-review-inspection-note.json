@@ -1,0 +1,6 @@
+{
+  "initial_lookup": "Expected direct /sobel/weak_x_s2 cell path; returned zero matches and stopped inspection",
+  "finding": "Efinity inserts i1414..i1417 hierarchy for small logic arrays",
+  "correction": "Match actual EFX_FF declarations, allowing generated hierarchy; still require four exact bits per array",
+  "rtl_or_gate_changed": false
+}

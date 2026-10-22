@@ -1,0 +1,92 @@
+{
+  "diagnostic_only": true,
+  "matching_tolerance_px": 1,
+  "connectivity": 8,
+  "rows": [
+    {
+      "scene": "vertical-d64",
+      "geometry_points": 44,
+      "v1_uncovered": 0,
+      "v2_uncovered": 0,
+      "v1_components": [
+        88
+      ],
+      "v2_components": [
+        88
+      ]
+    },
+    {
+      "scene": "horizontal-d64",
+      "geometry_points": 60,
+      "v1_uncovered": 0,
+      "v2_uncovered": 0,
+      "v1_components": [
+        120
+      ],
+      "v2_components": [
+        120
+      ]
+    },
+    {
+      "scene": "rectangle-d64",
+      "geometry_points": 108,
+      "v1_uncovered": 0,
+      "v2_uncovered": 0,
+      "v1_components": [
+        224
+      ],
+      "v2_components": [
+        212
+      ]
+    },
+    {
+      "scene": "diagonal-d64",
+      "geometry_points": 44,
+      "v1_uncovered": 0,
+      "v2_uncovered": 0,
+      "v1_components": [
+        176
+      ],
+      "v2_components": [
+        88
+      ]
+    },
+    {
+      "scene": "thin_horizontal-d64",
+      "geometry_points": 82,
+      "v1_uncovered": 0,
+      "v2_uncovered": 0,
+      "v1_components": [
+        170
+      ],
+      "v2_components": [
+        160
+      ]
+    },
+    {
+      "scene": "thin_vertical-d64",
+      "geometry_points": 66,
+      "v1_uncovered": 0,
+      "v2_uncovered": 0,
+      "v1_components": [
+        138
+      ],
+      "v2_components": [
+        128
+      ]
+    },
+    {
+      "scene": "curve-d64",
+      "geometry_points": 132,
+      "v1_uncovered": 0,
+      "v2_uncovered": 0,
+      "v1_components": [
+        352
+      ],
+      "v2_components": [
+        148,
+        108
+      ]
+    }
+  ]
+}

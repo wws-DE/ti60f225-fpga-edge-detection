@@ -1,0 +1,29 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-005-REV1",
+  "design_version": "优化v5.1",
+  "time": "2026-10-21T22:59:13.365045+08:00",
+  "stage": "READY_FOR_REVIEW",
+  "approval_status": "NOT_APPROVED",
+  "design_path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\planning\\design-TRACK4-V7-LOWLIGHT-EDGE-005-REV1.md",
+  "design_sha256": "580b0426832ba68a2df5135a0b8cc1df8bd9081033caba01cb122460903a5cf9",
+  "design_saved_and_full_readback": true,
+  "failed_v5_quality_sha256": "49acf2fcb340d5c5e4f85928889622d8e930ee7088c9aceb4694d64cf4d62a4f",
+  "failed_v5_reference_verification_sha256": "9552cc7c821710f28806260d38dad50204711fa25622bd2dc6deeb62e556faf3",
+  "v5_business_inputs_unchanged": true,
+  "v41_business_inputs_unchanged": true,
+  "v41_desktop_bit_unchanged": true,
+  "six_fixed_candidates": [
+    "P1A",
+    "P1B",
+    "P2A",
+    "P2B",
+    "P3A",
+    "P3B"
+  ],
+  "new_revision_tests_generated": false,
+  "new_revision_rtl_generated": false,
+  "new_revision_tests_run": false,
+  "bit_generated": false,
+  "formal_state_updated": false,
+  "hardware_operation": false
+}

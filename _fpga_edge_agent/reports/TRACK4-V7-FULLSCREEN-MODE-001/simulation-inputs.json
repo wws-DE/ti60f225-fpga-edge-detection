@@ -1,0 +1,15 @@
+{
+  "C:\\Efinity\\2026.1\\sim_models\\verilog\\efx_ram10.v": "dd8db45116a67b9754920856dc380eb2dc73ca51e0a6a62cc74cda01c0e31a33",
+  "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\algorithm\\frontend\\frontend_frame_pair.sv": "92d2977041271f44cee1f11f757f137403929f8a614d45aef807c2973707f5c9",
+  "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\algorithm\\frontend\\line_store_pair.sv": "5c9f41a260cc9792f4900debb96cd8fc9aab7f0094c2bac3a08d8d4bcc40e65f",
+  "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\algorithm\\frontend\\median9_pair.sv": "c9fb7d69f2bf286ea8aa707eca2ec9d34a364658e9d100e338e92de791adde8f",
+  "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\algorithm\\frontend\\rgb_to_y_pair.sv": "d98a5ada8711b0920f7ab7cbe5cff1dcb8b3baa302a3a45f9407747353ce1c31",
+  "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\algorithm\\frontend\\sobel_pair.sv": "1bf1247ef68b5573dfa3e8c64191d090507b1c0ed10589ef24157e9366a740dd",
+  "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\algorithm\\frontend\\window3x3_pair.sv": "6e8b3b9d2ca22b93bfefbe08d35ce96bb5b38530c5a1311472ecbd269afd9321",
+  "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\algorithm\\control\\key_press_debouncer.sv": "88ebaf3ddddff5dcbd6da94903b273d4098be4a0f71f2a283b53b9e4580c6681",
+  "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\rtl\\v7_fullscreen_mode_control.sv": "cafd9f8c63b8bd005a9066061db963dad5ad558e48d00792dd563810c59203d1",
+  "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\rtl\\v7_algorithm_video_pair.sv": "734a08b3d0f0a671ad2312af7c150b5793f241abe4bcb3c15329e452e9b055c0",
+  "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\sim_fullscreen\\actual_serializer.sv": "067f55f7c42ba33f6f4e10be01ec5eb72e957757ae8db27f71de51ca7f85a606",
+  "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\tests\\tb_five_modes.sv": "fd217a4db140505dd8cb67ac7c52ef95a845492feefe41cc96151b9879227208",
+  "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\tests\\tb_mode_boundary.sv": "a16e2c6b0b140fbc5858f350bf9ecea3bbaac7d52e9a0378f9e9bfa22db661ba"
+}

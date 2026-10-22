@@ -1,0 +1,16 @@
+{
+  "result": "SCALAR_VECTOR_AGREE_FAILURE_CONFIRMED",
+  "cases": {
+    "A": {
+      "arbitrary_windows": 45955,
+      "image_pixels_with_control_and_boundary": 30720,
+      "protected_windows": 2016
+    },
+    "B": {
+      "arbitrary_windows": 44587,
+      "image_pixels_with_control_and_boundary": 30720,
+      "protected_windows": 1776
+    }
+  },
+  "correlated_failures": 11
+}

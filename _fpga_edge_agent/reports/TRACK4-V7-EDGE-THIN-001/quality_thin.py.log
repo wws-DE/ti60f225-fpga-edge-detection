@@ -1,0 +1,278 @@
+{
+  "result": "SYNTHETIC_GATE_FAIL",
+  "selected_candidate": null,
+  "candidates": {
+    "A": {
+      "eligible": false,
+      "diagonal_reduction": 0,
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "limit": 0,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 16,
+          "old_false_edges": 50,
+          "new_false_edges": 49,
+          "limit": 50,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 24,
+          "old_false_edges": 2843,
+          "new_false_edges": 2614,
+          "limit": 2843,
+          "pixels": 93744
+        }
+      ],
+      "steps": [
+        {
+          "delta": 18,
+          "axis": 0,
+          "reversed": false,
+          "old_positions": [
+            23,
+            24
+          ],
+          "new_positions": [
+            23
+          ],
+          "expected_single_peak": 23
+        },
+        {
+          "delta": 18,
+          "axis": 0,
+          "reversed": true,
+          "old_positions": [
+            23,
+            24
+          ],
+          "new_positions": [
+            23
+          ],
+          "expected_single_peak": 23
+        },
+        {
+          "delta": 18,
+          "axis": 1,
+          "reversed": false,
+          "old_positions": [
+            31,
+            32
+          ],
+          "new_positions": [
+            31
+          ],
+          "expected_single_peak": 31
+        },
+        {
+          "delta": 18,
+          "axis": 1,
+          "reversed": true,
+          "old_positions": [
+            31,
+            32
+          ],
+          "new_positions": [
+            31
+          ],
+          "expected_single_peak": 31
+        },
+        {
+          "delta": 64,
+          "axis": 0,
+          "reversed": false,
+          "old_positions": [
+            23,
+            24
+          ],
+          "new_positions": [
+            23
+          ],
+          "expected_single_peak": 23
+        },
+        {
+          "delta": 64,
+          "axis": 0,
+          "reversed": true,
+          "old_positions": [
+            23,
+            24
+          ],
+          "new_positions": [
+            23
+          ],
+          "expected_single_peak": 23
+        },
+        {
+          "delta": 64,
+          "axis": 1,
+          "reversed": false,
+          "old_positions": [
+            31,
+            32
+          ],
+          "new_positions": [
+            31
+          ],
+          "expected_single_peak": 31
+        },
+        {
+          "delta": 64,
+          "axis": 1,
+          "reversed": true,
+          "old_positions": [
+            31,
+            32
+          ],
+          "new_positions": [
+            31
+          ],
+          "expected_single_peak": 31
+        }
+      ],
+      "failures": [
+        "y_junction-d18: geometry/connected part regressed"
+      ]
+    },
+    "B": {
+      "eligible": false,
+      "diagonal_reduction": 0,
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "old_false_edges": 0,
+          "new_false_edges": 0,
+          "limit": 0,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 16,
+          "old_false_edges": 50,
+          "new_false_edges": 49,
+          "limit": 50,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 24,
+          "old_false_edges": 2843,
+          "new_false_edges": 2623,
+          "limit": 2843,
+          "pixels": 93744
+        }
+      ],
+      "steps": [
+        {
+          "delta": 18,
+          "axis": 0,
+          "reversed": false,
+          "old_positions": [
+            23,
+            24
+          ],
+          "new_positions": [
+            23
+          ],
+          "expected_single_peak": 23
+        },
+        {
+          "delta": 18,
+          "axis": 0,
+          "reversed": true,
+          "old_positions": [
+            23,
+            24
+          ],
+          "new_positions": [
+            23
+          ],
+          "expected_single_peak": 23
+        },
+        {
+          "delta": 18,
+          "axis": 1,
+          "reversed": false,
+          "old_positions": [
+            31,
+            32
+          ],
+          "new_positions": [
+            31
+          ],
+          "expected_single_peak": 31
+        },
+        {
+          "delta": 18,
+          "axis": 1,
+          "reversed": true,
+          "old_positions": [
+            31,
+            32
+          ],
+          "new_positions": [
+            31
+          ],
+          "expected_single_peak": 31
+        },
+        {
+          "delta": 64,
+          "axis": 0,
+          "reversed": false,
+          "old_positions": [
+            23,
+            24
+          ],
+          "new_positions": [
+            23
+          ],
+          "expected_single_peak": 23
+        },
+        {
+          "delta": 64,
+          "axis": 0,
+          "reversed": true,
+          "old_positions": [
+            23,
+            24
+          ],
+          "new_positions": [
+            23
+          ],
+          "expected_single_peak": 23
+        },
+        {
+          "delta": 64,
+          "axis": 1,
+          "reversed": false,
+          "old_positions": [
+            31,
+            32
+          ],
+          "new_positions": [
+            31
+          ],
+          "expected_single_peak": 31
+        },
+        {
+          "delta": 64,
+          "axis": 1,
+          "reversed": true,
+          "old_positions": [
+            31,
+            32
+          ],
+          "new_positions": [
+            31
+          ],
+          "expected_single_peak": 31
+        }
+      ],
+      "failures": [
+        "y_junction-d18: geometry/connected part regressed"
+      ]
+    }
+  }
+}

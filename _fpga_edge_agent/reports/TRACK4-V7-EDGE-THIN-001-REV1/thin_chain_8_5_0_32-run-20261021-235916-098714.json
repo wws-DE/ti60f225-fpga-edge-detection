@@ -1,0 +1,22 @@
+{
+  "name": "thin_chain_8_5_0_32-run",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xsim.bat",
+    "thin_chain_8_5_0_32",
+    "--runall",
+    "--onerror",
+    "quit",
+    "--onfinish",
+    "quit",
+    "--nolog",
+    "--testplusarg",
+    "INPUT=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_edge_thin_001_rev1_20261021/sim_thin_core/chain-8-5-0-32-input.hex",
+    "--testplusarg",
+    "GOLD=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_edge_thin_001_rev1_20261021/sim_thin_core/chain-8-5-0-32-gold.hex",
+    "--testplusarg",
+    "WINDOW=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_edge_thin_001_rev1_20261021/sim_thin_core/chain-8-5-0-32-window.hex"
+  ],
+  "returncode": 0,
+  "seconds": 2.519829273223877,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-EDGE-THIN-001-REV1\\thin_chain_8_5_0_32-run-20261021-235916-098714.log"
+}

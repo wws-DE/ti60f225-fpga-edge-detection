@@ -1,0 +1,19 @@
+{
+  "task_id": "TRACK4-V7-EDGE-THIN-001-REV1",
+  "design_version": "细化v1.1",
+  "time": "2026-10-21T23:43:36.870136+08:00",
+  "stage": "READY_FOR_REVIEW",
+  "approval_status": "NOT_APPROVED",
+  "design_path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\planning\\design-TRACK4-V7-EDGE-THIN-001-REV1.md",
+  "design_sha256": "fb16f0eef8b7d5fd2c924b7d0cd3475728ef2d493c7837f8c4b20777df935e7c",
+  "design_saved_and_full_readback": true,
+  "prior_quality_sha256": "ab01bab0f8cf42fb4c121f852342adc1fedc7d7577068a0295cf57b9ce68a89f",
+  "prior_reference_verification_sha256": "6f01d85c3c0e98f133a614caf2f62874cc45d850a86304d20a2dc56e72fab16e",
+  "new_rule": "keep original edge at real seeded neighbor direction changes; inherited protected NMS otherwise",
+  "new_revision_tests_generated": false,
+  "new_revision_tests_run": false,
+  "new_revision_rtl_generated": false,
+  "bit_generated": false,
+  "formal_state_updated": false,
+  "hardware_operation": false
+}

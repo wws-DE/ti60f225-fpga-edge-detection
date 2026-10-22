@@ -1,0 +1,24 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-002",
+  "design_version": "优化v2",
+  "state": "READY_FOR_REVIEW",
+  "approval": "PENDING",
+  "timestamp": "2026-10-21T16:45:46.733783+08:00",
+  "design": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\planning\\design-TRACK4-V7-LOWLIGHT-EDGE-002.md",
+  "design_sha256": "98df9817e492e80baa2df5be0e4b20f3c0f1e12e530859ca29760d3c502a0683",
+  "baseline": "track4_v7_lowlight_edge_001_20261021",
+  "baseline_input_hashes_verified": 156,
+  "bit_hash_verified": true,
+  "proposed_threshold": 64,
+  "proposed_min_diff_candidates": [
+    16,
+    20
+  ],
+  "proposed_gate": "2-of-3 same-sign support on dominant gradient axis",
+  "database_env_configured": false,
+  "formal_state_write": false,
+  "new_business_rtl_generated": false,
+  "new_executable_tests_generated": false,
+  "build_started": false,
+  "bit_generated": false
+}

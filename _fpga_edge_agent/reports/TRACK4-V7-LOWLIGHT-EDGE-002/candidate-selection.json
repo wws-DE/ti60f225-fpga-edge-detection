@@ -1,0 +1,11 @@
+{
+  "result": "SELECTED_AFTER_MATH_AND_RTL_CHECKS",
+  "selected_d": 20,
+  "threshold": 64,
+  "coherence_enabled": true,
+  "selected_at": "2026-10-21T16:59:51.325742+08:00",
+  "quality_sha256": "f787ce035af294064df83a9570f4184f59a1f144ae5fa1eb0ad5bdeb2855b7dc",
+  "core_checks_sha256": "5a695598f839e50d56430146c889a64a09bafdc37d21599c57e7e8dde5cd9950",
+  "reason": "D16 fails unchanged noise gates. D20 passes geometry coverage/continuity, weak-contour and noise gates; real camera effect pending.",
+  "real_camera_validated": false
+}

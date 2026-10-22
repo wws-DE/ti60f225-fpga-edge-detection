@@ -1,0 +1,113 @@
+{
+  "result": "SCALAR_AND_VECTOR_AGREE",
+  "scalar_thinning_pixels": 700416,
+  "legacy_scalar_comparisons": 700416,
+  "failed_y_junction": [
+    {
+      "candidate": "A",
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-EDGE-THIN-001\\failed-y-junction-d18-A.npz",
+      "sha256": "1e883e3a23b3d19bad269b701699edd961b1b39bf56a88ca4bf13be6de7df682",
+      "missed_target_yx": [
+        23,
+        31
+      ],
+      "deleted_seed_yx": [
+        22,
+        31
+      ],
+      "center_direction": 2,
+      "center_magnitude": 72,
+      "equal_winner_yx": [
+        21,
+        31
+      ],
+      "seed_direction_window": [
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          0,
+          1
+        ]
+      ],
+      "seed_window": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "candidate": "B",
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-EDGE-THIN-001\\failed-y-junction-d18-B.npz",
+      "sha256": "836ffddab8843dcfd28067d04b9e8eecfb83adf5ad430b511ee3e180bc2e37b8",
+      "missed_target_yx": [
+        23,
+        31
+      ],
+      "deleted_seed_yx": [
+        22,
+        31
+      ],
+      "center_direction": 2,
+      "center_magnitude": 72,
+      "equal_winner_yx": [
+        21,
+        31
+      ],
+      "seed_direction_window": [
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          0,
+          1
+        ]
+      ],
+      "seed_window": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  ]
+}

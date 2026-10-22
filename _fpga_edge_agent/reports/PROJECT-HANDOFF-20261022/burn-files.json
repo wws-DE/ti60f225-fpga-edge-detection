@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-22",
+  "task_id": "TRACK4-V7-MEDIAN-DETAIL-001",
+  "artifacts": [
+    {
+      "local_file": "FPGA_保边中值v1_A.bit",
+      "release_asset": "median_detail_v1_A_20261022.bit",
+      "bytes": 2490429,
+      "sha256": "c3b313e58726b96ab3fe487cb06249f7cbfe7b14707950d46772a6b4a7b59d11",
+      "status": "最新候选；尚待人工上板验收"
+    },
+    {
+      "local_file": "FPGA_细化v1.1.bit",
+      "release_asset": "edge_thin_v1_1_20261022.bit",
+      "bytes": 2474082,
+      "sha256": "c407819ed8fcbbf0bc5e9a9b38d219299d2f6489988d1c19dda036f44e21bd43",
+      "status": "回退对照；用户反馈精细程度提升，但仍有漏检、断点"
+    },
+    {
+      "local_file": "FPGA_v4.1.bit",
+      "release_asset": "v7_lowlight_edge_004_v4_1_20261021.bit",
+      "bytes": 2450544,
+      "sha256": "c194210fb0ff0e3f5e81da6746557b36e280fb16c0aa3ec24fa057e5c25ac77f",
+      "status": "更早的低光优化回退版"
+    }
+  ],
+  "frozen_build_inputs_verified": 162,
+  "hardware_passed": false
+}

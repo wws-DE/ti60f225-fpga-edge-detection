@@ -1,0 +1,126 @@
+"""Approved v4.1 local software delivery; no board or Flash access."""
+from pathlib import Path
+import datetime, hashlib, json, sys
+from review_bitgen import review
+sys.stdout.reconfigure(encoding='utf-8')
+w=Path(__file__).resolve().parents[1];a=w.parents[2]
+task='TRACK4-V7-LOWLIGHT-EDGE-004-REV1';session=task+'-20261021'
+r=a/'reports'/task;stage=a/'artifacts/staging'/task
+read=lambda p:json.loads(p.read_text(encoding='utf-8'))
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+auth=read(r/'authorization.json');checks=read(r/'checks.json')
+assert auth['reply_exact']=='确认修改'
+assert sha(r/'approved-design-v4.1.md')==auth['approved_design_sha256']=='34c0dc732cf8e0056e46fe2a78608a836c5018d12b14f280c618d6f56fcbe1c8'
+assert checks['state']=='SOFTWARE_CHECKED' and sha(r/'warning-review.json')==checks['warning_review_sha256']
+pgm=read(sorted(r.glob('build-pgm-*.json'))[-1]);assert pgm['returncode']==0 and not pgm['hardware_operation']
+selection=read(r/'candidate-selection.json');quality=read(r/'candidate-quality.json')
+assert selection['candidate']==quality['selected_candidate']=='A'
+assert quality['result']=='SYNTHETIC_GATE_PASS' and quality['candidates']['A']['eligible']
+assert selection['diagonal_min_diff']==18 and selection['context_threshold_drop']==16 and selection['threshold']==64
+assert selection['quality_sha256']==sha(r/'candidate-quality.json') and selection['core_checks_sha256']==sha(r/'diagonal-core-result.json')
+for name in ('diagonal-core-result.json','frontend-context-result.json','simulation-inputs.json','candidate-quality.json'):
+    obj=read(r/name)
+    hashes=obj if name=='simulation-inputs.json' else obj['sources' if name in ('diagonal-core-result.json','frontend-context-result.json') else 'source_sha256']
+    for p,h in hashes.items():assert sha(Path(p))==h,p
+for case in ('small','fault','reset','lowlight','full'):assert read(r/f'sim-{case}-result.json')['result']=='PASS'
+equiv=read(r/'v3-mode-012-equivalence.json');assert equiv['result']=='PASS' and equiv['pixels']==6220800
+assert equiv['script_sha256']==sha(w/'tests/verify_modes.py')
+for rel,h in equiv['unchanged_source_sha256'].items():assert sha(w/rel)==h,rel
+control=read(r/'control-result.json');assert sha(Path(control['prior_result']))==control['prior_result_sha256']
+for rel,h in control['source_sha256'].items():assert sha(w/rel)==h,rel
+normal={x['relative']:x['after_sha256'] for x in checks['source_normalizations']}
+inputs=read(r/'build-inputs.json');assert len(inputs['files'])==159
+for item in inputs['files']:assert sha(w/item['relative'])==normal.get(item['relative'],item['sha256']),item['relative']
+review()
+rollback=a/'artifacts/staging/TRACK4-V7-LOWLIGHT-EDGE-003/v7_lowlight_edge_003_v3_20261021.bit'
+assert sha(rollback)=='f3825f7e99b9626746df4cb21e21eab9fa32e219af3051e4fde38612764aec0e'
+stage.mkdir(parents=True,exist_ok=False)
+bit=stage/'v7_lowlight_edge_004_v4_1_20261021.bit';source=w/'outflow/ti60f225_oob.bit'
+bit.write_bytes(source.read_bytes());assert sha(bit)==sha(source) and bit.stat().st_size>2000000
+(stage/'SHA256SUMS.txt').write_text(sha(bit)+'  '+bit.name+'\n',encoding='ascii')
+final_inputs={};test_inputs={}
+for item in inputs['files']:
+    p=w/item['relative'];final_inputs[item['relative']]=sha(p)
+    target=r/'final-source-snapshot'/item['relative'];target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(p.read_bytes())
+for p in (w/'tests').iterdir():
+    if p.is_file():
+        target=r/'final-source-snapshot/tests'/p.name;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(p.read_bytes())
+        test_inputs[p.name]=sha(p)
+(r/'final-build-inputs.json').write_text(json.dumps(final_inputs,indent=2),encoding='utf-8')
+(r/'final-test-inputs.json').write_text(json.dumps(test_inputs,indent=2),encoding='utf-8')
+now=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).isoformat()
+manifest=dict(task_id=task,session_id=session,timestamp=now,state='WAITING_HUMAN_PROGRAM',design_version='优化v4.1',
+    approved_design_sha256=auth['approved_design_sha256'],authorization_sha256=sha(r/'authorization.json'),
+    project=str(w/'ti60f225_oob.xml'),tool='Efinity 2026.1.132',device='Ti60F225/I3',
+    bit=dict(path=str(bit),bytes=bit.stat().st_size,sha256=sha(bit)),
+    parameters=dict(sobel_threshold=64,base_min_diff=20,base_support=2,weak_enabled=True,weak_min_diff=18,weak_support=3,weak_threshold_drop=0,
+        diagonal_enabled=True,diagonal_min_diff=18,diagonal_support='both axes at least2-of3 and max(absGx,absGy)<=2*min; sign aligned',
+        context_threshold_drop=16,context_support='one-pixel tangent gap repair and isolated seed rejection',video_latency_cycles=6602,sensor_gain_registers='0x81/0x2A',median_enabled=True),
+    setup_min_ns=checks['setup_min_ns'],hold_min_ns=checks['hold_min_ns'],resources=checks['resources'],
+    mode_order=['COLOR','GRAY','MEDIAN','SOBEL','OVERLAY'],full_resolution_compared_pixels=10368000,
+    checks_sha256=sha(r/'checks.json'),selection_sha256=sha(r/'candidate-selection.json'),
+    inputs_manifest_sha256=sha(r/'final-build-inputs.json'),test_inputs_manifest_sha256=sha(r/'final-test-inputs.json'),
+    rollback_bit=dict(path=str(rollback),sha256=sha(rollback)),
+    hardware_programmed=False,hardware_passed=False,real_camera_accuracy_measured=False,local_audit_exception=True,formal_state_updated=False)
+guide=f"""# 优化v4.1：弱斜边恢复、短断点连接与孤立点筛除
+
+2026-10-21，任务{task}，按用户在v4.1设计后的“确认修改”实施。软件验证/构建完成，状态WAITING_HUMAN_PROGRAM，实际画质等待你下载验收。
+
+## 文件和烧录
+
+- [本版JTAG bit]({bit.as_posix()})
+- [Efinity2026.1.132工程]({(w/'ti60f225_oob.xml').as_posix()})
+- [Sobel：弱斜向种子]({(w/'algorithm/frontend/sobel_pair.sv').as_posix()})
+- [frontend：空间处理接入]({(w/'algorithm/frontend/frontend_frame_pair.sv').as_posix()})
+- [bridge：D18及六行显示延迟]({(w/'rtl/v7_algorithm_video_pair.sv').as_posix()})
+- [空间打包]({(w/'algorithm/edge/edge_context_pack_pair.sv').as_posix()})、[窗口]({(w/'algorithm/edge/edge_context_window_pair.sv').as_posix()})、[空间判定]({(w/'algorithm/edge/edge_context_filter_pair.sv').as_posix()})
+- [完整软件检查]({(r/'checks.json').as_posix()})、[固定候选质量结果]({(r/'candidate-quality.json').as_posix()})
+- [v3回退bit]({rollback.as_posix()})
+
+新bit大小{bit.stat().st_size}字节，SHA256 `{sha(bit)}`。
+
+在Programmer选择上方本版bit，沿用成功设置：`(local) Quad RS232-HS`、`JTAG`、`1 - 0x10660a79`、10MHz；由你点击Program FPGA并确认成功日志。JTAG配置断电后需要重新下载，本轮没有Flash固化。
+
+## 修改和理想效果
+
+v3的T64、D20/2支持和D18/3支持保留；新增弱斜向种子：横向和纵向各至少2/3同号跨度达到18，且两个梯度方向符号一致、主次幅值比不超过2。L1仍须大于64。随后用原seed进行有方向的一像素断点补出，并筛掉无真实8邻域seed的孤立点；新补点不递归扩张。
+
+本版希望普通光照下的弱斜线、圆弧和细小轮廓更完整，局部短断点和孤立杂点减少。整段低于阈值、长缺口、相关纹理/噪声仍可能存在；这不是完整Canny或NMS，不承诺恢复所有弱轮廓或消除像素网格锯齿。真实孤立单像素细节可能被筛掉，句点、小点和短笔画应重点看；两像素相邻种子按规则保留。
+
+相机增益0x81/0x2A、曝光、灰度、中值、KEY3模式和约束沿用。显示延迟由4402变6602个74.25MHz时钟，增加约29.63微秒，吞吐和帧率不变。前三模式像素值与v3一致。
+
+## 一次验收
+
+在同一普通室内照明、镜头位置和目标下与v3比较，KEY3仍按彩色→灰度→中值→Sobel→红边叠加循环。观察书本/纸张斜边、圆弧、小字笔画、手指轮廓，再观察白墙或平坦纸面。
+
+| 检查项 | 理想表现 | 请反馈的异常 |
+|---|---|---|
+| 弱斜线和圆弧 | 原先漏掉的斜边更易出现、轮廓更完整 | 仍只在强光下出现、斜线消失或弧线断裂 |
+| 短断点和细线 | 短缺口减少，相邻细线仍分开 | 粘连、错误搭桥、细线/角点丢失 |
+| 噪点和小点 | 平坦背景孤立杂点减少，短笔画保留 | 噪点/闪烁增加，句点或真实小细节被删 |
+| 实时性和模式 | 五模式实时、长按仅切一次，红边贴合 | 停帧、黑屏、错行或红边错位 |
+
+明显退步时可由你加载上方v3回退文件。请描述光照、目标和各模式现象；软件结果不能代替这次验收。
+
+## 软件证据和局限
+
+- 15组Sobel配置逐位/协议通过：D18、D19、关闭分支各276839组双像素，另12组阈值/输出种类边界各21863组；包含三灰阶穷举窗口、随机、符号、双轴/单轴及幅值比边界。真实v3核并行确认诊断、六级身份、握手及进入后处理前的种子包含关系；气泡/反压/停顿/flush/frame_start/rst通过。
+- 空间模块源码与v4局部验证版本完全一致，复用6720组窗口及12组组合配置/60帧/36打断的哈希绑定证据。完整新frontend另做真实v3默认关闭/外部owner比较、灰度旁路、完整job、取消、坏输入、恢复及身份/状态计数检查通过。
+- 固定候选A/D18与B/D19均合格，按更多弱几何恢复选择A。Δ18斜线44个几何点覆盖0→44，形成1条连续轮廓；圆弧132点覆盖116→132，内外2轮廓完整连通。原高对比、弱横/竖/矩形、细线分离、单点/两点规则及盐椒检查通过。是固定合成输入和1像素定位/8连通条件下的结果，不是实机准确率。
+- 每档93744个固定平坦ROI像素，噪声±8为0→0，±16为56→50，±24为2885→2843；没有提高原0/56/2885上限。不能外推实机降噪百分比。
+- 同沿VS/模式、帧/job配置隔离、首帧、故障回退、活动区复位和1080p五帧10368000像素及实际顶层串行化比对通过；固定视频延迟6602，前三模式6220800像素与v3预期逐字节一致。
+- Efinity软件map/interface/pnr/位流生成通过；18组setup/18组hold均非负，最小{checks['setup_min_ns']}ns/{checks['hold_min_ns']}ns；XLR{checks['resources']['xlr']}、RAM{checks['resources']['ram']}、DSP{checks['resources']['dsp']}。四条新增小数组提示逐项核对，1287条PNR告警均为历史消息，未宣称全部CDC/约束问题已消除；见warning-review.json和bitgen-warning-review.json。
+- 首次核仿真展开时脚本引用旧TB，修正入口后重跑；初次告警差异检查把历史gradient-delay提示预估为新增，核对实际差异后修正记录。旧日志保留，RTL/算法期望/质量门槛没有因此放宽。
+
+相对v3的整体交付包含三个原RTL、三个空间模块及工程源表调整；相对未交付v4实现只改三个源。原v3及失败v4证据保留，正式DB/PROJECT_STATE/TASK_LEDGER/Approval Manifest不改写，沿用批准的本地报告和追加审计。
+按[fpga-hardware-node-gate]({(a/'skills/fpga-hardware-node-gate/SKILL.md').as_posix()})的“停止在WAITING_HUMAN_PROGRAM”要求，此处停止等待你下载验收。没有自动FPGA/Flash/Debugger操作，硬件通过false；理解验收待检验，不以考试阻塞工程交付。
+"""
+(r/'交付与验收说明.md').write_text(guide,encoding='utf-8');(w/'使用说明.md').write_text(guide,encoding='utf-8')
+evidence={p.name:sha(p) for p in r.iterdir() if p.is_file() and p.name!='evidence-manifest.json'}
+(r/'evidence-manifest.json').write_text(json.dumps(dict(scope='Root reports at registration; final build/test snapshots bound separately',sha256=evidence),indent=2),encoding='utf-8')
+manifest['evidence_manifest_sha256']=sha(r/'evidence-manifest.json')
+(stage/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
+event=dict(project_id='FPGA_EDGE_TI60',session_id=session,task_id=task,event_id=session+'-003',timestamp=now,event_type='V4_1_SOFTWARE_VERIFIED_BIT_REGISTERED',state='WAITING_HUMAN_PROGRAM',bit_sha256=sha(bit),manifest=str(stage/'manifest.json'),hardware_operation=False,formal_state_updated=False)
+for folder in ('runtime/events/2026/10','side_effects/ledger'):
+    with (a/folder/('session-'+session+'.jsonl')).open('a',encoding='utf-8') as f:f.write(json.dumps(event,ensure_ascii=False)+'\n')
+print(json.dumps(manifest,ensure_ascii=False,indent=2))

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<efx:tool_report xmlns:efx="http://www.efinixinc.com/tool_report" date="2026-10-18T18:38:25+0800" project="ti60f225_oob" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/tool_report tool_report.xsd">
+<efx:tool_report xmlns:efx="http://www.efinixinc.com/tool_report" date="2026-10-20T16:39:49+0800" project="ti60f225_oob" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/tool_report tool_report.xsd">
 
   <efx:group name="Interface">
     <efx:group_data name="Missing Interface Pins" severity="info" value="7"/>
@@ -7,11 +7,11 @@
   </efx:group>
 
   <efx:group name="System Resources">
-    <efx:group_data info="runtime" name="packing" severity="info" value="0|0:0:4"/>
-    <efx:group_data info="runtime" name="placement" severity="info" value="0|0:0:51"/>
-    <efx:group_data info="runtime" name="routing" severity="info" value="0|0:0:32"/>
-    <efx:group_data info="runtime" name="Latest PnR Run" severity="info" value="0|0:2:17"/>
-    <efx:group_data info="peak_rr" name="Peak RSS" severity="info" value="455.112 MB"/>
+    <efx:group_data info="runtime" name="packing" severity="info" value="0|0:0:1"/>
+    <efx:group_data info="runtime" name="placement" severity="info" value="0|0:0:26"/>
+    <efx:group_data info="runtime" name="routing" severity="info" value="0|0:0:17"/>
+    <efx:group_data info="runtime" name="Latest PnR Run" severity="info" value="0|0:1:11"/>
+    <efx:group_data info="peak_rr" name="Peak RSS" severity="info" value="457.58 MB"/>
   </efx:group>
 
   <efx:group name="Core Resources">

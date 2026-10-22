@@ -1,0 +1,20 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-005",
+  "design_version": "优化v5",
+  "time": "2026-10-21T22:48:07.000393+08:00",
+  "stage": "READY_FOR_REVIEW",
+  "approval_status": "NOT_APPROVED",
+  "design_path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\planning\\design-TRACK4-V7-LOWLIGHT-EDGE-005.md",
+  "design_sha256": "3fcc47c08678f4e289cf52af0b88f72e99d58ef318c603d3e128534495ce70ef",
+  "design_saved_and_full_readback": true,
+  "baseline_input_count": 159,
+  "baseline_unchanged": true,
+  "business_code_changed": false,
+  "new_tests_generated": false,
+  "new_tests_run": false,
+  "new_bit_generated": false,
+  "formal_state_updated": false,
+  "hardware_operation": false,
+  "scope": "三个新fine edge模块、frontend与bridge静态路由/参数、XML源表、必要测试及本机软件构建/登记；批准后实施",
+  "presented_in": "本次最终回复链接和摘要；等待优化v5批准"
+}

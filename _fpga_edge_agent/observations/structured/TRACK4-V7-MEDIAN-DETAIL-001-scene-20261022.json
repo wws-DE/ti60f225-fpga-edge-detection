@@ -1,0 +1,40 @@
+{
+  "task_id": "TRACK4-V7-MEDIAN-DETAIL-001",
+  "timestamp": "2026-10-22T15:19:37.840442+08:00",
+  "images": [
+    {
+      "mode": "GRAY",
+      "original_path": "C:\\Users\\29147\\OneDrive\\文档\\xwechat_files\\wxid_b0dsd8ju3zd122_3a80\\temp\\RWTemp\\2026-10\\9e20f478899dc29eb19741386f9343c8\\c79e38e24eed21af3b56da6ba16aef32.jpg",
+      "archive_path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\observations\\incoming\\TRACK4-V7-MEDIAN-DETAIL-001-scene-20261022\\gray.jpg",
+      "sha256": "7cea801f8d45a3d30fbe7015b6c8ffc3a50dc0fa0d847dad006675257fc9f3ea"
+    },
+    {
+      "mode": "MEDIAN",
+      "original_path": "C:\\Users\\29147\\OneDrive\\文档\\xwechat_files\\wxid_b0dsd8ju3zd122_3a80\\temp\\RWTemp\\2026-10\\9e20f478899dc29eb19741386f9343c8\\7dc383e9f5526f62d0e42b4848b63023.jpg",
+      "archive_path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\observations\\incoming\\TRACK4-V7-MEDIAN-DETAIL-001-scene-20261022\\median.jpg",
+      "sha256": "a2dcb46f7a09d6f56ebb28cf49fc82868bdf785aa5c75c11cbe7d263c489489a"
+    },
+    {
+      "mode": "SOBEL",
+      "original_path": "C:\\Users\\29147\\OneDrive\\文档\\xwechat_files\\wxid_b0dsd8ju3zd122_3a80\\temp\\RWTemp\\2026-10\\9e20f478899dc29eb19741386f9343c8\\dc65b1d018101b241ded2568cfdcfca4.jpg",
+      "archive_path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\observations\\incoming\\TRACK4-V7-MEDIAN-DETAIL-001-scene-20261022\\sobel.jpg",
+      "sha256": "8fa028550233732356a4b4450d1505edcb43fe5e49e375f4bcc7b5898e2a7cbb"
+    }
+  ],
+  "user_confirmation": "第123确实是这样的顺序。打了一部分光，摄像头离木板距离大约是80-95厘米",
+  "user_target": "木纹、细线和外轮廓都尽量保留",
+  "user_tradeoff": "优先恢复弱细节，允许少量杂点增加后上板对比",
+  "facts": [
+    "Confirmed GRAY/MEDIAN/SOBEL order",
+    "Partial supplementary lighting, distance80-95cm",
+    "Main board seams and wood grain remain visible in both grayscale views",
+    "Sobel shows some fragmented traces and many wood grain responses"
+  ],
+  "limits": [
+    "Photographed display with changed viewpoint/scale/exposure; no pixelwise difference or original gray threshold calibration",
+    "This is not an unlit validation or close-distance controlled pair",
+    "Not every short white trace is sensor noise; wood grain is now explicitly desired"
+  ],
+  "hardware_passed": false,
+  "formal_state_updated": false
+}

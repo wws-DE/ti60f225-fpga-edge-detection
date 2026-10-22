@@ -1,0 +1,15 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-002",
+  "timestamp": "2026-10-21T16:48:14.272427+08:00",
+  "source": "user_chat",
+  "reply_exact": "批准优化v2",
+  "approved_design_version": "优化v2",
+  "approved_design_sha256": "98df9817e492e80baa2df5be0e4b20f3c0f1e12e530859ca29760d3c502a0683",
+  "approved_design_snapshot": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-002\\approved-design-v2.md",
+  "scope": "Four RTL files in independent copy; required tests/scripts; only fixed candidates T64/D16 and T64/D20 with frozen quality gates; XSim and Efinity software build; bit staging then stop for human acceptance",
+  "local_audit_exception": true,
+  "formal_database_write": false,
+  "hardware_operation": false,
+  "baseline": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_001_20261021",
+  "baseline_hash_manifest_sha256": "59c9a8f2f4e08d061822a3e8b9514a6bb49ffa646db7b878f9efbadff2247da6"
+}

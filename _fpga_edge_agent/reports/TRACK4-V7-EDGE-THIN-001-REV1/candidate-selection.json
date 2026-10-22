@@ -1,0 +1,10 @@
+{
+  "candidate": "B",
+  "thin_mode": 1,
+  "threshold": 64,
+  "diagonal_min_diff": 18,
+  "context_threshold_drop": 16,
+  "quality_sha256": "b39c8f8baba6f6b4721769132ca42ee6bbceffae532386a54443ead80bd4a9e3",
+  "core_checks_sha256": "b2a4c02f05023dcf1dc73614225f1ab90e02bae1b6dc2a31a96a47669c1c49fc",
+  "reason": "A has no measured required diagonal reduction; eligible B meets axis thinning and geometry/noise gates, per approved selection rule"
+}

@@ -1,0 +1,17 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Wed Oct 21 17:45:05 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/video_lowlight/xsim_script.tcl
+# xsim {video_lowlight} -testplusarg INPUT=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/sim_fullscreen/lowlight-input.hex -testplusarg GOLD=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/sim_fullscreen/lowlight-gold.hex -autoloadwcfg -runall -onfinish quit -onerror quit
+Time resolution is 1 ps
+run -all
+FIVE_MODES_PASS W=128 H=48 frames=5 pixels=30720 checked_cycles=65105 latency=562 statuses=5 fault_test=0 reset_test=0
+$finish called at time : 884491698 ps : File "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/tests/tb_five_modes.sv" Line 120
+exit 0
+INFO: [Common 17-206] Exiting xsim at Wed Oct 21 17:45:08 2026...

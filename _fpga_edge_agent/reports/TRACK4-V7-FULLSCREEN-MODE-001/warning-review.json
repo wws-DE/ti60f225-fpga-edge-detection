@@ -1,0 +1,21 @@
+{
+  "task": "TRACK4-V7-FULLSCREEN-MODE-001",
+  "reviewed_map_added": [],
+  "reviewed_flow_added": [
+    "ti60f225_oob.place.out: WARNING  : Synchronizer chain starting at cell fullscreen_mode_control/mode_key/key_sync_first~FF is driven by a non-sequential source key_mode_n:inpad [FlowMsg::SyncHeadDrivenByNonSeq]"
+  ],
+  "unreviewed": [],
+  "decision": "SOFTWARE_CHECKED_FOR_BIT_GENERATION",
+  "reason": "New asynchronous physical key pad drives the intended first stage; netlist confirms one first-stage FF and a second-stage synchronizer, matching A3/3.3V/weak pullup pinout. Only the first-stage D is false-pathed. No additional timing relationships or unmatched key constraints. Legacy loop messages are matched by source hash, LUT mask and pin-equality graph in compare_flow_warnings.py.",
+  "legacy_pnr_count": 1286,
+  "current_pnr_count": 1287,
+  "source_normalizations": [
+    {
+      "relative": "ti60f225_oob.xml",
+      "before_sha256": "2b68e26d629d64cae5733f1f238f0284794ef4ef47b84a810c4f210b1847d14a",
+      "after_sha256": "338290e30d2412a2f5f1211e7083d52bd79b18ae4d0758b36094a87d739858ac",
+      "reason": "Efinity XML serialization; exact element/attribute/value/order equivalence"
+    }
+  ],
+  "hardware_acceptance": "PENDING"
+}

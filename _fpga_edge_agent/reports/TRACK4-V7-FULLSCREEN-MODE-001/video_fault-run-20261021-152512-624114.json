@@ -1,0 +1,20 @@
+{
+  "name": "video_fault-run",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xsim.bat",
+    "video_fault",
+    "--runall",
+    "--onerror",
+    "quit",
+    "--onfinish",
+    "quit",
+    "--nolog",
+    "--testplusarg",
+    "INPUT=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_fullscreen_mode_001_20261021/sim_fullscreen/fault-input.hex",
+    "--testplusarg",
+    "GOLD=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_fullscreen_mode_001_20261021/sim_fullscreen/fault-gold.hex"
+  ],
+  "returncode": 0,
+  "seconds": 2.722982406616211,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-FULLSCREEN-MODE-001\\video_fault-run-20261021-152512-624114.log"
+}

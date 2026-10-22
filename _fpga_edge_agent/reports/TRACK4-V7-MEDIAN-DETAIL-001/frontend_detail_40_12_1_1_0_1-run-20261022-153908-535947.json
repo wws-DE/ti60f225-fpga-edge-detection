@@ -1,0 +1,22 @@
+{
+  "name": "frontend_detail_40_12_1_1_0_1-run",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xsim.bat",
+    "frontend_detail_40_12_1_1_0_1",
+    "--runall",
+    "--onerror",
+    "quit",
+    "--onfinish",
+    "quit",
+    "--nolog",
+    "--testplusarg",
+    "INPUT=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_median_detail_001_20261022/sim_frontend_detail/40-12-1-1-0-1-input.hex",
+    "--testplusarg",
+    "GOLD0=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_median_detail_001_20261022/sim_frontend_detail/40-12-1-1-0-1-gold0.hex",
+    "--testplusarg",
+    "GOLD1=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_median_detail_001_20261022/sim_frontend_detail/40-12-1-1-0-1-gold1.hex"
+  ],
+  "returncode": 0,
+  "seconds": 2.595116376876831,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\frontend_detail_40_12_1_1_0_1-run-20261022-153908-535947.log"
+}

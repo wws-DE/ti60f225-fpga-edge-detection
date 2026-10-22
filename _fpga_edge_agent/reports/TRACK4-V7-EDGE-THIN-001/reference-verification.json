@@ -1,0 +1,121 @@
+{
+  "result": "SCALAR_AND_VECTOR_AGREE",
+  "scalar_thinning_pixels": 700416,
+  "legacy_scalar_comparisons": 700416,
+  "failed_y_junction": [
+    {
+      "candidate": "A",
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-EDGE-THIN-001\\failed-y-junction-d18-A.npz",
+      "sha256": "1e883e3a23b3d19bad269b701699edd961b1b39bf56a88ca4bf13be6de7df682",
+      "missed_target_yx": [
+        23,
+        31
+      ],
+      "deleted_seed_yx": [
+        22,
+        31
+      ],
+      "center_direction": 2,
+      "center_magnitude": 72,
+      "equal_winner_yx": [
+        21,
+        31
+      ],
+      "seed_direction_window": [
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          0,
+          1
+        ]
+      ],
+      "seed_window": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "candidate": "B",
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-EDGE-THIN-001\\failed-y-junction-d18-B.npz",
+      "sha256": "836ffddab8843dcfd28067d04b9e8eecfb83adf5ad430b511ee3e180bc2e37b8",
+      "missed_target_yx": [
+        23,
+        31
+      ],
+      "deleted_seed_yx": [
+        22,
+        31
+      ],
+      "center_direction": 2,
+      "center_magnitude": 72,
+      "equal_winner_yx": [
+        21,
+        31
+      ],
+      "seed_direction_window": [
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          0,
+          1
+        ]
+      ],
+      "seed_window": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "source_sha256": {
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_20261021\\tests\\verify_thin_reference.py": "1bfb4559eb781673100fe00fbda0eefd05a84605921e35fcd47df1abc3bbcc75",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_20261021\\tests\\reference_thin.py": "1e8b22760b4d73daead011328d611219d2aed120241052a268bf2597af8050d9",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_20261021\\tests\\quality_thin.py": "b19140ac8514baacbe27f2641ed01003434e082991591990301de3d03de15b31",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_20261021\\tests\\reference_v4.py": "ffa90e3c79dd35d348b6e7922d5ccd15a247d5a23632c76a62eea9516bf4ba82"
+  },
+  "rtl_checked": false,
+  "hardware_checked": false
+}

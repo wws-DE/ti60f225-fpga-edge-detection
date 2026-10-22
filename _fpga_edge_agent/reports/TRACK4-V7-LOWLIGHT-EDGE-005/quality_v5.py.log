@@ -1,0 +1,84 @@
+{
+  "result": "SYNTHETIC_GATE_FAIL",
+  "selected_candidate": null,
+  "candidates": {
+    "A": {
+      "low_threshold": 24,
+      "eligible": false,
+      "weak_geometry_gain": 6528,
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "old_false_edges": 0,
+          "new_false_edges": 6270,
+          "limit": 0,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 16,
+          "old_false_edges": 50,
+          "new_false_edges": 26232,
+          "limit": 50,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 24,
+          "old_false_edges": 2843,
+          "new_false_edges": 32246,
+          "limit": 2843,
+          "pixels": 93744
+        }
+      ],
+      "failures": [
+        "noise amplitude 8: 6270 > approved v4.1 cap 0",
+        "correlated noise amplitude 8 axis 0: 532 > v4.1 0",
+        "correlated noise amplitude 8 axis 1: 572 > v4.1 0",
+        "noise amplitude 16: 26232 > approved v4.1 cap 50",
+        "correlated noise amplitude 16 axis 0: 14433 > v4.1 0",
+        "correlated noise amplitude 16 axis 1: 14456 > v4.1 0",
+        "noise amplitude 24: 32246 > approved v4.1 cap 2843",
+        "correlated noise amplitude 24 axis 0: 25766 > v4.1 79",
+        "correlated noise amplitude 24 axis 1: 25798 > v4.1 100"
+      ]
+    },
+    "B": {
+      "low_threshold": 32,
+      "eligible": false,
+      "weak_geometry_gain": 5271,
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "old_false_edges": 0,
+          "new_false_edges": 1312,
+          "limit": 0,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 16,
+          "old_false_edges": 50,
+          "new_false_edges": 18820,
+          "limit": 50,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 24,
+          "old_false_edges": 2843,
+          "new_false_edges": 29075,
+          "limit": 2843,
+          "pixels": 93744
+        }
+      ],
+      "failures": [
+        "noise amplitude 8: 1312 > approved v4.1 cap 0",
+        "correlated noise amplitude 8 axis 0: 18 > v4.1 0",
+        "correlated noise amplitude 8 axis 1: 27 > v4.1 0",
+        "noise amplitude 16: 18820 > approved v4.1 cap 50",
+        "correlated noise amplitude 16 axis 0: 6034 > v4.1 0",
+        "correlated noise amplitude 16 axis 1: 6131 > v4.1 0",
+        "noise amplitude 24: 29075 > approved v4.1 cap 2843",
+        "correlated noise amplitude 24 axis 0: 18166 > v4.1 79",
+        "correlated noise amplitude 24 axis 1: 18369 > v4.1 100"
+      ]
+    }
+  }
+}

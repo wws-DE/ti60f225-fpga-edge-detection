@@ -1,0 +1,16 @@
+{
+  "name": "mode_boundary-elaborate",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "mode_boundary",
+    "work.tb_mode_boundary"
+  ],
+  "returncode": 0,
+  "seconds": 4.24918007850647,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-EDGE-THIN-001-REV1\\mode_boundary-elaborate-20261022-000137-689696.log"
+}

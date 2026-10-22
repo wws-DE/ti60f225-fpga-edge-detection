@@ -1,0 +1,7 @@
+{
+  "initial_failure": "xelab could not find tb_diagonal_sobel because compile list still named tb_coherent_sobel.sv",
+  "fix": "Compile the already prepared tb_diagonal_sobel.sv",
+  "rtl_changed": false,
+  "expected_values_changed": false,
+  "initial_logs_retained": true
+}

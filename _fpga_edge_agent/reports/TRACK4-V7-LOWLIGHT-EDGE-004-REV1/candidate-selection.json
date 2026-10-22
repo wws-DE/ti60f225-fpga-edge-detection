@@ -1,0 +1,11 @@
+{
+  "candidate": "A",
+  "diagonal_min_diff": 18,
+  "threshold": 64,
+  "context_threshold_drop": 16,
+  "base_min_diff": 20,
+  "base_weak_min_diff": 18,
+  "quality_sha256": "bcea435e3bc855bd970e7ed046d4cff5088fa57c8c0434a02d17b580929818c3",
+  "core_checks_sha256": "dd39b28afcd9f41aa86808a93d670604645287dbf787451b3791a3c662d31d42",
+  "reason": "Both eligible; A has larger delta18/19 geometry gain under unchanged noise limits"
+}

@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Efinity/2026.1/sim_models/verilog/efx_ram10.v" into library work
+INFO: [VRFC 10-311] analyzing module EFX_RAM10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/algorithm/frontend/frontend_frame_pair.sv" into library work
+INFO: [VRFC 10-311] analyzing module frontend_frame_pair
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/algorithm/frontend/line_store_pair.sv" into library work
+INFO: [VRFC 10-311] analyzing module line_store_pair
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/algorithm/frontend/median9_pair.sv" into library work
+INFO: [VRFC 10-311] analyzing module median9_pair
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/algorithm/frontend/rgb_to_y_pair.sv" into library work
+INFO: [VRFC 10-311] analyzing module rgb_to_y_pair
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/algorithm/frontend/sobel_pair.sv" into library work
+INFO: [VRFC 10-311] analyzing module sobel_pair
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/algorithm/frontend/window3x3_pair.sv" into library work
+INFO: [VRFC 10-311] analyzing module window3x3_pair
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/algorithm/control/key_press_debouncer.sv" into library work
+INFO: [VRFC 10-311] analyzing module key_press_debouncer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/rtl/v7_fullscreen_mode_control.sv" into library work
+INFO: [VRFC 10-311] analyzing module v7_fullscreen_mode_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/rtl/v7_algorithm_video_pair.sv" into library work
+INFO: [VRFC 10-311] analyzing module v7_algorithm_video_pair
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/sim_fullscreen/actual_serializer.sv" into library work
+INFO: [VRFC 10-311] analyzing module actual_serializer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/tests/tb_five_modes.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_five_modes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/tests/tb_mode_boundary.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_mode_boundary

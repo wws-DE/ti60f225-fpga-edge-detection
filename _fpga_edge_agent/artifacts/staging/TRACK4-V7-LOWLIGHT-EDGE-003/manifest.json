@@ -1,0 +1,58 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-003",
+  "session_id": "TRACK4-V7-LOWLIGHT-EDGE-003-20261021",
+  "timestamp": "2026-10-21T17:50:28.654656+08:00",
+  "state": "WAITING_HUMAN_PROGRAM",
+  "design_version": "优化v3",
+  "approved_design_sha256": "717cffb801e440de98a5932a924594f0a0897cdc5b1d7259e7de5355f0d65cbf",
+  "authorization_sha256": "ef61644886a17a4fb6df1aa6f2bf6c597079a876f5c0fe2d4391e81ac23267ad",
+  "project": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_003_20261021\\ti60f225_oob.xml",
+  "tool": "Efinity 2026.1.132",
+  "device": "Ti60F225/I3",
+  "bit": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-LOWLIGHT-EDGE-003\\v7_lowlight_edge_003_v3_20261021.bit",
+    "bytes": 2434485,
+    "sha256": "f3825f7e99b9626746df4cb21e21eab9fa32e219af3051e4fde38612764aec0e"
+  },
+  "parameters": {
+    "sobel_threshold": 64,
+    "base_min_diff": 20,
+    "base_support": 2,
+    "weak_enabled": true,
+    "weak_min_diff": 18,
+    "weak_support": 3,
+    "weak_threshold_drop": 0,
+    "combination": "OR; same dominant axis and sign; ties accept either",
+    "sensor_gain_registers": "0x81/0x2A",
+    "median_enabled": true
+  },
+  "setup_min_ns": 0.344,
+  "hold_min_ns": 0.026,
+  "resources": {
+    "xlr": 22132,
+    "ram": 169,
+    "dsp": 0
+  },
+  "mode_order": [
+    "COLOR",
+    "GRAY",
+    "MEDIAN",
+    "SOBEL",
+    "OVERLAY"
+  ],
+  "full_resolution_compared_pixels": 10368000,
+  "checks_sha256": "5199535635a4cc475215d325311caee4631ac27dbf3f972c1947098d9591916c",
+  "selection_sha256": "b8c2b58b0dcbe3a28db5538e8d880c40db30ff39ac8c8dfd0b21396f1e391ae7",
+  "inputs_manifest_sha256": "137525f881a835d8e295f1df94a44ef7e54c46a2f11471f93ccbf79f59771ec6",
+  "test_inputs_manifest_sha256": "84cc1e8b274540875460578333e3d1425127eb505ebfa0036c224280ae5e9976",
+  "rollback_bit": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-LOWLIGHT-EDGE-002\\v7_lowlight_edge_002_v2_20261021.bit",
+    "sha256": "d152bfc760fac94cb87da6f4b0b3728eb5d927879262092cb1772f2658d65e32"
+  },
+  "hardware_programmed": false,
+  "hardware_passed": false,
+  "real_camera_accuracy_measured": false,
+  "local_audit_exception": true,
+  "formal_state_updated": false,
+  "evidence_manifest_sha256": "1672498044718c6e54d7325e112305a755d4039176a5ec0e3106d1a145548459"
+}

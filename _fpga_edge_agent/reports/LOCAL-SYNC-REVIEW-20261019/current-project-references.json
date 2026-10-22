@@ -1,0 +1,42 @@
+[
+  {
+    "project": "track4_v7_rawtag_001_20261017",
+    "references": 64,
+    "missing": []
+  },
+  {
+    "project": "track4_v7_bggr_wb_001_20261017",
+    "references": 65,
+    "missing": []
+  },
+  {
+    "project": "track4_v7_fps_001_20261017",
+    "references": 66,
+    "missing": []
+  },
+  {
+    "project": "track4_v7_detail_001_20261018",
+    "references": 67,
+    "missing": []
+  },
+  {
+    "project": "track4_v7_pixel_order_001_20261018",
+    "references": 67,
+    "missing": []
+  },
+  {
+    "project": "track4_v7_algorithm_bridge_001_20261018",
+    "references": 74,
+    "missing": []
+  },
+  {
+    "project": "track4_v7_algorithm_control_001_20261018",
+    "references": 78,
+    "missing": []
+  },
+  {
+    "project": "track4_v7_display_half_001_20261018",
+    "references": 79,
+    "missing": []
+  }
+]

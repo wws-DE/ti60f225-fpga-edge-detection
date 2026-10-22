@@ -1,0 +1,79 @@
+{
+  "assets_checked": 10,
+  "total_bytes": 50500809,
+  "all_sha256_and_size_match": true,
+  "archives": [
+    {
+      "name": "fpga-bitstreams-20261014.zip",
+      "members": 47,
+      "bad_crc_member": null
+    },
+    {
+      "name": "simulation-hex-samples-20261014.zip",
+      "members": 270,
+      "bad_crc_member": null
+    }
+  ],
+  "files": [
+    {
+      "tag": "handoff-2026-10-19",
+      "name": "SHA256SUMS.txt",
+      "sha256": "9bcd1bde6c55fc6b007f73a01520a80d5877297fc0359896bb98b272a486f6af",
+      "ok": true
+    },
+    {
+      "tag": "handoff-2026-10-19",
+      "name": "v7_algorithm_bridge_001_v1_20261018.bit",
+      "sha256": "4c4951b5eabc673144679059d67c6dd6828724f7efa94ab3b89d6752c4ae1755",
+      "ok": true
+    },
+    {
+      "tag": "handoff-2026-10-19",
+      "name": "v7_bggr_wb_001_v1_20261017.bit",
+      "sha256": "31a95ca1e325c8ff5da12e36a65bd6456517ce9643b6ff12501dfaf0f3045bfd",
+      "ok": true
+    },
+    {
+      "tag": "handoff-2026-10-15",
+      "name": "SHA256SUMS.txt",
+      "sha256": "3ef65d910cbf90e78dc7956145972500c4e3cb9fe8ddcea4294b693c1742b496",
+      "ok": true
+    },
+    {
+      "tag": "handoff-2026-10-15",
+      "name": "track4-ddr-cal-diag-v1.bit",
+      "sha256": "96e2367d399403f6cd8c73f65d142489eca4b111c6d36efeb0d78ec63dd8abb4",
+      "ok": true
+    },
+    {
+      "tag": "handoff-2026-10-15",
+      "name": "track4-video-restore-v1.bit",
+      "sha256": "d13b8719d5ddd7cd78697aafc3dea635a5bc4ed3d9bbf991c6ff62e78d27b8de",
+      "ok": true
+    },
+    {
+      "tag": "snapshot-2026-10-14",
+      "name": "fpga-bitstreams-20261014.zip",
+      "sha256": "0ddae82b3b7925992df38f7137c9f214fb47bf8b213ea07be138e9fac91ee3fd",
+      "ok": true
+    },
+    {
+      "tag": "snapshot-2026-10-14",
+      "name": "fpga-bitstreams-20261014.zip.sha256.txt",
+      "sha256": "29a2d6a7ed5534f27b5eedd875deb4a803371c08116288f85eb05203f91cb11d",
+      "ok": true
+    },
+    {
+      "tag": "snapshot-2026-10-14",
+      "name": "simulation-hex-samples-20261014.zip",
+      "sha256": "8025ababeba69719cf06c03a696e4fd44d4bb72a6ed61047bf18968fa24ec306",
+      "ok": true
+    },
+    {
+      "tag": "snapshot-2026-10-14",
+      "name": "simulation-hex-samples-20261014.zip.sha256.txt",
+      "sha256": "4eec9bf3fb7a3b9e7d4637a76403d79084a7fda97d424865b99fe8ce0b269da0",
+      "ok": true
+    }
+  ]
+}

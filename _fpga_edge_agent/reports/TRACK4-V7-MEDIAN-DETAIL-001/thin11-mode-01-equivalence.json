@@ -1,0 +1,16 @@
+{
+  "result": "PASS",
+  "baseline": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\sim_fullscreen\\full-gold.hex",
+  "current": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\sim_fullscreen\\full-gold.hex",
+  "modes": [
+    "COLOR",
+    "GRAY"
+  ],
+  "frames": 2,
+  "pixels": 4147200,
+  "compared_lines": 2073600,
+  "prefix_sha256": "d99c9922f03ae85d2a5cdf7ec4dca6fef13e759e26502d85ca57aea1a764e273",
+  "baseline_full_file_sha256": "ee3bdd5579baace2e40478aa659ff75aa1b19563dfe8d0d5a6f0e73d6210fad7",
+  "current_full_file_sha256": "ee3bdd5579baace2e40478aa659ff75aa1b19563dfe8d0d5a6f0e73d6210fad7",
+  "scope": "Expected first2 modes byte-for-byte equal; current actual RTL separately checked by full-video simulation"
+}

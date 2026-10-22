@@ -1,0 +1,20 @@
+{
+  "name": "thin_filter_0-elaborate",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "thin_filter_0",
+    "--generic_top",
+    "N=8448",
+    "--generic_top",
+    "MODE=0",
+    "work.tb_thin_filter"
+  ],
+  "returncode": 0,
+  "seconds": 3.5960867404937744,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-EDGE-THIN-001-REV1\\thin_filter_0-elaborate-20261021-235836-770647.log"
+}

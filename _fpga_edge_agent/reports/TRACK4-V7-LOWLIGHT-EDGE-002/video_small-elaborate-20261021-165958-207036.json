@@ -1,0 +1,28 @@
+{
+  "name": "video_small-elaborate",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "video_small",
+    "--generic_top",
+    "W=40",
+    "--generic_top",
+    "H=12",
+    "--generic_top",
+    "HT=100",
+    "--generic_top",
+    "FRAMES=5",
+    "--generic_top",
+    "FAULT_TEST=0",
+    "--generic_top",
+    "RESET_TEST=0",
+    "work.tb_five_modes"
+  ],
+  "returncode": 0,
+  "seconds": 3.668149709701538,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-002\\video_small-elaborate-20261021-165958-207036.log"
+}

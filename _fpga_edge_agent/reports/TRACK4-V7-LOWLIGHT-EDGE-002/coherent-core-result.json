@@ -1,0 +1,36 @@
+{
+  "result": "PASS",
+  "runs": [
+    {
+      "enabled": true,
+      "D": 16,
+      "threshold": 64,
+      "pairs": 201760,
+      "vector_sha256": "24f9edf3803151ef89b8d155b7c74ff8c537f5baa6228417ec89db5d9fb4e705",
+      "completion": "COHERENT_SOBEL_PASS enabled=1 D=16 T=64 vectors=201760 accepted=203847 delivered=203829 flushed=18 stalls=683 checks=204515"
+    },
+    {
+      "enabled": true,
+      "D": 20,
+      "threshold": 64,
+      "pairs": 201760,
+      "vector_sha256": "082bd91e70bee2c3207ca99edc639197416e636d10cf425abf2b0d18bdfbf9b9",
+      "completion": "COHERENT_SOBEL_PASS enabled=1 D=20 T=64 vectors=201760 accepted=203847 delivered=203829 flushed=18 stalls=683 checks=204515"
+    },
+    {
+      "enabled": false,
+      "D": 16,
+      "threshold": 96,
+      "pairs": 201760,
+      "vector_sha256": "469e97c89232ac580266fc2d7001523f8fab86cb228122e8af0ccd46037248ec",
+      "completion": "COHERENT_SOBEL_PASS enabled=0 D=16 T=96 vectors=201760 accepted=203847 delivered=203829 flushed=18 stalls=683 checks=204515"
+    }
+  ],
+  "sources": {
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_002_20261021\\algorithm\\frontend\\sobel_pair.sv": "9e239c18649cca8cfbfd188c5b708995702b53a5c690f928728c38bb12014c9b",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_002_20261021\\sim_fullscreen\\sobel_pair_baseline.sv": "78bb4679fb20c9b90a1834d98a5ff4b7ac37f99a7b2ab386a8fbc8502d57b04f",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_002_20261021\\tests\\tb_coherent_sobel.sv": "4e85b7f533c02ef740275fd28e9ca3e81b23dad15dbcf17f3a29f4fd88453bd4",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_002_20261021\\tests\\run_coherent_checks.py": "410e5d3b36fd401b45d07d8f8bfb0e22ad89b3a2a08696856a1280ef3263163f",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_002_20261021\\tests\\reference_v2.py": "733a2cd35fd90885a6f69b4281807af6a2c7885f20036d89782a04e1ad077c41"
+  }
+}

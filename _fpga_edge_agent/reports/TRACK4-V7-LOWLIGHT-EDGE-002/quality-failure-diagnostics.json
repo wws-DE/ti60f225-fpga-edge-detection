@@ -1,0 +1,89 @@
+{
+  "result": "CONFIRMED_MATH_GATE_FAILURE",
+  "samples": [
+    {
+      "scene": "diagonal-d64",
+      "lost_pixel_count": 88,
+      "sample_xy": [
+        52,
+        2
+      ],
+      "median_window": [
+        [
+          32,
+          32,
+          32
+        ],
+        [
+          32,
+          32,
+          32
+        ],
+        [
+          32,
+          32,
+          96
+        ]
+      ],
+      "gx": 64,
+      "gy": 64,
+      "l1": 128,
+      "row_differences": [
+        0,
+        0,
+        64
+      ],
+      "column_differences": [
+        0,
+        0,
+        64
+      ],
+      "original_edge": true,
+      "v2_edge": false,
+      "independent_scalar_check": "PASS"
+    },
+    {
+      "scene": "curve-d64",
+      "lost_pixel_count": 96,
+      "sample_xy": [
+        26,
+        11
+      ],
+      "median_window": [
+        [
+          32,
+          32,
+          32
+        ],
+        [
+          32,
+          32,
+          32
+        ],
+        [
+          32,
+          32,
+          96
+        ]
+      ],
+      "gx": 64,
+      "gy": 64,
+      "l1": 128,
+      "row_differences": [
+        0,
+        0,
+        64
+      ],
+      "column_differences": [
+        0,
+        0,
+        64
+      ],
+      "original_edge": true,
+      "v2_edge": false,
+      "independent_scalar_check": "PASS"
+    }
+  ],
+  "rtl_simulation_run": false,
+  "efinity_build_run": false
+}

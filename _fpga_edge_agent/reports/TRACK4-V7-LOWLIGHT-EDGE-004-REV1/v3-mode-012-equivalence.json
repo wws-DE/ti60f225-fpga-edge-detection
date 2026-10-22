@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "method": "Identical RGB input; first three expected frames byte-equal to v3; new RTL checked against these vectors",
+  "pixels": 6220800,
+  "input_sha256": "629176b669f369252be6d0eaa61cd122248ba478b54c41d223a499c140f14675",
+  "old_gold_sha256": "930b405117ff699653746e7e4a09175293391194b80faffbcef8e6d3010f0b57",
+  "new_gold_sha256": "d46f0821774403627f94cc4d9978ec3a0c0536984d783423a8ca288941815ec4",
+  "unchanged_source_sha256": {
+    "rtl/ti60f225_oob_top.v": "3f7d1336ce0240d79793533cc34212eb2191e9f9419f6b4e6d9a7567b046b73d",
+    "rtl/v7_fullscreen_mode_control.sv": "cafd9f8c63b8bd005a9066061db963dad5ad558e48d00792dd563810c59203d1",
+    "algorithm/frontend/rgb_to_y_pair.sv": "d98a5ada8711b0920f7ab7cbe5cff1dcb8b3baa302a3a45f9407747353ce1c31",
+    "algorithm/frontend/median9_pair.sv": "c9fb7d69f2bf286ea8aa707eca2ec9d34a364658e9d100e338e92de791adde8f",
+    "rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v": "9a5a6fab81c5aac94208a171742cb8ee9f7589cde1fe77cda8856cfc0bdf7455"
+  },
+  "script_sha256": "a15da2a45708ef8ad6878543e8e4028263f307709868de8449104c60c2372bcb",
+  "seed_inclusion_before_postprocessing": "Compared against real v3 Sobel in T1/T2; final isolated-point rejection is intentional",
+  "hardware_acceptance": false
+}

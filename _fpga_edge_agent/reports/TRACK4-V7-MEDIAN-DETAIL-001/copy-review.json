@@ -1,0 +1,8 @@
+{
+  "verified_files": 161,
+  "excluded_nonbuild_office_lock": [
+    "rtl/frame_buffer_V4/~$\u8c03\u8bd5\u603b\u7ed3 .docx"
+  ],
+  "note": "Office lock reappeared in original during copy; removed only the newly copied lock from new workspace. No baseline files edited/deleted.",
+  "business_sources_changed": false
+}

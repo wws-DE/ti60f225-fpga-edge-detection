@@ -1,0 +1,13 @@
+{
+  "name": "control-compile",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xvlog.bat",
+    "--sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\algorithm\\control\\key_press_debouncer.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\rtl\\v7_fullscreen_mode_control.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\tests\\tb_fullscreen_control.sv"
+  ],
+  "returncode": 0,
+  "seconds": 0.5627892017364502,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-FULLSCREEN-MODE-001\\control-compile-20261021-152432-826426.log"
+}

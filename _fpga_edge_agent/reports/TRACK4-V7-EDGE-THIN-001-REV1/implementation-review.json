@@ -1,0 +1,23 @@
+{
+  "task_id": "TRACK4-V7-EDGE-THIN-001-REV1",
+  "time": "2026-10-22T00:01:36.864384+08:00",
+  "changed_existing": [
+    "algorithm/frontend/frontend_frame_pair.sv",
+    "rtl/v7_algorithm_video_pair.sv",
+    "ti60f225_oob.xml"
+  ],
+  "new_modules": [
+    "algorithm/edge/edge_thin_pack_pair.sv",
+    "algorithm/edge/edge_thin_window_pair.sv",
+    "algorithm/edge/edge_thin_filter_pair.sv"
+  ],
+  "total_inputs": 162,
+  "unchanged_original_inputs": 156,
+  "selected_mode": "B/axis only with real-seed direction junction guard",
+  "ports_and_pipe": "same ready/valid and 1+window+2 stages; full video still pending",
+  "numeric_rule": "old v4.1 context result AND (protected v1 retain OR real mixed direction seed neighbor)",
+  "storage": "24bit window 12 RAM primitives, old 16bit window 8; original RAM addressing/phase/clock unchanged",
+  "baseline_preserved": true,
+  "formal_state_updated": false,
+  "hardware_operation": false
+}

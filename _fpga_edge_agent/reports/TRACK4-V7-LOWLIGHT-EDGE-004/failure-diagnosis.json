@@ -1,0 +1,177 @@
+{
+  "scope": "Only original approved delta18/19 diagonal/curve fixtures and unchanged v3 reference",
+  "rows": [
+    {
+      "name": "diagonal-d18",
+      "threshold_only_in_band": 88,
+      "v3_seed_in_band": 0,
+      "rejected_despite_l1": 88,
+      "example": {
+        "x": 31,
+        "y": 24,
+        "median_window": [
+          [
+            32,
+            32,
+            32
+          ],
+          [
+            32,
+            32,
+            50
+          ],
+          [
+            32,
+            50,
+            50
+          ]
+        ],
+        "gx": 54,
+        "gy": 54,
+        "l1": 108,
+        "row_differences": [
+          0,
+          18,
+          18
+        ],
+        "column_differences": [
+          0,
+          18,
+          18
+        ],
+        "v3_seed": false,
+        "interpretation": "L1 passed64 but per-row/column coherence gate rejected; postprocessing cannot create a seed where the whole diagonal lacks seeds"
+      }
+    },
+    {
+      "name": "curve-d18",
+      "threshold_only_in_band": 256,
+      "v3_seed_in_band": 160,
+      "rejected_despite_l1": 96,
+      "example": {
+        "x": 22,
+        "y": 28,
+        "median_window": [
+          [
+            50,
+            50,
+            32
+          ],
+          [
+            50,
+            50,
+            32
+          ],
+          [
+            50,
+            50,
+            50
+          ]
+        ],
+        "gx": -54,
+        "gy": 18,
+        "l1": 72,
+        "row_differences": [
+          -18,
+          -18,
+          0
+        ],
+        "column_differences": [
+          0,
+          0,
+          18
+        ],
+        "v3_seed": false,
+        "interpretation": "L1 passed64 but per-row/column coherence gate rejected; postprocessing cannot create a seed where the whole diagonal lacks seeds"
+      }
+    },
+    {
+      "name": "diagonal-d19",
+      "threshold_only_in_band": 88,
+      "v3_seed_in_band": 0,
+      "rejected_despite_l1": 88,
+      "example": {
+        "x": 31,
+        "y": 24,
+        "median_window": [
+          [
+            32,
+            32,
+            32
+          ],
+          [
+            32,
+            32,
+            51
+          ],
+          [
+            32,
+            51,
+            51
+          ]
+        ],
+        "gx": 57,
+        "gy": 57,
+        "l1": 114,
+        "row_differences": [
+          0,
+          19,
+          19
+        ],
+        "column_differences": [
+          0,
+          19,
+          19
+        ],
+        "v3_seed": false,
+        "interpretation": "L1 passed64 but per-row/column coherence gate rejected; postprocessing cannot create a seed where the whole diagonal lacks seeds"
+      }
+    },
+    {
+      "name": "curve-d19",
+      "threshold_only_in_band": 256,
+      "v3_seed_in_band": 160,
+      "rejected_despite_l1": 96,
+      "example": {
+        "x": 22,
+        "y": 28,
+        "median_window": [
+          [
+            51,
+            51,
+            32
+          ],
+          [
+            51,
+            51,
+            32
+          ],
+          [
+            51,
+            51,
+            51
+          ]
+        ],
+        "gx": -57,
+        "gy": 19,
+        "l1": 76,
+        "row_differences": [
+          -19,
+          -19,
+          0
+        ],
+        "column_differences": [
+          0,
+          0,
+          19
+        ],
+        "v3_seed": false,
+        "interpretation": "L1 passed64 but per-row/column coherence gate rejected; postprocessing cannot create a seed where the whole diagonal lacks seeds"
+      }
+    }
+  ],
+  "candidate_quality_sha256": "0ae0f293c488214b04c1c78042d865e068f7b21eea66ec1009ebf453452882f6",
+  "script_sha256": "ca348a68e022e10a55d5473e74bd5c9047c3eaf91f1fdc1a5779a1c9e3ae0762",
+  "real_camera_cause_proven": false,
+  "algorithm_parameters_changed": false
+}

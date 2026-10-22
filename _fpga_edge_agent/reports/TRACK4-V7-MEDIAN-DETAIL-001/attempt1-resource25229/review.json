@@ -1,0 +1,10 @@
+{
+  "result": "FAIL_RESOURCE_BUDGET",
+  "xlr": 25229,
+  "cap": 25000,
+  "ram": 181,
+  "dsp": 0,
+  "action": "Share opposite-pair min/max and per-pair classification; same D16/S4, 9 common advances, ports, owner, reset and output rule",
+  "hardware_operation": false,
+  "bit_generated": false
+}

@@ -1,0 +1,15 @@
+{
+  "result": "DELIVERY_VERIFIED",
+  "timestamp": "2026-10-21T17:51:33.956467+08:00",
+  "state": "WAITING_HUMAN_PROGRAM",
+  "manifest_sha256": "c62b81bc44e457d981eae44d612212985e786d3a80ccc41d6d323dfaaa42b143",
+  "build_inputs_verified": 156,
+  "test_files_verified": 18,
+  "report_evidence_files_verified": 118,
+  "guide_links_verified": 9,
+  "baseline_v2_156_unchanged": true,
+  "bit_sha256": "f3825f7e99b9626746df4cb21e21eab9fa32e219af3051e4fde38612764aec0e",
+  "design_final_sha256": "b9612f2f2675be7303aa317fad004bc3627e3b3f6cdb221815984066298f09f1",
+  "hardware_operation": false,
+  "hardware_passed": false
+}

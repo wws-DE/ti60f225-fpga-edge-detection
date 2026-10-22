@@ -1,0 +1,76 @@
+{
+  "result": "SYNTHETIC_GATE_FAIL",
+  "selected_candidate": null,
+  "candidates": {
+    "A": {
+      "failures": [
+        "Correlated noise increased 16/433/0",
+        "Correlated noise increased 24/431/0",
+        "Correlated noise increased 24/432/1",
+        "Correlated noise increased 24/433/0"
+      ],
+      "fine_coverage_gain_d18_d20": 1036,
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "old_edges": 0,
+          "new_edges": 0,
+          "cap": 0,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 16,
+          "old_edges": 49,
+          "new_edges": 47,
+          "cap": 49,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 24,
+          "old_edges": 2735,
+          "new_edges": 2735,
+          "cap": 2735,
+          "pixels": 93744
+        }
+      ],
+      "eligible": false
+    },
+    "B": {
+      "failures": [
+        "Correlated noise increased 16/431/0",
+        "Correlated noise increased 24/431/0",
+        "Correlated noise increased 24/431/1",
+        "Correlated noise increased 24/432/0",
+        "Correlated noise increased 24/432/1",
+        "Correlated noise increased 24/433/0",
+        "Correlated noise increased 24/433/1",
+        "Fixed flat noise cap exceeded amplitude16"
+      ],
+      "fine_coverage_gain_d18_d20": 1036,
+      "noise_totals": [
+        {
+          "amplitude": 8,
+          "old_edges": 0,
+          "new_edges": 0,
+          "cap": 0,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 16,
+          "old_edges": 49,
+          "new_edges": 51,
+          "cap": 49,
+          "pixels": 93744
+        },
+        {
+          "amplitude": 24,
+          "old_edges": 2735,
+          "new_edges": 2730,
+          "cap": 2735,
+          "pixels": 93744
+        }
+      ],
+      "eligible": false
+    }
+  }
+}

@@ -1,0 +1,17 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Wed Oct 21 16:13:30 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/sobel_threshold/xsim_script.tcl
+# xsim {sobel_threshold} -testplusarg DATA=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_001_20261021/sim_fullscreen/sobel-threshold-256.hex -testplusarg THRESHOLD=256 -autoloadwcfg -runall -onfinish quit -onerror quit
+Time resolution is 1 ps
+run -all
+SOBEL_THRESHOLD_PASS threshold=256 pairs=13 lanes=26
+$finish called at time : 280 ns : File "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_001_20261021/tests/tb_sobel_threshold.sv" Line 48
+exit 0
+INFO: [Common 17-206] Exiting xsim at Wed Oct 21 16:13:32 2026...

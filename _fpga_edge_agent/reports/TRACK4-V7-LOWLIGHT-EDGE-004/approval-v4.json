@@ -1,0 +1,14 @@
+{
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-004",
+  "design_version": "优化v4",
+  "reply_exact": "批准优化v4",
+  "source": "current user chat",
+  "timestamp": "2026-10-21T18:14:30.887884+08:00",
+  "approved_design_sha256": "2b8f8cdb51d67aef05b596bd4ddd0027c00f51255ec33df994942669949afd5b",
+  "approved_snapshot": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-004\\approved-design-v4.md",
+  "baseline": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_003_20261021",
+  "scope": "two existing RTL, three new context modules, XML source list, fixed A/B tests and selection, local software build/bit staging, local reports and append audit",
+  "database_env_configured": false,
+  "formal_state_updated": false,
+  "hardware_operation": false
+}

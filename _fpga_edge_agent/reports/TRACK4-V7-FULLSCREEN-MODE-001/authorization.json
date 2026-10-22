@@ -1,0 +1,21 @@
+{
+  "task_id": "TRACK4-V7-FULLSCREEN-MODE-001",
+  "session_id": "TRACK4-V7-FULLSCREEN-MODE-001-20261021",
+  "approved_at_recorded": "2026-10-21T15:19:28.815540+08:00",
+  "source": "user_chat",
+  "reply_exact": "批准此次修改",
+  "approved_design_version": "v1",
+  "approved_design_sha256": "667ef827152d7c4425de4cebe99cd7096663666cb74163c74f8cd35a18538d06",
+  "scope": "Independent work copy RTL, KEY3 GPIO/SDC, Efinity XML, tests/scripts; existing XSim and Efinity 2026.1.132 software flows; bit registration; stop for human programming and observation",
+  "local_audit_exception": true,
+  "database_write": false,
+  "hardware_operation": false,
+  "baseline_commit": "7e8564b0ed3b691925b0dea4afd2ee8e9d559ed9",
+  "baseline_hashes": {
+    "rtl/ti60f225_oob_top.v": "8c84f0875ac6be5c866cac08e3f8940f13ed9ed507e6811bc74ae080ba986d46",
+    "rtl/v7_algorithm_video_pair.sv": "734a08b3d0f0a671ad2312af7c150b5793f241abe4bcb3c15329e452e9b055c0",
+    "ti60f225_oob.xml": "a45033679081c2b7438ccc8d5864e8de937942740b4501a6b5badc73b055867c",
+    "ti60f225_oob.peri.xml": "884225e0ea6554eba62192ca03d49f8265121e069830fa09ee41694980148605",
+    "ti60f225_oob.sdc": "7dea948873e6bbaa2fda92e4e26c67f5cf0fd435a26d3b53bfaa46659b3325ff"
+  }
+}

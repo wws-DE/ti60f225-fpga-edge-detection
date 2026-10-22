@@ -1,0 +1,23 @@
+{
+  "name": "video-compile",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xvlog.bat",
+    "--sv",
+    "C:\\Efinity\\2026.1\\sim_models\\verilog\\efx_ram10.v",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\algorithm\\frontend\\frontend_frame_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\algorithm\\frontend\\line_store_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\algorithm\\frontend\\median9_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\algorithm\\frontend\\rgb_to_y_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\algorithm\\frontend\\sobel_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\algorithm\\frontend\\window3x3_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\algorithm\\control\\key_press_debouncer.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\rtl\\v7_fullscreen_mode_control.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\rtl\\v7_algorithm_video_pair.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\sim_fullscreen\\actual_serializer.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\tests\\tb_five_modes.sv",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_fullscreen_mode_001_20261021\\tests\\tb_mode_boundary.sv"
+  ],
+  "returncode": 0,
+  "seconds": 0.6290736198425293,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-FULLSCREEN-MODE-001\\video-compile-20261021-152456-602109.log"
+}

@@ -1,0 +1,17 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Thu Oct 22 15:39:09 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/frontend_detail_40_12_1_1_0_1/xsim_script.tcl
+# xsim {frontend_detail_40_12_1_1_0_1} -testplusarg INPUT=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_median_detail_001_20261022/sim_frontend_detail/40-12-1-1-0-1-input.hex -testplusarg GOLD0=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_median_detail_001_20261022/sim_frontend_detail/40-12-1-1-0-1-gold0.hex -testplusarg GOLD1=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_median_detail_001_20261022/sim_frontend_detail/40-12-1-1-0-1-gold1.hex -autoloadwcfg -runall -onfinish quit -onerror quit
+Time resolution is 1 ps
+run -all
+FRONTEND_DETAIL_PASS CONTEXT=1 COMPARE=0 OWNER=0 frames=3 statuses=5 stalls=178 external=0
+$finish called at time : 13750 ns : File "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_median_detail_001_20261022/tests/tb_frontend_detail.sv" Line 234
+exit 0
+INFO: [Common 17-206] Exiting xsim at Thu Oct 22 15:39:11 2026...

@@ -1,0 +1,20 @@
+{
+  "observation_id": "OBS-V41-20261021-DARK-FINE",
+  "task_id": "TRACK4-V7-LOWLIGHT-EDGE-004-REV1",
+  "time": "2026-10-21T22:44:01.461424+08:00",
+  "source": "current user chat and clarification call_39e6e8beb3ec4ed29305d00dc281bdf4",
+  "original_reply": "仍然存在刚刚的问题",
+  "clarification_exact": "暗处识别不行，边缘不够精细",
+  "historical_context": {
+    "gray_and_median_edges_visible": true,
+    "fine_detail_prior_meaning": "边线锯齿/断续和细小纹理或笔画漏检；不能改写成用户已确认边线太粗"
+  },
+  "linked_delivered_bit": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-LOWLIGHT-EDGE-004-REV1\\v7_lowlight_edge_004_v4_1_20261021.bit",
+  "bit_sha256": "c194210fb0ff0e3f5e81da6746557b36e280fb16c0aa3ec24fa057e5c25ac77f",
+  "association_basis": "latest v4.1 delivery followed by user acceptance feedback",
+  "loaded_bit_independently_verified": false,
+  "diagnosis": "REWORK_REQUIRED_FOR_REPORTED_IMAGE_QUALITY",
+  "hardware_pass": false,
+  "formal_state_updated": false,
+  "local_audit_exception": "用户既有本地报告授权沿用；不改正式数据库或状态文件"
+}

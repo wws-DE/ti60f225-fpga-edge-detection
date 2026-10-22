@@ -1,0 +1,16 @@
+{
+  "name": "keys_n2-run",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xsim.bat",
+    "keys_n2",
+    "--runall",
+    "--onerror",
+    "quit",
+    "--onfinish",
+    "quit",
+    "--nolog"
+  ],
+  "returncode": 0,
+  "seconds": 5.098426818847656,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-FULLSCREEN-MODE-001\\keys_n2-run-20261021-152437-731709.log"
+}

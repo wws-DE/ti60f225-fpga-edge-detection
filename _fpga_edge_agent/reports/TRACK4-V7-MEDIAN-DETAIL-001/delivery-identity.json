@@ -1,0 +1,12 @@
+{
+  "bit": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-MEDIAN-DETAIL-001\\median_detail_v1_A_20261022.bit",
+    "desktop_path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\FPGA_保边中值v1_A.bit",
+    "bytes": 2490429,
+    "sha256": "c3b313e58726b96ab3fe487cb06249f7cbfe7b14707950d46772a6b4a7b59d11"
+  },
+  "source_bit": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\outflow\\ti60f225_oob.bit",
+  "state": "WAITING_HUMAN_PROGRAM",
+  "quality_state": "ACCEPTED_WITH_KNOWN_NOISE_TRADEOFF",
+  "hardware_passed": false
+}

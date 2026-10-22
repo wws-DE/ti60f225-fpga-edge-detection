@@ -1,0 +1,25 @@
+{
+  "added": [
+    "[EFX-0657 WARNING] Mapping into logic memory block 'pair_min_s1' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'pair_max_s1' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'near_s1' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'positive_s1' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'negative_s1' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'qualified_s2' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'minimum_s2' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'maximum_s2' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'keep_s3' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'keep_s4' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'keep_tail' (algorithm/frontend/median9_detail_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/detail_median.median/legacy/candidates_s4' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/detail_median.median/legacy/row_order' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/detail_median.median/legacy/row_second_s2' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/detail_median.median/legacy/row_first_s1' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer."
+  ],
+  "removed": [
+    "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/median/row_first_s1' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/median/row_second_s2' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/median/row_order' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer.",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'algorithm_bridge/algorithms/median/candidates_s4' (algorithm/frontend/median9_pair.sv:LINE) because it has all constant reader/writer."
+  ]
+}

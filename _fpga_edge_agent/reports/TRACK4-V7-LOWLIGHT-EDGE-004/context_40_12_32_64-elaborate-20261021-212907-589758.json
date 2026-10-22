@@ -1,0 +1,24 @@
+{
+  "name": "context_40_12_32_64-elaborate",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "context_40_12_32_64",
+    "--generic_top",
+    "W=40",
+    "--generic_top",
+    "H=12",
+    "--generic_top",
+    "DROP=32",
+    "--generic_top",
+    "T=64",
+    "work.tb_context_chain"
+  ],
+  "returncode": 0,
+  "seconds": 2.1484603881835938,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-004\\context_40_12_32_64-elaborate-20261021-212907-589758.log"
+}

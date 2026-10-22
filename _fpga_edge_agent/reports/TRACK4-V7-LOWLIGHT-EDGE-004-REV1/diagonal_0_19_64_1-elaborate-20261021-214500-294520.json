@@ -1,0 +1,28 @@
+{
+  "name": "diagonal_0_19_64_1-elaborate",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "diagonal_0_19_64_1",
+    "--generic_top",
+    "N=276839",
+    "--generic_top",
+    "ENABLE=0",
+    "--generic_top",
+    "D=19",
+    "--generic_top",
+    "DROP=0",
+    "--generic_top",
+    "T=64",
+    "--generic_top",
+    "KIND=1",
+    "work.tb_diagonal_sobel"
+  ],
+  "returncode": 0,
+  "seconds": 2.200627088546753,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-004-REV1\\diagonal_0_19_64_1-elaborate-20261021-214500-294520.log"
+}

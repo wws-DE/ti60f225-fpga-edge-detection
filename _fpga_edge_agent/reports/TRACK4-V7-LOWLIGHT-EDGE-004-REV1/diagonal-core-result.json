@@ -1,0 +1,150 @@
+{
+  "result": "PASS",
+  "runs": [
+    {
+      "enabled": true,
+      "diagonal_min_diff": 18,
+      "threshold": 64,
+      "kind": 1,
+      "pairs": 276839,
+      "vector_sha256": "3b4c1052b07c4854694992c1bf3ef11e3ec99e0f7904a00f0010177fdd75051f",
+      "completion": "DIAGONAL_SOBEL_PASS enabled=1 D=18 T=64 vectors=276839 accepted=278926 delivered=278908 flushed=18 stalls=674 checks=279585"
+    },
+    {
+      "enabled": true,
+      "diagonal_min_diff": 19,
+      "threshold": 64,
+      "kind": 1,
+      "pairs": 276839,
+      "vector_sha256": "64d6e52368e8353d97de5ad4a5f637d1125b6e8e68ed2b39a07dae8ce3d6af25",
+      "completion": "DIAGONAL_SOBEL_PASS enabled=1 D=19 T=64 vectors=276839 accepted=278926 delivered=278908 flushed=18 stalls=674 checks=279585"
+    },
+    {
+      "enabled": false,
+      "diagonal_min_diff": 19,
+      "threshold": 64,
+      "kind": 1,
+      "pairs": 276839,
+      "vector_sha256": "711623ba0e0a1777128562d9770d893260dc8b4cdb27a488d55d870406499ca3",
+      "completion": "DIAGONAL_SOBEL_PASS enabled=0 D=19 T=64 vectors=276839 accepted=278926 delivered=278908 flushed=18 stalls=674 checks=279585"
+    },
+    {
+      "enabled": true,
+      "diagonal_min_diff": 18,
+      "threshold": 0,
+      "kind": 1,
+      "pairs": 21863,
+      "vector_sha256": "7f35b8f64fc9f43ffb17f50911bca0e10daee9b137866ef25c4c5b3aca3a7eea",
+      "completion": "DIAGONAL_SOBEL_PASS enabled=1 D=18 T=0 vectors=21863 accepted=23950 delivered=23932 flushed=18 stalls=674 checks=24609"
+    },
+    {
+      "enabled": true,
+      "diagonal_min_diff": 18,
+      "threshold": 7,
+      "kind": 1,
+      "pairs": 21863,
+      "vector_sha256": "7f35b8f64fc9f43ffb17f50911bca0e10daee9b137866ef25c4c5b3aca3a7eea",
+      "completion": "DIAGONAL_SOBEL_PASS enabled=1 D=18 T=7 vectors=21863 accepted=23950 delivered=23932 flushed=18 stalls=674 checks=24609"
+    },
+    {
+      "enabled": true,
+      "diagonal_min_diff": 18,
+      "threshold": 16,
+      "kind": 1,
+      "pairs": 21863,
+      "vector_sha256": "33c26f4905c5f02bbf831823c0d740626c8c3198c7f7c2175f84b659d748bbc6",
+      "completion": "DIAGONAL_SOBEL_PASS enabled=1 D=18 T=16 vectors=21863 accepted=23950 delivered=23932 flushed=18 stalls=674 checks=24609"
+    },
+    {
+      "enabled": true,
+      "diagonal_min_diff": 18,
+      "threshold": 32,
+      "kind": 1,
+      "pairs": 21863,
+      "vector_sha256": "359b4022086f75ced9aab116c37f5f79fd5ff73f5b2c8036ad2c53bfad6b7b74",
+      "completion": "DIAGONAL_SOBEL_PASS enabled=1 D=18 T=32 vectors=21863 accepted=23950 delivered=23932 flushed=18 stalls=674 checks=24609"
+    },
+    {
+      "enabled": true,
+      "diagonal_min_diff": 18,
+      "threshold": 2047,
+      "kind": 1,
+      "pairs": 21863,
+      "vector_sha256": "15d71b0a2a5a184df3d7d9a55395762d00857344c1a973349020e572f5757121",
+      "completion": "DIAGONAL_SOBEL_PASS enabled=1 D=18 T=2047 vectors=21863 accepted=23950 delivered=23932 flushed=18 stalls=674 checks=24609"
+    },
+    {
+      "enabled": true,
+      "diagonal_min_diff": 19,
+      "threshold": 0,
+      "kind": 1,
+      "pairs": 21863,
+      "vector_sha256": "380a1a79d40c0acd04788d9d8fff658a5a08c56b63b23e6d9a707576b64b9578",
+      "completion": "DIAGONAL_SOBEL_PASS enabled=1 D=19 T=0 vectors=21863 accepted=23950 delivered=23932 flushed=18 stalls=674 checks=24609"
+    },
+    {
+      "enabled": true,
+      "diagonal_min_diff": 19,
+      "threshold": 7,
+      "kind": 1,
+      "pairs": 21863,
+      "vector_sha256": "380a1a79d40c0acd04788d9d8fff658a5a08c56b63b23e6d9a707576b64b9578",
+      "completion": "DIAGONAL_SOBEL_PASS enabled=1 D=19 T=7 vectors=21863 accepted=23950 delivered=23932 flushed=18 stalls=674 checks=24609"
+    },
+    {
+      "enabled": true,
+      "diagonal_min_diff": 19,
+      "threshold": 16,
+      "kind": 1,
+      "pairs": 21863,
+      "vector_sha256": "86ed56bed2fe4674b98557cb58684716e6c4329a7a808a65bb6e7bd7611297f6",
+      "completion": "DIAGONAL_SOBEL_PASS enabled=1 D=19 T=16 vectors=21863 accepted=23950 delivered=23932 flushed=18 stalls=674 checks=24609"
+    },
+    {
+      "enabled": true,
+      "diagonal_min_diff": 19,
+      "threshold": 32,
+      "kind": 1,
+      "pairs": 21863,
+      "vector_sha256": "c96c63afb5d533b54b87d5b53281dcdfe445d771a7bdea3b69bf0beac27f8817",
+      "completion": "DIAGONAL_SOBEL_PASS enabled=1 D=19 T=32 vectors=21863 accepted=23950 delivered=23932 flushed=18 stalls=674 checks=24609"
+    },
+    {
+      "enabled": true,
+      "diagonal_min_diff": 19,
+      "threshold": 2047,
+      "kind": 1,
+      "pairs": 21863,
+      "vector_sha256": "15d71b0a2a5a184df3d7d9a55395762d00857344c1a973349020e572f5757121",
+      "completion": "DIAGONAL_SOBEL_PASS enabled=1 D=19 T=2047 vectors=21863 accepted=23950 delivered=23932 flushed=18 stalls=674 checks=24609"
+    },
+    {
+      "enabled": true,
+      "diagonal_min_diff": 19,
+      "threshold": 64,
+      "kind": 0,
+      "pairs": 21863,
+      "vector_sha256": "15d71b0a2a5a184df3d7d9a55395762d00857344c1a973349020e572f5757121",
+      "completion": "DIAGONAL_SOBEL_PASS enabled=1 D=19 T=64 vectors=21863 accepted=23950 delivered=23932 flushed=18 stalls=674 checks=24609"
+    },
+    {
+      "enabled": true,
+      "diagonal_min_diff": 19,
+      "threshold": 64,
+      "kind": 2,
+      "pairs": 21863,
+      "vector_sha256": "15d71b0a2a5a184df3d7d9a55395762d00857344c1a973349020e572f5757121",
+      "completion": "DIAGONAL_SOBEL_PASS enabled=1 D=19 T=64 vectors=21863 accepted=23950 delivered=23932 flushed=18 stalls=674 checks=24609"
+    }
+  ],
+  "sources": {
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\algorithm\\frontend\\sobel_pair.sv": "ce2e9f70d93eb616c803f8bc9b34f9c2a07e06e660a5a5c652608be8f84ceeb6",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\sim_fullscreen\\sobel_pair_baseline.sv": "4b372d2cf1d6ad0de10483df74deb7f81f55617497c86455ecf4f17cb91cf88d",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\tests\\tb_diagonal_sobel.sv": "d844bf84a35cc019798c5a461d2ec388a9a71ce13f0a02367b99f1212411b344",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\tests\\run_diagonal_checks.py": "d890b64c1d4ac19e4317c7eadced2b758c8c99eaa0a3653e38edcc91c7be5357",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\tests\\reference_v41.py": "21592eb4cfed669380f5a2905f77bf55326977ecfbcca78ea5399b0db5bd8c6d",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\tests\\reference_v3.py": "97f67156eabdfbf6e0bc124660161a0815ea461f091963063fc147cd1e50de71",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\tests\\reference_v2.py": "733a2cd35fd90885a6f69b4281807af6a2c7885f20036d89782a04e1ad077c41",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_lowlight_edge_004_rev1_20261021\\tests\\quality_v3.py": "b8f49f19959f5c3a817025e60316bb173017c8bab7e9da455ae7b63328594d85"
+  }
+}

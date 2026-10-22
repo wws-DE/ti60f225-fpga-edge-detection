@@ -1,0 +1,22 @@
+{
+  "name": "median_40_12-elaborate",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.bat",
+    "--debug",
+    "typical",
+    "--timescale",
+    "1ns/1ps",
+    "--snapshot",
+    "median_40_12",
+    "--generic_top",
+    "W=40",
+    "--generic_top",
+    "H=12",
+    "--generic_top",
+    "N=12000",
+    "work.tb_median_detail"
+  ],
+  "returncode": 0,
+  "seconds": 2.2949717044830322,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\median_40_12-elaborate-20261022-152633-236589.log"
+}

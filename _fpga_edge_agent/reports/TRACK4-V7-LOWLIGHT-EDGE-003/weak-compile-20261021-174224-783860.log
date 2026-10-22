@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/algorithm/frontend/sobel_pair.sv" into library work
+INFO: [VRFC 10-311] analyzing module sobel_pair
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/sim_fullscreen/sobel_pair_baseline.sv" into library work
+INFO: [VRFC 10-311] analyzing module sobel_pair_baseline
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/tests/tb_coherent_sobel.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_coherent_sobel

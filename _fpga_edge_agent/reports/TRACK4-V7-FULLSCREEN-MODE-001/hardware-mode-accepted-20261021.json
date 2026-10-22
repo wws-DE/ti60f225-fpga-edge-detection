@@ -1,0 +1,21 @@
+{
+  "task_id": "TRACK4-V7-FULLSCREEN-MODE-001",
+  "recorded_at": "2026-10-21T16:01:23.280561+08:00",
+  "source": "user_chat",
+  "raw_feedback": "各模式实时，模式顺序正确，长按只切换一次。按键切换模式已经实现，我现在需要提高sobel和红边叠加的准确度。现在这两个模式只有在打强光的时候才能进行部分边缘检测功能，你对算法或者参数进行优化解决此问题",
+  "clarification_reply": "画面明显偏暗，轮廓也较模糊",
+  "acceptance": "USER_ACCEPTED_MODE_SWITCHING",
+  "accepted_scope": [
+    "five_modes_realtime",
+    "mode_order_correct",
+    "long_hold_single_step"
+  ],
+  "not_reported": [
+    "KEY0_reset_test",
+    "long_duration_stability"
+  ],
+  "open_issue": "Low illumination: dark/blurred source and weak Sobel/red-overlay response",
+  "delivered_bit_sha256": "759ffa9c928561c7d6ad95d796be101e83495ba25794542141bfd524402cfeb9",
+  "artifact_binding": "Conversation context; programmed hash not independently read back",
+  "formal_state_updated": false
+}

@@ -1,0 +1,365 @@
+--- v4.1/algorithm/edge/edge_thin_filter_pair.sv
++++ thin-v1.1/algorithm/edge/edge_thin_filter_pair.sv
+@@ -0,0 +1,84 @@
++// THIN-M3：先复现v4.1结果，再删除可由同方向种子替代的非峰点。
++// 方向交接处保留旧结果；原补点不参与删除，细化输出不作新证据。
++module edge_thin_filter_pair #(parameter integer W=1920,H=1080,MODE=1) (
++    input wire clk,rst,frame_start,data_flush,
++    input wire in_valid,output wire in_ready,input wire [431:0] in_window_pair,
++    input wire [10:0] in_x_even,in_y,input wire in_sof,in_eol,in_eof,
++    output wire out_valid,input wire out_ready,output wire [15:0] out_center_pair,
++    output logic [1:0] out_edge_pair,output wire [10:0] out_x_even,out_y,
++    output wire out_sof,out_eol,out_eof,output wire empty
++);
++    logic [1:0] valid_pipe;
++    logic [24:0] coordinate_s1,coordinate_s2;
++    logic [15:0] center_s1,center_s2;
++    logic [1:0] seed_s1,weak_s1,neighbor_s1,gap_s1,retain_s1;
++    logic [1:0] neighbor_input,gap_input,retain_input;
++    wire advance=!valid_pipe[1]||out_ready;
++    assign in_ready=!rst&&advance;
++    assign out_valid=!rst&&valid_pipe[1];
++    assign empty=!(|valid_pipe);
++    assign out_center_pair=center_s2;
++    assign {out_eof,out_eol,out_sof,out_y,out_x_even}=coordinate_s2;
++    always_comb begin : spatial_evidence
++        integer x,y,dx,dy,tangent_first,tangent_second,normal_first,normal_second;
++        logic [8:0] seeds;
++        logic [23:0] center_pixel,first_pixel,second_pixel;
++        logic [1:0] d,first_d,second_d;
++        logic mixed_direction,normal_inside,delete_center;
++        neighbor_input=0;gap_input=0;retain_input=2'b11;
++        for(integer lane=0;lane<2;lane=lane+1)begin
++            x=int'(in_x_even)+lane;y=int'(in_y);seeds=0;
++            center_pixel=in_window_pair[lane*216+96+:24];d=center_pixel[9:8];
++            mixed_direction=0;
++            for(integer sample=0;sample<9;sample=sample+1)begin
++                dx=sample%3-1;dy=sample/3-1;
++                seeds[sample]=(x+dx>=0)&&(x+dx<W)&&(y+dy>=0)&&(y+dy<H)
++                    &&in_window_pair[lane*216+sample*24+11];
++                if(sample!=4&&seeds[sample]&&in_window_pair[lane*216+sample*24+8+:2]!=d)
++                    mixed_direction=1;
++            end
++            neighbor_input[lane]=|(seeds&9'b111101111);
++            case(d)
++                0:begin tangent_first=1;tangent_second=7;normal_first=3;normal_second=5;
++                    normal_inside=x>0&&x<W-1;end
++                1:begin tangent_first=2;tangent_second=6;normal_first=0;normal_second=8;
++                    normal_inside=x>0&&x<W-1&&y>0&&y<H-1;end
++                2:begin tangent_first=3;tangent_second=5;normal_first=1;normal_second=7;
++                    normal_inside=y>0&&y<H-1;end
++                default:begin tangent_first=0;tangent_second=8;normal_first=2;normal_second=6;
++                    normal_inside=x>0&&x<W-1&&y>0&&y<H-1;end
++            endcase
++            first_d=in_window_pair[lane*216+tangent_first*24+8+:2];
++            second_d=in_window_pair[lane*216+tangent_second*24+8+:2];
++            gap_input[lane]=seeds[tangent_first]&&seeds[tangent_second]
++                &&((first_d^d)!=2'd2)&&((second_d^d)!=2'd2);
++            first_pixel=in_window_pair[lane*216+normal_first*24+:24];
++            second_pixel=in_window_pair[lane*216+normal_second*24+:24];
++            delete_center=center_pixel[11]&&(center_pixel[22:12]!=0)&&normal_inside
++                &&!mixed_direction&&((MODE==0)||(d==0)||(d==2))
++                &&((seeds[normal_first]&&(first_pixel[9:8]==d)
++                        &&(first_pixel[22:12]>=center_pixel[22:12]))
++                    ||(seeds[normal_second]&&(second_pixel[9:8]==d)
++                        &&(second_pixel[22:12]>center_pixel[22:12])));
++            retain_input[lane]=!delete_center;
++        end
++    end
++    always_ff @(posedge clk)begin
++        if(rst||frame_start||data_flush)valid_pipe<=0;
++        else if(advance)begin
++            valid_pipe<={valid_pipe[0],in_valid};
++            coordinate_s1<={in_eof,in_eol,in_sof,in_y,in_x_even};coordinate_s2<=coordinate_s1;
++            center_s1<={in_window_pair[312+:8],in_window_pair[96+:8]};center_s2<=center_s1;
++            neighbor_s1<=neighbor_input;gap_s1<=gap_input;retain_s1<=retain_input;
++            for(integer lane=0;lane<2;lane=lane+1)begin
++                seed_s1[lane]<=in_window_pair[lane*216+107];
++                weak_s1[lane]<=in_window_pair[lane*216+106];
++                out_edge_pair[lane]<=(seed_s1[lane]?neighbor_s1[lane]:(weak_s1[lane]&&gap_s1[lane]))
++                    &&retain_s1[lane];
++            end
++        end
++    end
++    // synthesis translate_off
++    initial if(MODE!=0&&MODE!=1)$fatal(1,"THIN: only fixed A/B modes");
++    // synthesis translate_on
++endmodule
+--- v4.1/algorithm/edge/edge_thin_pack_pair.sv
++++ thin-v1.1/algorithm/edge/edge_thin_pack_pair.sv
+@@ -0,0 +1,47 @@
++// THIN-M1：原v4.1字段原样携带，另附同中心幅值；不改变检出阈值。
++module edge_thin_pack_pair #(parameter integer THRESHOLD_DROP=16) (
++    input wire clk,rst,frame_start,data_flush,
++    input wire in_valid,output wire in_ready,
++    input wire [15:0] in_center_pair,input wire [1:0] in_seed_pair,
++    input wire [21:0] in_gx_pair,in_gy_pair,in_l1_pair,
++    input wire [10:0] threshold,in_x_even,in_y,input wire in_sof,in_eol,in_eof,
++    output wire out_valid,input wire out_ready,output logic [47:0] out_pair,
++    output wire [10:0] out_x_even,out_y,output wire out_sof,out_eol,out_eof,output wire empty
++);
++    logic present;
++    logic [24:0] coordinate;
++    localparam logic [10:0] DROP=THRESHOLD_DROP;
++    wire [10:0] low_threshold=threshold>=DROP?threshold-DROP:11'd0;
++    wire advance=!present||out_ready;
++    function automatic [1:0] direction(input logic signed [10:0] gx,gy);
++        logic [10:0] ax,ay;
++        begin
++            ax=gx<0?-gx:gx;ay=gy<0?-gy:gy;
++            // 与v4.1完全相同的2:1量化；两倍<=2040，保留11位。
++            if(gx==0&&gy==0)direction=0;
++            else if((ay<<1)<ax)direction=0;
++            else if((ax<<1)<ay)direction=2;
++            else direction=(gx[10]==gy[10])?2'd1:2'd3;
++        end
++    endfunction
++    assign in_ready=!rst&&advance;
++    assign out_valid=!rst&&present;
++    assign empty=!present;
++    assign {out_eof,out_eol,out_sof,out_y,out_x_even}=coordinate;
++    always_ff @(posedge clk)begin
++        if(rst||frame_start||data_flush)present<=0;
++        else if(advance)begin
++            present<=in_valid;
++            coordinate<={in_eof,in_eol,in_sof,in_y,in_x_even};
++            for(integer lane=0;lane<2;lane=lane+1)
++                out_pair[lane*24+:24]<={1'b0,in_l1_pair[lane*11+:11],in_seed_pair[lane],
++                    (in_l1_pair[lane*11+:11]>low_threshold)&&
++                        ((in_gx_pair[lane*11+:11]!=0)||(in_gy_pair[lane*11+:11]!=0)),
++                    direction($signed(in_gx_pair[lane*11+:11]),$signed(in_gy_pair[lane*11+:11])),
++                    in_center_pair[lane*8+:8]};
++        end
++    end
++    // synthesis translate_off
++    initial if(THRESHOLD_DROP!=16)$fatal(1,"THIN: only approved drop16");
++    // synthesis translate_on
++endmodule
+--- v4.1/algorithm/edge/edge_thin_window_pair.sv
++++ thin-v1.1/algorithm/edge/edge_thin_window_pair.sv
+@@ -0,0 +1,139 @@
++// THIN-M2：两行24bit上下文容器，复用原同步读/延迟写窗口；有效边界由后级按坐标屏蔽。
++module edge_thin_window_pair #(parameter integer W=1920,H=1080) (
++    input wire clk,rst,frame_start,data_flush,
++    input wire in_valid,output wire in_ready,input wire [47:0] in_pair,
++    input wire [10:0] in_x_even,in_y,input wire in_sof,in_eol,in_eof,
++    output wire out_valid,input wire out_ready,output logic [431:0] out_window_pair,
++    output logic [10:0] out_x_even,out_y,output logic out_sof,out_eol,out_eof,
++    output wire empty
++);
++    localparam logic [9:0] LAST_Q=W/2-1;
++    localparam logic [10:0] LAST_ROW=H-1;
++    localparam logic [2:0] IDLE=0,REAL=1,REPLAY=2,TAIL=3,WAIT_EOF=4;
++    localparam logic [1:0] NONE_PENDING=0,REAL_PENDING=1,REPLAY_PENDING=2,TAIL_PENDING=3;
++    logic [2:0] phase;
++    logic [1:0] pending;
++    logic [9:0] input_q,input_replay_q,pending_q,horizontal_q;
++    logic [10:0] input_row,pending_row,horizontal_row;
++    logic [47:0] pending_pair;
++    logic horizontal_valid,output_present;
++    logic [71:0] left_column,center_column0,center_column1;
++    wire advance=!output_present||out_ready;
++    wire active=!rst&&!frame_start&&!data_flush&&advance;
++    wire real_issue=active&&phase==REAL&&in_valid;
++    wire replay_issue=active&&phase==REPLAY;
++    wire rd_en=real_issue||replay_issue;
++    // RAM只使用本模块受限游标。raw metadata另由C0按真实N fire核对。
++    wire [9:0] rd_addr=real_issue?input_q:input_replay_q;
++    wire [9:0] wr_addr=pending_q;
++    wire recent_wr_en=active&&pending==REAL_PENDING;
++    wire older_wr_en=recent_wr_en&&pending_row!=0;
++    wire [47:0] recent_read,older_read;
++    genvar bank,byte_index;
++    generate for(bank=0;bank<2;bank=bank+1) begin : line_bank
++        wire write_enable=bank==0?recent_wr_en:older_wr_en;
++        wire [47:0] write_pair=bank==0?pending_pair:recent_read;
++        for(byte_index=0;byte_index<6;byte_index=byte_index+1) begin : byte_plane
++            wire [7:0] read_byte;
++            EFX_RAM10 #(
++                .READ_WIDTH(8),.WRITE_WIDTH(8),.OUTPUT_REG(1'b0),.WRITE_MODE("READ_FIRST"),
++                .WCLK_POLARITY(1'b1),.WCLKE_POLARITY(1'b1),.WADDREN_POLARITY(1'b1),
++                .WE_POLARITY(2'b11),.RCLK_POLARITY(1'b1),.RE_POLARITY(1'b1),
++                .RST_POLARITY(1'b1),.RADDREN_POLARITY(1'b1)
++            ) ram(
++                .WCLK(clk),.WE({1'b0,write_enable}),.WCLKE(write_enable),.WADDREN(1'b1),
++                .WDATA(write_pair[byte_index*8 +: 8]),.WADDR(wr_addr),
++                .RCLK(clk),.RE(rd_en),.RST(1'b0),.RADDREN(1'b1),.RADDR(rd_addr),.RDATA(read_byte)
++            );
++            if(bank==0) assign recent_read[byte_index*8 +: 8]=read_byte;
++            else assign older_read[byte_index*8 +: 8]=read_byte;
++        end
++    end endgenerate
++    assign in_ready=!rst&&phase==REAL&&advance;
++    assign out_valid=!rst&&output_present;
++    assign empty=phase==IDLE&&pending==NONE_PENDING&&!horizontal_valid&&!output_present;
++    logic vertical_valid;logic [71:0] new_column0,new_column1;logic [10:0] new_row;
++    always_comb begin : choose_vertical_history
++        vertical_valid=0;new_column0=0;new_column1=0;new_row=0;
++        if(pending==REAL_PENDING&&pending_row!=0) begin
++            vertical_valid=1;new_row=pending_row-11'd1;
++            if(pending_row==1) begin
++                new_column0={pending_pair[23:0],recent_read[23:0],recent_read[23:0]};
++                new_column1={pending_pair[47:24],recent_read[47:24],recent_read[47:24]};
++            end else begin
++                new_column0={pending_pair[23:0],recent_read[23:0],older_read[23:0]};
++                new_column1={pending_pair[47:24],recent_read[47:24],older_read[47:24]};
++            end
++        end else if(pending==REPLAY_PENDING) begin
++            vertical_valid=1;new_row=LAST_ROW;
++            new_column0={recent_read[23:0],recent_read[23:0],older_read[23:0]};
++            new_column1={recent_read[47:24],recent_read[47:24],older_read[47:24]};
++        end
++    end
++    function automatic [215:0] row_major(input logic [71:0] l,c,r);
++        row_major={r[71:48],c[71:48],l[71:48],r[47:24],c[47:24],l[47:24],r[23:0],c[23:0],l[23:0]};
++    endfunction
++    always_ff @(posedge clk) begin : window_steps
++        if(rst||frame_start||data_flush) begin
++            phase<=frame_start&&!rst&&!data_flush?REAL:IDLE;
++            pending<=NONE_PENDING;input_q<=0;input_row<=0;input_replay_q<=0;
++            pending_q<=0;pending_row<=0;pending_pair<=0;
++            horizontal_valid<=0;horizontal_q<=0;horizontal_row<=0;
++            left_column<=0;center_column0<=0;center_column1<=0;
++            output_present<=0;out_window_pair<=0;out_x_even<=0;out_y<=0;
++            out_sof<=0;out_eol<=0;out_eof<=0;
++        end else if(advance) begin
++            output_present<=0;pending<=NONE_PENDING;
++            if(vertical_valid) begin
++                if(horizontal_valid) begin
++                    output_present<=1;
++                    out_window_pair[215:0]<=row_major(left_column,center_column0,center_column1);
++                    out_window_pair[431:216]<=row_major(center_column0,center_column1,
++                        pending_q==0?center_column1:new_column0);
++                    out_x_even<={horizontal_q,1'b0};out_y<=horizontal_row;
++                    out_sof<=horizontal_q==0&&horizontal_row==0;
++                    out_eol<=horizontal_q==LAST_Q;
++                    out_eof<=horizontal_q==LAST_Q&&horizontal_row==LAST_ROW;
++                end
++                left_column<=pending_q==0?new_column0:center_column1;
++                center_column0<=new_column0;center_column1<=new_column1;
++                horizontal_q<=pending_q;horizontal_row<=new_row;horizontal_valid<=1;
++            end else if(pending==TAIL_PENDING) begin
++                output_present<=1;
++                out_window_pair[215:0]<=row_major(left_column,center_column0,center_column1);
++                out_window_pair[431:216]<=row_major(center_column0,center_column1,center_column1);
++                out_x_even<={horizontal_q,1'b0};out_y<=horizontal_row;
++                out_sof<=horizontal_q==0&&horizontal_row==0;out_eol<=horizontal_q==LAST_Q;
++                out_eof<=horizontal_q==LAST_Q&&horizontal_row==LAST_ROW;horizontal_valid<=0;
++            end
++            case(phase)
++                REAL:if(real_issue) begin
++                    pending<=REAL_PENDING;pending_q<=input_q;pending_row<=input_row;pending_pair<=in_pair;
++                    if(input_q==LAST_Q) begin
++                        if(input_row==LAST_ROW) begin phase<=REPLAY;input_replay_q<=0;end
++                        else begin input_q<=0;input_row<=input_row+11'd1;end
++                    end else input_q<=input_q+10'd1;
++                end
++                REPLAY:begin
++                    pending<=REPLAY_PENDING;pending_q<=input_replay_q;pending_row<=LAST_ROW;
++                    if(input_replay_q==LAST_Q) phase<=TAIL;
++                    else input_replay_q<=input_replay_q+10'd1;
++                end
++                TAIL:begin pending<=TAIL_PENDING;phase<=WAIT_EOF;end
++                WAIT_EOF:if(output_present&&out_ready&&out_eof&&pending==NONE_PENDING&&!horizontal_valid)
++                    phase<=IDLE;
++                default:begin end
++            endcase
++        end
++    end
++    // synthesis translate_off
++    initial if(W<6||W>1920||W%2!=0||H<5||H>1080) $fatal(1,"THIN window dimensions");
++    always @(posedge clk) begin
++        if(rd_en&&rd_addr>=W/2) $fatal(1,"THIN read range");
++        if((recent_wr_en||older_wr_en)&&wr_addr>=W/2) $fatal(1,"THIN write range");
++        if(rd_en&&(recent_wr_en||older_wr_en)&&rd_addr==wr_addr) $fatal(1,"THIN RAM collision");
++        if(active&&vertical_valid&&pending_q!=0&&(!horizontal_valid||horizontal_row!=new_row||horizontal_q+1!=pending_q))
++            $fatal(1,"THIN horizontal sequence");
++    end
++    // synthesis translate_on
++endmodule
+--- v4.1/algorithm/frontend/frontend_frame_pair.sv
++++ thin-v1.1/algorithm/frontend/frontend_frame_pair.sv
+@@ -7,6 +7,8 @@
+     parameter integer SOBEL_WEAK_MIN_DIFF = 18,
+     parameter integer SOBEL_WEAK_THRESHOLD_DROP = 0,
+     parameter integer EDGE_CONTEXT_ENABLE = 0,
++    parameter integer EDGE_THIN_ENABLE = 0,
++    parameter integer EDGE_THIN_MODE = 1,
+     parameter integer EDGE_CONTEXT_THRESHOLD_DROP = 16,
+     parameter integer DIAGONAL_ENABLE = 0,
+     parameter integer DIAGONAL_MIN_DIFF = 19
+@@ -144,7 +146,43 @@
+         .out_x_even(sobel_coordinate[10:0]), .out_y(sobel_coordinate[21:11]),
+         .out_sof(sobel_coordinate[22]), .out_eol(sobel_coordinate[23]), .out_eof(sobel_coordinate[24]), .empty(sobel_empty)
+     );
+-    generate if(EDGE_CONTEXT_ENABLE!=0)begin : spatial_context
++    generate if(EDGE_CONTEXT_ENABLE!=0&&EDGE_THIN_ENABLE!=0)begin : thin_spatial_context
++        wire packed_valid,packed_ready,pack_empty,window_valid,window_ready,window_empty,filter_empty;
++        wire [47:0] packed_pair;
++        wire [431:0] context_window;
++        wire [24:0] packed_coordinate,window_coordinate;
++        wire context_start=frame_start&&!external_sobel_owner&&job_output_kind==1;
++        wire context_flush=flush||(frame_start&&(external_sobel_owner||job_output_kind!=1));
++        edge_thin_pack_pair #(.THRESHOLD_DROP(EDGE_CONTEXT_THRESHOLD_DROP)) pack (
++            .clk(clk),.rst(rst),.frame_start(frame_start),.data_flush(flush),
++            .in_valid(sobel_valid&&context_active&&running),.in_ready(context_input_ready),
++            .in_center_pair(sobel_center),.in_seed_pair(sobel_edge),
++            .in_gx_pair(unused_gx),.in_gy_pair(unused_gy),.in_l1_pair(unused_l1),.threshold(threshold_locked),
++            .in_x_even(sobel_coordinate[10:0]),.in_y(sobel_coordinate[21:11]),
++            .in_sof(sobel_coordinate[22]),.in_eol(sobel_coordinate[23]),.in_eof(sobel_coordinate[24]),
++            .out_valid(packed_valid),.out_ready(packed_ready),.out_pair(packed_pair),
++            .out_x_even(packed_coordinate[10:0]),.out_y(packed_coordinate[21:11]),
++            .out_sof(packed_coordinate[22]),.out_eol(packed_coordinate[23]),.out_eof(packed_coordinate[24]),.empty(pack_empty));
++        edge_thin_window_pair #(.W(W),.H(H)) window (
++            .clk(clk),.rst(rst),.frame_start(context_start),.data_flush(context_flush),
++            .in_valid(packed_valid),.in_ready(packed_ready),.in_pair(packed_pair),
++            .in_x_even(packed_coordinate[10:0]),.in_y(packed_coordinate[21:11]),
++            .in_sof(packed_coordinate[22]),.in_eol(packed_coordinate[23]),.in_eof(packed_coordinate[24]),
++            .out_valid(window_valid),.out_ready(window_ready),.out_window_pair(context_window),
++            .out_x_even(window_coordinate[10:0]),.out_y(window_coordinate[21:11]),
++            .out_sof(window_coordinate[22]),.out_eol(window_coordinate[23]),.out_eof(window_coordinate[24]),.empty(window_empty));
++        edge_thin_filter_pair #(.W(W),.H(H),.MODE(EDGE_THIN_MODE)) filter (
++            .clk(clk),.rst(rst),.frame_start(frame_start),.data_flush(flush),
++            .in_valid(window_valid),.in_ready(window_ready),.in_window_pair(context_window),
++            .in_x_even(window_coordinate[10:0]),.in_y(window_coordinate[21:11]),
++            .in_sof(window_coordinate[22]),.in_eol(window_coordinate[23]),.in_eof(window_coordinate[24]),
++            .out_valid(context_valid),.out_ready(output_slot_ready&&running),
++            .out_center_pair(context_center),.out_edge_pair(context_edge),
++            .out_x_even(context_coordinate[10:0]),.out_y(context_coordinate[21:11]),
++            .out_sof(context_coordinate[22]),.out_eol(context_coordinate[23]),.out_eof(context_coordinate[24]),.empty(filter_empty));
++        assign context_empty=pack_empty&&window_empty&&filter_empty;
++
++    end else if(EDGE_CONTEXT_ENABLE!=0)begin : spatial_context
+         wire packed_valid,packed_ready,pack_empty,window_valid,window_ready,window_empty,filter_empty;
+         wire [31:0] packed_pair;
+         wire [287:0] context_window;
+--- v4.1/rtl/v7_algorithm_video_pair.sv
++++ thin-v1.1/rtl/v7_algorithm_video_pair.sv
+@@ -7,6 +7,7 @@
+     parameter integer SOBEL_WEAK_MIN_DIFF=18,
+     parameter integer SOBEL_WEAK_THRESHOLD_DROP=0,
+     parameter integer EDGE_CONTEXT_THRESHOLD_DROP=16,
++    parameter integer EDGE_THIN_MODE=1,
+     parameter integer DIAGONAL_MIN_DIFF=18
+ )(
+     input wire clk, rst,
+@@ -53,6 +54,7 @@
+         .SOBEL_WEAK_MIN_DIFF(SOBEL_WEAK_MIN_DIFF),
+         .SOBEL_WEAK_THRESHOLD_DROP(SOBEL_WEAK_THRESHOLD_DROP),.EDGE_CONTEXT_ENABLE(1),
+         .EDGE_CONTEXT_THRESHOLD_DROP(EDGE_CONTEXT_THRESHOLD_DROP),
++        .EDGE_THIN_ENABLE(1),.EDGE_THIN_MODE(EDGE_THIN_MODE),
+         .DIAGONAL_ENABLE(1),.DIAGONAL_MIN_DIFF(DIAGONAL_MIN_DIFF)) algorithms(
+         .clk(clk),.rst(rst||frame_boundary),
+         .job_valid(job_pending&&!frame_boundary),.job_ready(job_ready),
+--- v4.1/ti60f225_oob.xml
++++ thin-v1.1/ti60f225_oob.xml
+@@ -19,6 +19,9 @@
+         <efx:design_file name="algorithm/edge/edge_context_pack_pair.sv" version="sv_09" library="default" />
+         <efx:design_file name="algorithm/edge/edge_context_window_pair.sv" version="sv_09" library="default" />
+         <efx:design_file name="algorithm/edge/edge_context_filter_pair.sv" version="sv_09" library="default" />
++        <efx:design_file name="algorithm/edge/edge_thin_pack_pair.sv" version="sv_09" library="default" />
++        <efx:design_file name="algorithm/edge/edge_thin_window_pair.sv" version="sv_09" library="default" />
++        <efx:design_file name="algorithm/edge/edge_thin_filter_pair.sv" version="sv_09" library="default" />
+         <efx:design_file name="rtl/colorcard_overlay.v" version="default" library="default" />
+         <efx:design_file name="rtl/rawcard_overlay.v" version="default" library="default" />
+         <efx:design_file name="rtl/raw_bggr_balance.v" version="default" library="default" />

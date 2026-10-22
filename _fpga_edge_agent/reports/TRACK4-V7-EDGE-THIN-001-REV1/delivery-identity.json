@@ -1,0 +1,13 @@
+{
+  "state": "WAITING_HUMAN_PROGRAM",
+  "bit": {
+    "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\artifacts\\staging\\TRACK4-V7-EDGE-THIN-001-REV1\\edge_thin_v1_1_20261022.bit",
+    "desktop_path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\FPGA_细化v1.1.bit",
+    "bytes": 2474082,
+    "sha256": "c407819ed8fcbbf0bc5e9a9b38d219299d2f6489988d1c19dda036f44e21bd43"
+  },
+  "source_bit": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\outflow\\ti60f225_oob.bit",
+  "identical_sha256": "c407819ed8fcbbf0bc5e9a9b38d219299d2f6489988d1c19dda036f44e21bd43",
+  "baseline_159_inputs_unchanged": true,
+  "hardware_passed": false
+}

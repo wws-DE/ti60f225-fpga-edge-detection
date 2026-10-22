@@ -1,0 +1,12 @@
+{
+  "modified": [
+    "rtl/ti60f225_oob_top.v",
+    "ti60f225_oob.peri.xml",
+    "ti60f225_oob.sdc",
+    "ti60f225_oob.xml"
+  ],
+  "added": [
+    "rtl/v7_fullscreen_mode_control.sv"
+  ],
+  "unchanged_legacy_core": true
+}

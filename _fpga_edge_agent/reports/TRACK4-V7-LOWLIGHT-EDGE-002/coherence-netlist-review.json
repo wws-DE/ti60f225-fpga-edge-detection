@@ -1,0 +1,14 @@
+{
+  "ff_counts": {
+    "row_difference_s1": 54,
+    "column_difference_s1": 36,
+    "support_x_s2": 4,
+    "support_y_s2": 4,
+    "support_x_s3": 4,
+    "support_y_s3": 4
+  },
+  "map_netlist_sha256": "b943d5d955a3d190eb4b984c4f7b22ae0082d998db904499ec95c69cd4b565a5",
+  "ram_blocks": 169,
+  "dsp_blocks": 0,
+  "assessment": "Named small arrays implement the approved in-flight register state; EFX_FF primitives confirmed. No added image or block RAM."
+}

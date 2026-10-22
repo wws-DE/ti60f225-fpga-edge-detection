@@ -1,0 +1,31 @@
+{
+  "task": "TRACK4-V7-LOWLIGHT-EDGE-001",
+  "timestamp": "2026-10-21T16:18:55.201064+08:00",
+  "reviewed_map_added": [],
+  "reviewed_flow_added": [],
+  "unreviewed": [],
+  "decision": "SOFTWARE_CHECKED_FOR_BIT_GENERATION",
+  "reason": "All 1410 normalized synthesis warnings and all 1287 normalized PNR warnings match the hardware-accepted fullscreen-mode baseline. Generated loop IDs resolved using unchanged source hashes, LUT masks and pin equality graph. Inherited CSI/DDR/interface warnings remain documented; this is not a waiver of the full legacy constraint set. Same unique KEY3 synchronizer and pin configuration. Only two approved parameter source files changed; no project or constraint normalization occurred.",
+  "legacy_pnr_count": 1287,
+  "current_pnr_count": 1287,
+  "legacy_map_count": 1410,
+  "current_map_count": 1410,
+  "source_normalizations": [],
+  "resources": {
+    "current": {
+      "xlr": 21846,
+      "ram": 169,
+      "dsp": 0
+    },
+    "baseline_xlr": 21800,
+    "delta_xlr": 46,
+    "ram_unchanged": true,
+    "dsp_unchanged": true,
+    "assessment": "Constant configuration changes can affect synthesized logic and optimization; the 46-XLR increase is bounded within the two approved parameter changes. No new RAM/DSP. All 18 setup/hold relationships pass."
+  },
+  "timing": {
+    "setup_min_ns": 0.355,
+    "hold_min_ns": 0.026
+  },
+  "hardware_acceptance": "PENDING"
+}

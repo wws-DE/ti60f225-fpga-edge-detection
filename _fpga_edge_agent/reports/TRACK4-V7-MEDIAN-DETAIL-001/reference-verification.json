@@ -1,0 +1,134 @@
+{
+  "result": "SCALAR_VECTOR_AGREE_FAILURE_CONFIRMED",
+  "cases": {
+    "A": {
+      "arbitrary_windows": 45955,
+      "image_pixels_with_control_and_boundary": 30720,
+      "protected_windows": 2016
+    },
+    "B": {
+      "arbitrary_windows": 44587,
+      "image_pixels_with_control_and_boundary": 30720,
+      "protected_windows": 1776
+    }
+  },
+  "correlated_failure_inputs": [
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\A-correlated-amp16-seed433-axis0.npz",
+      "sha256": "4ea2f43a68a830b099e44714472a1ad901ef78d3cd22d38079132c9412e995de",
+      "amplitude": 16,
+      "seed": 433,
+      "axis": 0,
+      "old_edges": 0,
+      "new_edges": 2,
+      "candidate": "A"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\A-correlated-amp24-seed431-axis0.npz",
+      "sha256": "b3a7b5089d904c6ceff3f2d8a5e5ec56a79f0f61f06e2d12440a0d0edfd04eac",
+      "amplitude": 24,
+      "seed": 431,
+      "axis": 0,
+      "old_edges": 24,
+      "new_edges": 26,
+      "candidate": "A"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\A-correlated-amp24-seed432-axis1.npz",
+      "sha256": "da1af051b482990cc840476e099d0aac5687dc2c18fefd68a2e39ae6e681feba",
+      "amplitude": 24,
+      "seed": 432,
+      "axis": 1,
+      "old_edges": 40,
+      "new_edges": 42,
+      "candidate": "A"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\A-correlated-amp24-seed433-axis0.npz",
+      "sha256": "eea07c5314c637e822953f2744d800bfb78c8a2e0d7a89a3356ed97388add90d",
+      "amplitude": 24,
+      "seed": 433,
+      "axis": 0,
+      "old_edges": 22,
+      "new_edges": 32,
+      "candidate": "A"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\B-correlated-amp16-seed431-axis0.npz",
+      "sha256": "18ec2f6fdd14b87acfd4ff4c7f8eb0a204be67602fc7cd28d00a504844396579",
+      "amplitude": 16,
+      "seed": 431,
+      "axis": 0,
+      "old_edges": 0,
+      "new_edges": 2,
+      "candidate": "B"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\B-correlated-amp24-seed431-axis0.npz",
+      "sha256": "db4a203ec0ca786d9927251b1d1a4909a9661f3901bf3a4a9158285c491e8dfb",
+      "amplitude": 24,
+      "seed": 431,
+      "axis": 0,
+      "old_edges": 24,
+      "new_edges": 46,
+      "candidate": "B"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\B-correlated-amp24-seed431-axis1.npz",
+      "sha256": "2f2f84576cd7d84dcc19102f5d01e677eb94aaf4cf3f1f014919fca98cbce6ce",
+      "amplitude": 24,
+      "seed": 431,
+      "axis": 1,
+      "old_edges": 25,
+      "new_edges": 48,
+      "candidate": "B"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\B-correlated-amp24-seed432-axis0.npz",
+      "sha256": "8f50268ba4cde82d7e1b6ddaf56fc93cd37687425e621e43adfc60cf5f465334",
+      "amplitude": 24,
+      "seed": 432,
+      "axis": 0,
+      "old_edges": 22,
+      "new_edges": 48,
+      "candidate": "B"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\B-correlated-amp24-seed432-axis1.npz",
+      "sha256": "b207f7f830be29f5367243d7f8dc73b1a9129a48de17fa461640939b93fb092e",
+      "amplitude": 24,
+      "seed": 432,
+      "axis": 1,
+      "old_edges": 40,
+      "new_edges": 73,
+      "candidate": "B"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\B-correlated-amp24-seed433-axis0.npz",
+      "sha256": "bd245dbaca30549ec39200b07cd0a6ec39fe573fc4a954adb4ebe0089139f128",
+      "amplitude": 24,
+      "seed": 433,
+      "axis": 0,
+      "old_edges": 22,
+      "new_edges": 66,
+      "candidate": "B"
+    },
+    {
+      "path": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-MEDIAN-DETAIL-001\\B-correlated-amp24-seed433-axis1.npz",
+      "sha256": "969bf5a6e7aabc393911da236388e6799d4682addaadba5defc1916ef6101d00",
+      "amplitude": 24,
+      "seed": 433,
+      "axis": 1,
+      "old_edges": 23,
+      "new_edges": 69,
+      "candidate": "B"
+    }
+  ],
+  "source_sha256": {
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\verify_median_detail.py": "280186e166433184baad271a1b53d498e4effb61f415766280107a9856a3fde9",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_median_detail_001_20261022\\tests\\reference_median_detail.py": "62ff19043ac84f1848e0cfb7b8a0d50cc2835fee29013d4e72408fd9ca56bce0"
+  },
+  "quality_sha256": "eb675ef020c5d8d2818df00adeb94bcaa36344cbb5ee2ca9aa851608fafe08ef",
+  "rtl_checked": false,
+  "hardware_checked": false
+}

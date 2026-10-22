@@ -1,0 +1,229 @@
+{
+  "result": "PASS",
+  "runs": [
+    {
+      "test": "filter",
+      "mode": 0,
+      "vectors": 8448,
+      "sha256": "055e35deadd688c33520807914d385ca2ec3e0334afaec417d49ded18a02c6af",
+      "completion": "THIN_FILTER_PASS vectors=8448 checks=8488 stalls=40"
+    },
+    {
+      "test": "filter",
+      "mode": 1,
+      "vectors": 8448,
+      "sha256": "0987db20487fd76fb952f87e61d10d6e2960a136f795f98b4733949be1c973a3",
+      "completion": "THIN_FILTER_PASS vectors=8448 checks=8488 stalls=40"
+    },
+    {
+      "test": "chain",
+      "W": 40,
+      "H": 12,
+      "mode": 0,
+      "threshold": 64,
+      "frames": 5,
+      "interrupts": 3,
+      "vectors": {
+        "chain-40-12-0-64-input.hex": "1e409b4c273c595c7a540ab34827f18ed24cc6a808d25aa674ef39ef24743b5c",
+        "chain-40-12-0-64-gold.hex": "caea672ab1cdce6994a82a8bcd31d5330276a8c1298f2d84e3f06ccbad2c0de5",
+        "chain-40-12-0-64-window.hex": "4e7242f3d491ba55aae915c5c552ed83617b42f9484fae7478676cab5cb10be8"
+      },
+      "completion": "THIN_CHAIN_PASS W=40 H=12 DROP=16 T=64 frames=5 interrupts=3 stalls=114"
+    },
+    {
+      "test": "chain",
+      "W": 40,
+      "H": 12,
+      "mode": 1,
+      "threshold": 64,
+      "frames": 5,
+      "interrupts": 3,
+      "vectors": {
+        "chain-40-12-1-64-input.hex": "c0e466941b802c7d12f4af9245de5ed3a05f5609b7ebec7333a794a0080fbd55",
+        "chain-40-12-1-64-gold.hex": "76c1b9bbb41607f78a17473d7e4837271d4da88a5f61f039170a70d5b9a0ec81",
+        "chain-40-12-1-64-window.hex": "d95e9715c4fdea7e27e13af1381214e74d8728ba6e448a42fecf79a4d6f2ca0e"
+      },
+      "completion": "THIN_CHAIN_PASS W=40 H=12 DROP=16 T=64 frames=5 interrupts=3 stalls=114"
+    },
+    {
+      "test": "chain",
+      "W": 8,
+      "H": 5,
+      "mode": 0,
+      "threshold": 0,
+      "frames": 5,
+      "interrupts": 3,
+      "vectors": {
+        "chain-8-5-0-0-input.hex": "c21f8f704b03871082da2531d7625005c9f51114a58e6384eee72681141a93d9",
+        "chain-8-5-0-0-gold.hex": "c686b0b1d39383dd1c7258b496f7af06f7dcd52983028a5fb3a1f602e24cad19",
+        "chain-8-5-0-0-window.hex": "701b250127cce52c038266f8af00fecf2c712dd9966a8ec0fae050c244f464ed"
+      },
+      "completion": "THIN_CHAIN_PASS W=8 H=5 DROP=16 T=0 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "chain",
+      "W": 8,
+      "H": 5,
+      "mode": 0,
+      "threshold": 7,
+      "frames": 5,
+      "interrupts": 3,
+      "vectors": {
+        "chain-8-5-0-7-input.hex": "a6a12dba33d15d99062367288658642a2b100cf1d34eb5d24cbfc778572dbe98",
+        "chain-8-5-0-7-gold.hex": "807d29ce999aaab16e8132b286cbebc82330d836db6197a51e619b493816ab82",
+        "chain-8-5-0-7-window.hex": "8feaca5fd41ed38f3d8993210bf045008d958165bbe3c221500fb368fa65aaa7"
+      },
+      "completion": "THIN_CHAIN_PASS W=8 H=5 DROP=16 T=7 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "chain",
+      "W": 8,
+      "H": 5,
+      "mode": 0,
+      "threshold": 16,
+      "frames": 5,
+      "interrupts": 3,
+      "vectors": {
+        "chain-8-5-0-16-input.hex": "4b2016fcc73585a00064ddb11352367cdc3d3d9a808f694928daa116c5d31387",
+        "chain-8-5-0-16-gold.hex": "9fde46bff4d1b823068c8e05df590ab9d2df74b5d7c507bd67bb554b466afa3b",
+        "chain-8-5-0-16-window.hex": "fc375652786349bc893c525e0220d6087bb52ff8b0a1db8f89685f000a242a4f"
+      },
+      "completion": "THIN_CHAIN_PASS W=8 H=5 DROP=16 T=16 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "chain",
+      "W": 8,
+      "H": 5,
+      "mode": 0,
+      "threshold": 32,
+      "frames": 5,
+      "interrupts": 3,
+      "vectors": {
+        "chain-8-5-0-32-input.hex": "4b4257bbadef1d01c457a95b7802b4b93c065e5fdc1941004cb5e0218356f875",
+        "chain-8-5-0-32-gold.hex": "636bcf0dee81cab3a80b4cf33194cfd1f2262a033b95d6288eb4c98e0903d164",
+        "chain-8-5-0-32-window.hex": "e7b9b44b00434f27a7a1db121ae8e2180b19c3971053f93e63373319f296d0f9"
+      },
+      "completion": "THIN_CHAIN_PASS W=8 H=5 DROP=16 T=32 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "chain",
+      "W": 8,
+      "H": 5,
+      "mode": 0,
+      "threshold": 2047,
+      "frames": 5,
+      "interrupts": 3,
+      "vectors": {
+        "chain-8-5-0-2047-input.hex": "0745c1e7fee806f4502296493e1f3f274bc7a49f587a5e63913aa0c219b430b4",
+        "chain-8-5-0-2047-gold.hex": "dd31fde6235f0d2030a8f7079ddbfff98bb83663814ac83f2985c0f66f014463",
+        "chain-8-5-0-2047-window.hex": "e148bad5ecbfcf41d93864989c3c8333627dca6245cffd82812809d6a94bd279"
+      },
+      "completion": "THIN_CHAIN_PASS W=8 H=5 DROP=16 T=2047 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "chain",
+      "W": 8,
+      "H": 5,
+      "mode": 1,
+      "threshold": 0,
+      "frames": 5,
+      "interrupts": 3,
+      "vectors": {
+        "chain-8-5-1-0-input.hex": "b595489e3db95bc26ad7ff923bc2cd402d349b776446be53d671dacbfb2b6187",
+        "chain-8-5-1-0-gold.hex": "778ec1639924ab78ce6871e0b8aa23a0b22f9ff9c1e541a699c4e2b7a067e620",
+        "chain-8-5-1-0-window.hex": "3d01f18e2adc3be23bf8cdb520c1ae76e65a8e19a9cd2ac07799d217d18cebb7"
+      },
+      "completion": "THIN_CHAIN_PASS W=8 H=5 DROP=16 T=0 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "chain",
+      "W": 8,
+      "H": 5,
+      "mode": 1,
+      "threshold": 7,
+      "frames": 5,
+      "interrupts": 3,
+      "vectors": {
+        "chain-8-5-1-7-input.hex": "347ff51c4ae040e946af0566d30c28c4c74285b3ee95aba9abb0877187aeed48",
+        "chain-8-5-1-7-gold.hex": "f1554d14515fd3bd0f6f4d305eb2e7997bcf0dadcf10c085c9e75d15c8c91e2c",
+        "chain-8-5-1-7-window.hex": "c36c63daa0236ba8d15a0ec4ced2a5bbc971fd3b15053ac00fda9267083924ab"
+      },
+      "completion": "THIN_CHAIN_PASS W=8 H=5 DROP=16 T=7 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "chain",
+      "W": 8,
+      "H": 5,
+      "mode": 1,
+      "threshold": 16,
+      "frames": 5,
+      "interrupts": 3,
+      "vectors": {
+        "chain-8-5-1-16-input.hex": "0103b381855da2461b470fb336b0aa11ccfb4a2686493906170f29151dd7b9ce",
+        "chain-8-5-1-16-gold.hex": "1b4a8a5300756ac2fd39d983ffb4d61c35db8f7ea6d5e6dfa155544b9098b2be",
+        "chain-8-5-1-16-window.hex": "1f5c393d6d47705ca0f847ee9459259769cab6d512e92dbae696d619f8c787e0"
+      },
+      "completion": "THIN_CHAIN_PASS W=8 H=5 DROP=16 T=16 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "chain",
+      "W": 8,
+      "H": 5,
+      "mode": 1,
+      "threshold": 32,
+      "frames": 5,
+      "interrupts": 3,
+      "vectors": {
+        "chain-8-5-1-32-input.hex": "dc824abd08198b96a11bde6f1e1f746c2b49213fac7856c9610286124643ff7d",
+        "chain-8-5-1-32-gold.hex": "8c2deb5d31ba08aaec7542723bb17c11fcfbe39a243a99ff828d8b48deeb4a7b",
+        "chain-8-5-1-32-window.hex": "210199958e6a7d5910727dae486028205c6a4e1e57d426875f429da1c8c02ee7"
+      },
+      "completion": "THIN_CHAIN_PASS W=8 H=5 DROP=16 T=32 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "chain",
+      "W": 8,
+      "H": 5,
+      "mode": 1,
+      "threshold": 2047,
+      "frames": 5,
+      "interrupts": 3,
+      "vectors": {
+        "chain-8-5-1-2047-input.hex": "1553f7551bd21b0ee6c146923cb77fd5612155b695cc9b9f52122e5f9f4fbcd6",
+        "chain-8-5-1-2047-gold.hex": "c2f632a961c438069b5ab7ad18d08eac50eb6f88e16fc52ab49972f176a16dcd",
+        "chain-8-5-1-2047-window.hex": "e7b6e20c9e6eac5bcf9303f11cc32fd2ebfc9ffa63dcafcb81f7a682b96f71cb"
+      },
+      "completion": "THIN_CHAIN_PASS W=8 H=5 DROP=16 T=2047 frames=5 interrupts=3 stalls=3"
+    },
+    {
+      "test": "chain",
+      "W": 1920,
+      "H": 5,
+      "mode": 1,
+      "threshold": 64,
+      "frames": 5,
+      "interrupts": 3,
+      "vectors": {
+        "chain-1920-5-1-64-input.hex": "efa2ae483e0411e60a84d7db8ec0cf99db992d3ddcb069135b70b869a2eb5cb6",
+        "chain-1920-5-1-64-gold.hex": "d730f8fb67405efdbfb47518d264e43494853125fcf7b58fba1f63a1da22af9c",
+        "chain-1920-5-1-64-window.hex": "c9a9752d184b29e45ed9b30927c1765e7a31673114db220ead50c0585d08ceb2"
+      },
+      "completion": "THIN_CHAIN_PASS W=1920 H=5 DROP=16 T=64 frames=5 interrupts=3 stalls=1314"
+    }
+  ],
+  "sources": {
+    "C:\\Efinity\\2026.1\\sim_models\\verilog\\efx_ram10.v": "dd8db45116a67b9754920856dc380eb2dc73ca51e0a6a62cc74cda01c0e31a33",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\algorithm\\edge\\edge_context_filter_pair.sv": "fceab374f3248e4526ddef2238107612f60eea481e33729086fd6e91c4c49fb2",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\algorithm\\edge\\edge_context_pack_pair.sv": "bf704887112a1e1044f46554c75c46ed6bd21bf60fd8b9d67cc420efae575fe0",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\algorithm\\edge\\edge_context_window_pair.sv": "5d8d872f338c2fe3b054ff541e161c761cc5881fbd0ffb34461de3e93f0ac8c4",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\algorithm\\edge\\edge_thin_filter_pair.sv": "b1b37ce83baed93a1beb60af3874a2c8ad41255bbb28f377c7791f76d1652bff",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\algorithm\\edge\\edge_thin_pack_pair.sv": "a06a8a35d52c71d4d5b3d8ee1b350eaef3125bdf34c22dde79e482df4e17b566",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\algorithm\\edge\\edge_thin_window_pair.sv": "526b80d44afbdb1706b977c020af8cf13f3802b230e9586794224f929ef28323",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\tests\\tb_thin_filter.sv": "65555c7845c1ebcffab7a67956e0d0fdf3a20c6a8f8ff0e338799bc796aa3241",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\tests\\tb_thin_chain.sv": "273da49019a18e7eb918051c2faa388e19dd77924a5edd70c4e6fd7e7c6d7805",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\tests\\run_thin_checks.py": "f929c2ec44843a16ae73c11b49eee89d6bac8f76ba7f745b53a3f0f856d4e25f",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\tests\\reference_thin_v11.py": "987d08bf980c616cc9c9a8ee6ec49868d864c93a50619dbd580f359b717310ec",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\tests\\reference_thin.py": "1e8b22760b4d73daead011328d611219d2aed120241052a268bf2597af8050d9",
+    "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\work\\active\\track4_v7_edge_thin_001_rev1_20261021\\tests\\reference_v4.py": "ffa90e3c79dd35d348b6e7922d5ccd15a247d5a23632c76a62eea9516bf4ba82"
+  }
+}

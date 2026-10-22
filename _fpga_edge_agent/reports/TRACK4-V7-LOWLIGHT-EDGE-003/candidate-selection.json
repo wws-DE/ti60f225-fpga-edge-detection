@@ -1,0 +1,13 @@
+{
+  "candidate": "B",
+  "threshold": 64,
+  "base_min_diff": 20,
+  "base_support": 2,
+  "weak_min_diff": 18,
+  "threshold_drop": 0,
+  "weak_support": 3,
+  "quality_sha256": "8fb9fd96f49cfd2a94fcc03b0849506e93bd148110ffa07c0f4563c23b2d9407",
+  "core_checks_sha256": "5b909ad937c3a72c132cc1b4b123ef58e865351886b5bbf5986f72ec555da997",
+  "reason": "B is the only eligible candidate under fixed geometry/separation/noise gates",
+  "rtl_checks_passed": true
+}

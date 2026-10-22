@@ -1,0 +1,40 @@
+{
+  "reviewed_map_added": [
+    "[EFX-0657 WARNING] Mapping into logic memory block 'diagonal_x_s2' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'diagonal_y_s2' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'diagonal_x_s3' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)",
+    "[EFX-0657 WARNING] Mapping into logic memory block 'diagonal_y_s3' (algorithm/frontend/sobel_pair.sv:LINE) because size is too small (<=64)"
+  ],
+  "reviewed_flow_added": [],
+  "unreviewed": [],
+  "source_normalizations": [],
+  "assessment": "Only four EFX-0657 notes are new: approved small diagonal arrays with16 explicit EFX_FF bits. Gradient-delay array notes were already in v3 and are inherited. Total175 RAM/22913 XLR/DSP0 is within approved budgets. All1287 PNR messages inherited after source/LUT/pin graph comparison; historical CSI/DDR/KEY warnings remain.",
+  "flip_flop_proof": {
+    "diagonal_x_s2": [
+      "algorithm_bridge/algorithms/sobel/i1705/diagonal_x_s2[0][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1705/diagonal_x_s2[0][1]~FF",
+      "algorithm_bridge/algorithms/sobel/i1705/diagonal_x_s2[1][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1705/diagonal_x_s2[1][1]~FF"
+    ],
+    "diagonal_y_s2": [
+      "algorithm_bridge/algorithms/sobel/i1706/diagonal_y_s2[0][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1706/diagonal_y_s2[0][1]~FF",
+      "algorithm_bridge/algorithms/sobel/i1706/diagonal_y_s2[1][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1706/diagonal_y_s2[1][1]~FF"
+    ],
+    "diagonal_x_s3": [
+      "algorithm_bridge/algorithms/sobel/i1707/diagonal_x_s3[0][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1707/diagonal_x_s3[0][1]~FF",
+      "algorithm_bridge/algorithms/sobel/i1707/diagonal_x_s3[1][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1707/diagonal_x_s3[1][1]~FF"
+    ],
+    "diagonal_y_s3": [
+      "algorithm_bridge/algorithms/sobel/i1708/diagonal_y_s3[0][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1708/diagonal_y_s3[0][1]~FF",
+      "algorithm_bridge/algorithms/sobel/i1708/diagonal_y_s3[1][0]~FF",
+      "algorithm_bridge/algorithms/sobel/i1708/diagonal_y_s3[1][1]~FF"
+    ]
+  },
+  "map_netlist_sha256": "fd8c76d863b7e64116923fa706fa92f7b43c557b4def567e0324d8c5a1d0b600",
+  "hardware_passed": false
+}

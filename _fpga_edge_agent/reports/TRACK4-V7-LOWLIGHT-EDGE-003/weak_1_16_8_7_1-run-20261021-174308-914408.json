@@ -1,0 +1,18 @@
+{
+  "name": "weak_1_16_8_7_1-run",
+  "argv": [
+    "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xsim.bat",
+    "weak_1_16_8_7_1",
+    "--runall",
+    "--onerror",
+    "quit",
+    "--onfinish",
+    "quit",
+    "--nolog",
+    "--testplusarg",
+    "DATA=C:/Users/29147/OneDrive/Desktop/FPGA/_fpga_edge_agent/work/active/track4_v7_lowlight_edge_003_20261021/sim_fullscreen/weak_1_16_8_7_1.hex"
+  ],
+  "returncode": 0,
+  "seconds": 2.582136869430542,
+  "log": "C:\\Users\\29147\\OneDrive\\Desktop\\FPGA\\_fpga_edge_agent\\reports\\TRACK4-V7-LOWLIGHT-EDGE-003\\weak_1_16_8_7_1-run-20261021-174308-914408.log"
+}
