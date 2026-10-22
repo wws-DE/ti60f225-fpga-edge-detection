@@ -8,6 +8,8 @@
     "archive current project",
     "publish to existing GitHub repository and Release"
   ],
+  "destination": "https://github.com/wws-DE/ti60f225-fpga-edge-detection",
+  "destination_user_choice": "发布到 wws-DE 下的新仓库 ti60f225-fpga-edge-detection（公开，与原仓库一致）",
   "formal_state_updated": false,
   "new_rtl_or_build": false,
   "hardware_operation": false,

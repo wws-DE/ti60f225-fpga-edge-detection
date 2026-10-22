@@ -1,6 +1,6 @@
 # 导入与烧录（2026-10-22）
 
-先读 [交接文档](HANDOFF_2026-10-22.md)，从 [Release](https://github.com/William19-creator-wq/ti60f225-fpga-edge-detection/releases/tag/handoff-2026-10-22) 下载 bit、便携工程或完整项目，核对 SHA256SUMS.txt。最新候选尚待实机对比；已有细化 v1.1 回退。
+先读 [交接文档](HANDOFF_2026-10-22.md)，从 [Release](https://github.com/wws-DE/ti60f225-fpga-edge-detection/releases/tag/handoff-2026-10-22) 下载 bit、便携工程或完整项目，核对 SHA256SUMS.txt。最新候选尚待实机对比；已有细化 v1.1 回退。
 
 1. 建议解压到短路径（例如 C:/FPGA），准备已安装且有有效许可的 Efinity **2026.1.132**。
 2. 在 Efinity 使用 File → Open Project，打开 `_fpga_edge_agent/work/active/track4_v7_median_detail_001_20261022/ti60f225_oob.xml`。便携工程包中相同相对位置即为入口。不要选择旧 bridge/control 工程，也不要把 track4_board.xml 约束文件当顶层工程。

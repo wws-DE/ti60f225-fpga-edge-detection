@@ -1,6 +1,6 @@
 # 仓库与完整归档（2026-10-22）
 
-当前说明见 [交接](HANDOFF_2026-10-22.md)。源码仓库供浏览和版本管理，大型二进制与完整快照通过 [Release](https://github.com/William19-creator-wq/ti60f225-fpga-edge-detection/releases/tag/handoff-2026-10-22) 分发。
+当前说明见 [交接](HANDOFF_2026-10-22.md)。源码仓库供浏览和版本管理，大型二进制与完整快照通过 [Release](https://github.com/wws-DE/ti60f225-fpga-edge-detection/releases/tag/handoff-2026-10-22) 分发。
 
 | 位置/附件 | 内容 |
 |---|---|
